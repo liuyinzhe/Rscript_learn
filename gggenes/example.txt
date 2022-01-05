@@ -1,0 +1,9 @@
+molecule	gene	start	end	strand	direction
+contig1	genA	20	30	forward	1
+contig1	genB	49	56	forward	1
+contig1	genB	57	64	forward	1
+contig1	genC	59	73	reverse	-1
+contig4	genB	49	56	forward	1
+contig6	genC	72	84	forward	1
+contig6	genA	88	90	forward	1
+contig6	genC	93	102	forward	1
