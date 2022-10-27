@@ -8,7 +8,7 @@ library(scales)
 #getwd()
 setwd("D:\\xx\\xx\\xx\\xxx")
 
-df_res=read.table("input.tsv",header=T,sep="\t")
+df_res=read.table("pie.input.tsv",header=T,sep="\t")
 df_res$Precent = df_res$Number/sum(df_res$Number)
 
 
