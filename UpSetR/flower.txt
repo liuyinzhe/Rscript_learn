@@ -1,0 +1,1663 @@
+c1	c2	c3	c4	c5	c6	c7	c8
+gene1193	gene1253	gene1236	gene1325	gene1246	gene1414	gene1259	gene1249
+gene1194	gene1254	gene1241	gene1327	gene1247	gene1416	gene1260	gene1250
+gene1195	gene1255	gene1243	gene1328	gene1248	gene1417	gene1261	gene1251
+gene1197	gene1256	gene1244	gene1329	gene1249	gene1421	gene1262	gene1253
+gene1199	gene1257	gene1246	gene1330	gene1250	gene1422	gene1263	gene1256
+gene1202	gene1259	gene1247	gene1331	gene1251	gene1425	gene1265	gene1258
+gene1203	gene1260	gene1248	gene1332	gene1254	gene1426	gene1266	gene1259
+gene1205	gene1261	gene1249	gene1333	gene1255	gene1431	gene1268	gene1260
+gene1206	gene1263	gene1251	gene1335	gene1256	gene1433	gene1269	gene1261
+gene1208	gene1267	gene1253	gene1336	gene1259	gene1434	gene1272	gene1262
+gene1209	gene1268	gene1255	gene1338	gene1260	gene1436	gene1278	gene1263
+gene1213	gene1269	gene1259	gene1340	gene1261	gene1437	gene1282	gene1265
+gene1215	gene1270	gene1260	gene1341	gene1262	gene1441	gene1286	gene1266
+gene1217	gene1272	gene1261	gene1343	gene1263	gene1443	gene1287	gene1267
+gene1218	gene1273	gene1262	gene1344	gene1265	gene1444	gene1288	gene1268
+gene1220	gene1275	gene1263	gene1347	gene1266	gene1445	gene1289	gene1269
+gene1221	gene1276	gene1265	gene1349	gene1268	gene1446	gene1291	gene1270
+gene1222	gene1278	gene1266	gene1352	gene1269	gene1447	gene1293	gene1271
+gene1223	gene1282	gene1268	gene1353	gene1270	gene1449	gene1294	gene1272
+gene1224	gene1285	gene1269	gene1354	gene1271	gene1451	gene1295	gene1274
+gene1225	gene1286	gene1270	gene1355	gene1272	gene1452	gene1296	gene1275
+gene1226	gene1287	gene1272	gene1356	gene1275	gene1456	gene1297	gene1278
+gene1227	gene1288	gene1273	gene1357	gene1282	gene1457	gene1299	gene1279
+gene1229	gene1291	gene1276	gene1359	gene1283	gene1459	gene1301	gene1282
+gene1231	gene1292	gene1278	gene1361	gene1284	gene1460	gene1303	gene1286
+gene1232	gene1293	gene1279	gene1363	gene1285	gene1461	gene1308	gene1287
+gene1233	gene1294	gene1282	gene1364	gene1286	gene1463	gene1310	gene1288
+gene1235	gene1295	gene1283	gene1365	gene1287	gene1465	gene1312	gene1289
+gene1237	gene1296	gene1284	gene1367	gene1289	gene1466	gene1313	gene1290
+gene1238	gene1297	gene1285	gene1368	gene1291	gene1469	gene1317	gene1292
+gene1240	gene1299	gene1286	gene1371	gene1292	gene1471	gene1319	gene1293
+gene1241	gene1301	gene1287	gene1373	gene1293	gene1474	gene1320	gene1295
+gene1242	gene1302	gene1288	gene1374	gene1295	gene1476	gene1321	gene1296
+gene1243	gene1303	gene1289	gene1375	gene1296	gene1478	gene1322	gene1299
+gene1244	gene1305	gene1291	gene1376	gene1297	gene1479	gene1323	gene1300
+gene1245	gene1306	gene1293	gene1381	gene1299	gene1480	gene1324	gene1301
+gene1246	gene1307	gene1294	gene1387	gene1300	gene1483	gene1325	gene1302
+gene1247	gene1308	gene1295	gene1388	gene1302	gene1484	gene1326	gene1303
+gene1248	gene1312	gene1296	gene1389	gene1303	gene1486	gene1327	gene1305
+gene1249	gene1313	gene1297	gene1390	gene1305	gene1488	gene1328	gene1306
+gene1250	gene1315	gene1299	gene1391	gene1308	gene1489	gene1329	gene1308
+gene1251	gene1317	gene1300	gene1392	gene1312	gene1490	gene1330	gene1312
+gene1252	gene1319	gene1301	gene1394	gene1315	gene1492	gene1333	gene1313
+gene1253	gene1320	gene1303	gene1395	gene1316	gene1494	gene1335	gene1314
+gene1254	gene1322	gene1305	gene1396	gene1317	gene1498	gene1336	gene1315
+gene1255	gene1324	gene1308	gene1397	gene1319	gene1500	gene1337	gene1317
+gene1256	gene1325	gene1312	gene1400	gene1320	gene1502	gene1338	gene1320
+gene1258	gene1327	gene1313	gene1401	gene1322	gene1504	gene1342	gene1322
+gene1259	gene1328	gene1314	gene1402	gene1325	gene1508	gene1344	gene1323
+gene1260	gene1330	gene1315	gene1403	gene1327	gene1509	gene1346	gene1324
+gene1262	gene1331	gene1316	gene1405	gene1328	gene1510	gene1347	gene1325
+gene1263	gene1333	gene1317	gene1407	gene1331	gene1511	gene1348	gene1327
+gene1265	gene1335	gene1318	gene1408	gene1332	gene1512	gene1351	gene1328
+gene1268	gene1336	gene1320	gene1411	gene1333	gene1513	gene1352	gene1329
+gene1269	gene1338	gene1322	gene1414	gene1335	gene1514	gene1353	gene1330
+gene1270	gene1340	gene1324	gene1421	gene1340	gene1515	gene1359	gene1331
+gene1271	gene1341	gene1326	gene1422	gene1342	gene1518	gene1363	gene1333
+gene1272	gene1342	gene1327	gene1431	gene1343	gene1519	gene1364	gene1335
+gene1275	gene1343	gene1328	gene1433	gene1344	gene1522	gene1367	gene1340
+gene1276	gene1344	gene1329	gene1434	gene1347	gene1523	gene1368	gene1343
+gene1282	gene1345	gene1331	gene1436	gene1352	gene1524	gene1369	gene1344
+gene1283	gene1346	gene1332	gene1437	gene1353	gene1528	gene1370	gene1347
+gene1285	gene1347	gene1333	gene1441	gene1355	gene1529	gene1372	gene1351
+gene1286	gene1350	gene1335	gene1443	gene1356	gene1533	gene1373	gene1352
+gene1287	gene1351	gene1338	gene1444	gene1359	gene1536	gene1374	gene1353
+gene1288	gene1352	gene1339	gene1448	gene1361	gene1539	gene1375	gene1354
+gene1289	gene1353	gene1340	gene1449	gene1364	gene1540	gene1376	gene1357
+gene1291	gene1354	gene1341	gene1450	gene1366	gene1542	gene1377	gene1359
+gene1292	gene1355	gene1342	gene1451	gene1367	gene1543	gene1378	gene1364
+gene1293	gene1356	gene1343	gene1452	gene1368	gene1545	gene1381	gene1365
+gene1294	gene1357	gene1344	gene1454	gene1372	gene1547	gene1382	gene1366
+gene1295	gene1359	gene1345	gene1455	gene1373	gene1548	gene1385	gene1368
+gene1296	gene1360	gene1347	gene1456	gene1374	gene1549	gene1387	gene1371
+gene1297	gene1361	gene1348	gene1459	gene1375	gene1551	gene1388	gene1373
+gene1299	gene1366	gene1351	gene1461	gene1377	gene1559	gene1389	gene1374
+gene1300	gene1367	gene1352	gene1462	gene1378	gene1560	gene1395	gene1375
+gene1301	gene1369	gene1353	gene1463	gene1380	gene1561	gene1396	gene1376
+gene1302	gene1371	gene1354	gene1466	gene1382	gene1565	gene1397	gene1378
+gene1303	gene1373	gene1355	gene1472	gene1383	gene1568	gene1398	gene1380
+gene1305	gene1374	gene1356	gene1473	gene1386	gene1570	gene1400	gene1381
+gene1308	gene1375	gene1357	gene1474	gene1387	gene1573	gene1401	gene1382
+gene1310	gene1376	gene1359	gene1477	gene1391	gene1575	gene1402	gene1383
+gene1312	gene1377	gene1363	gene1478	gene1392	gene1576	gene1403	gene1386
+gene1313	gene1378	gene1364	gene1479	gene1395	gene1577	gene1405	gene1387
+gene1314	gene1379	gene1365	gene1480	gene1396	gene1582	gene1406	gene1388
+gene1315	gene1382	gene1368	gene1483	gene1397	gene1584	gene1407	gene1389
+gene1316	gene1383	gene1371	gene1484	gene1400	gene1585	gene1408	gene1392
+gene1317	gene1384	gene1373	gene1486	gene1403	gene1586	gene1411	gene1395
+gene1319	gene1385	gene1375	gene1488	gene1407	gene1591	gene1412	gene1396
+gene1320	gene1386	gene1376	gene1490	gene1408	gene1592	gene1413	gene1397
+gene1322	gene1387	gene1377	gene1492	gene1411	gene1595	gene1417	gene1398
+gene1323	gene1388	gene1379	gene1497	gene1412	gene1600	gene1421	gene1400
+gene1324	gene1389	gene1381	gene1499	gene1413	gene1602	gene1422	gene1402
+gene1325	gene1390	gene1382	gene1500	gene1414	gene1604	gene1424	gene1403
+gene1326	gene1391	gene1386	gene1501	gene1418	gene1611	gene1427	gene1404
+gene1327	gene1392	gene1387	gene1502	gene1421	gene1614	gene1430	gene1405
+gene1328	gene1394	gene1388	gene1509	gene1422	gene1616	gene1433	gene1406
+gene1329	gene1395	gene1389	gene1513	gene1424	gene1617	gene1434	gene1407
+gene1331	gene1396	gene1392	gene1514	gene1425	gene1620	gene1435	gene1408
+gene1332	gene1397	gene1395	gene1515	gene1430	gene1624	gene1436	gene1410
+gene1333	gene1398	gene1396	gene1517	gene1432	gene1628	gene1437	gene1411
+gene1335	gene1399	gene1397	gene1518	gene1433	gene1630	gene1440	gene1414
+gene1336	gene1400	gene1398	gene1523	gene1434	gene1633	gene1441	gene1421
+gene1340	gene1401	gene1399	gene1524	gene1435	gene1634	gene1443	gene1422
+gene1343	gene1402	gene1400	gene1527	gene1436	gene1636	gene1444	gene1424
+gene1344	gene1403	gene1403	gene1529	gene1437	gene1639	gene1445	gene1425
+gene1345	gene1405	gene1404	gene1533	gene1441	gene1642	gene1446	gene1427
+gene1346	gene1407	gene1405	gene1534	gene1449	gene1644	gene1448	gene1430
+gene1347	gene1408	gene1406	gene1535	gene1450	gene1650	gene1449	gene1431
+gene1349	gene1409	gene1407	gene1536	gene1451	gene1652	gene1450	gene1432
+gene1350	gene1411	gene1408	gene1538	gene1456	gene1656	gene1451	gene1433
+gene1351	gene1412	gene1411	gene1539	gene1457	gene1658	gene1452	gene1434
+gene1352	gene1413	gene1413	gene1540	gene1458	gene1659	gene1453	gene1435
+gene1353	gene1414	gene1414	gene1542	gene1461	gene1661	gene1458	gene1436
+gene1354	gene1417	gene1416	gene1543	gene1462	gene1664	gene1459	gene1437
+gene1355	gene1418	gene1421	gene1548	gene1463	gene1667	gene1460	gene1438
+gene1357	gene1419	gene1422	gene1550	gene1465	gene1668	gene1461	gene1441
+gene1359	gene1421	gene1424	gene1554	gene1469	gene1674	gene1462	gene1443
+gene1360	gene1422	gene1425	gene1555	gene1471	gene1675	gene1463	gene1445
+gene1363	gene1429	gene1427	gene1556	gene1474	gene1681	gene1466	gene1446
+gene1367	gene1431	gene1432	gene1559	gene1475	gene1683	gene1468	gene1448
+gene1368	gene1432	gene1433	gene1561	gene1476	gene1684	gene1469	gene1449
+gene1371	gene1433	gene1434	gene1562	gene1478	gene1685	gene1473	gene1450
+gene1372	gene1435	gene1435	gene1563	gene1479	gene1686	gene1478	gene1453
+gene1373	gene1436	gene1436	gene1564	gene1481	gene1688	gene1479	gene1456
+gene1374	gene1437	gene1437	gene1565	gene1483	gene1689	gene1480	gene1457
+gene1375	gene1441	gene1439	gene1568	gene1486	gene1690	gene1483	gene1460
+gene1377	gene1444	gene1441	gene1573	gene1488	gene1691	gene1484	gene1462
+gene1380	gene1445	gene1443	gene1575	gene1489	gene1693	gene1485	gene1465
+gene1383	gene1448	gene1445	gene1576	gene1490	gene1697	gene1486	gene1466
+gene1385	gene1449	gene1446	gene1577	gene1492	gene1700	gene1490	gene1468
+gene1386	gene1451	gene1449	gene1586	gene1494	gene1701	gene1491	gene1469
+gene1387	gene1453	gene1450	gene1591	gene1496	gene1703	gene1494	gene1473
+gene1388	gene1454	gene1452	gene1592	gene1497	gene1705	gene1495	gene1477
+gene1389	gene1456	gene1453	gene1595	gene1498	gene1710	gene1497	gene1478
+gene1390	gene1457	gene1456	gene1596	gene1500	gene1712	gene1498	gene1479
+gene1392	gene1460	gene1457	gene1597	gene1502	gene1713	gene1500	gene1481
+gene1394	gene1461	gene1459	gene1603	gene1503	gene1716	gene1502	gene1483
+gene1395	gene1462	gene1460	gene1604	gene1510	gene1717	gene1503	gene1484
+gene1396	gene1463	gene1462	gene1605	gene1512	gene1722	gene1506	gene1485
+gene1397	gene1466	gene1463	gene1606	gene1513	gene1732	gene1509	gene1486
+gene1399	gene1467	gene1466	gene1607	gene1515	gene1744	gene1510	gene1487
+gene1400	gene1468	gene1468	gene1611	gene1518	gene1745	gene1511	gene1488
+gene1402	gene1470	gene1473	gene1614	gene1519	gene1747	gene1512	gene1489
+gene1403	gene1473	gene1474	gene1616	gene1523	gene1749	gene1513	gene1490
+gene1404	gene1476	gene1477	gene1621	gene1525	gene1750	gene1516	gene1492
+gene1405	gene1478	gene1478	gene1622	gene1528	gene1755	gene1518	gene1495
+gene1407	gene1479	gene1479	gene1624	gene1529	gene1757	gene1525	gene1497
+gene1408	gene1480	gene1480	gene1626	gene1530	gene1758	gene1529	gene1500
+gene1411	gene1481	gene1483	gene1627	gene1536	gene1760	gene1530	gene1502
+gene1412	gene1483	gene1484	gene1628	gene1538	gene1762	gene1531	gene1503
+gene1413	gene1484	gene1485	gene1630	gene1539	gene1766	gene1532	gene1506
+gene1414	gene1485	gene1486	gene1632	gene1540	gene1767	gene1536	gene1509
+gene1416	gene1486	gene1487	gene1633	gene1541	gene1769	gene1538	gene1512
+gene1417	gene1487	gene1490	gene1636	gene1547	gene1771	gene1539	gene1513
+gene1421	gene1490	gene1491	gene1637	gene1548	gene1773	gene1540	gene1517
+gene1427	gene1491	gene1492	gene1638	gene1549	gene1779	gene1543	gene1518
+gene1429	gene1492	gene1494	gene1642	gene1552	gene1782	gene1544	gene1522
+gene1430	gene1497	gene1497	gene1643	gene1554	gene1786	gene1546	gene1523
+gene1431	gene1498	gene1500	gene1644	gene1559	gene1791	gene1548	gene1529
+gene1432	gene1500	gene1505	gene1650	gene1562	gene1795	gene1549	gene1530
+gene1433	gene1501	gene1509	gene1651	gene1563	gene1798	gene1550	gene1531
+gene1434	gene1502	gene1510	gene1652	gene1564	gene1799	gene1552	gene1533
+gene1435	gene1504	gene1513	gene1654	gene1568	gene1801	gene1556	gene1535
+gene1436	gene1505	gene1514	gene1656	gene1571	gene1804	gene1559	gene1536
+gene1437	gene1506	gene1515	gene1658	gene1573	gene1806	gene1560	gene1538
+gene1440	gene1507	gene1516	gene1659	gene1576	gene1810	gene1561	gene1539
+gene1441	gene1508	gene1518	gene1660	gene1577	gene1817	gene1563	gene1540
+gene1443	gene1510	gene1519	gene1661	gene1587	gene1818	gene1565	gene1547
+gene1444	gene1512	gene1520	gene1664	gene1591	gene1819	gene1568	gene1548
+gene1445	gene1513	gene1522	gene1665	gene1592	gene1821	gene1569	gene1550
+gene1449	gene1514	gene1526	gene1668	gene1594	gene1828	gene1570	gene1551
+gene1451	gene1515	gene1529	gene1675	gene1595	gene1832	gene1571	gene1553
+gene1452	gene1516	gene1530	gene1676	gene1597	gene1835	gene1572	gene1554
+gene1453	gene1518	gene1531	gene1677	gene1598	gene1840	gene1573	gene1559
+gene1457	gene1519	gene1532	gene1678	gene1601	gene1841	gene1575	gene1560
+gene1458	gene1524	gene1536	gene1679	gene1603	gene1846	gene1581	gene1561
+gene1459	gene1529	gene1539	gene1680	gene1604	gene1852	gene1582	gene1563
+gene1460	gene1530	gene1544	gene1682	gene1611	gene1853	gene1584	gene1564
+gene1461	gene1531	gene1547	gene1684	gene1613	gene1854	gene1588	gene1568
+gene1462	gene1535	gene1548	gene1685	gene1616	gene1855	gene1589	gene1570
+gene1463	gene1536	gene1549	gene1689	gene1618	gene1860	gene1591	gene1573
+gene1464	gene1538	gene1550	gene1690	gene1619	gene1861	gene1592	gene1575
+gene1465	gene1539	gene1552	gene1691	gene1620	gene1862	gene1593	gene1577
+gene1466	gene1540	gene1554	gene1692	gene1621	gene1864	gene1595	gene1581
+gene1468	gene1541	gene1556	gene1693	gene1622	gene1868	gene1597	gene1586
+gene1469	gene1548	gene1557	gene1695	gene1624	gene1869	gene1600	gene1588
+gene1471	gene1550	gene1559	gene1697	gene1628	gene1870	gene1602	gene1589
+gene1474	gene1551	gene1562	gene1698	gene1632	gene1871	gene1604	gene1590
+gene1476	gene1552	gene1563	gene1700	gene1633	gene1874	gene1606	gene1591
+gene1477	gene1554	gene1564	gene1701	gene1638	gene1879	gene1611	gene1595
+gene1478	gene1557	gene1566	gene1703	gene1639	gene1881	gene1614	gene1597
+gene1479	gene1559	gene1567	gene1704	gene1640	gene1883	gene1616	gene1598
+gene1481	gene1560	gene1568	gene1707	gene1642	gene1885	gene1620	gene1599
+gene1483	gene1561	gene1573	gene1712	gene1643	gene1890	gene1622	gene1600
+gene1484	gene1562	gene1574	gene1713	gene1644	gene1892	gene1627	gene1602
+gene1486	gene1563	gene1575	gene1714	gene1645	gene1896	gene1632	gene1604
+gene1487	gene1565	gene1577	gene1716	gene1649	gene1897	gene1633	gene1605
+gene1488	gene1568	gene1581	gene1722	gene1652	gene1901	gene1636	gene1606
+gene1489	gene1570	gene1582	gene1729	gene1658	gene1904	gene1637	gene1607
+gene1490	gene1571	gene1591	gene1730	gene1659	gene1906	gene1638	gene1611
+gene1492	gene1573	gene1592	gene1745	gene1660	gene1907	gene1639	gene1612
+gene1497	gene1577	gene1595	gene1746	gene1661	gene1915	gene1640	gene1613
+gene1499	gene1578	gene1597	gene1747	gene1664	gene1916	gene1641	gene1616
+gene1500	gene1582	gene1598	gene1748	gene1665	gene1919	gene1642	gene1617
+gene1501	gene1585	gene1600	gene1749	gene1668	gene1922	gene1643	gene1621
+gene1502	gene1586	gene1602	gene1750	gene1669	gene1923	gene1644	gene1622
+gene1504	gene1589	gene1603	gene1756	gene1675	gene1925	gene1645	gene1624
+gene1505	gene1590	gene1604	gene1760	gene1677	gene1927	gene1646	gene1625
+gene1510	gene1591	gene1606	gene1762	gene1679	gene1928	gene1649	gene1628
+gene1511	gene1595	gene1607	gene1765	gene1680	gene1932	gene1652	gene1630
+gene1512	gene1597	gene1611	gene1766	gene1682	gene1938	gene1654	gene1632
+gene1513	gene1600	gene1616	gene1767	gene1685	gene1946	gene1655	gene1633
+gene1514	gene1601	gene1620	gene1768	gene1687	gene1948	gene1656	gene1634
+gene1516	gene1602	gene1621	gene1773	gene1688	gene1949	gene1658	gene1635
+gene1519	gene1603	gene1622	gene1774	gene1689	gene1951	gene1659	gene1636
+gene1520	gene1604	gene1624	gene1776	gene1691	gene1955	gene1664	gene1639
+gene1528	gene1605	gene1626	gene1779	gene1692	gene1956	gene1665	gene1640
+gene1529	gene1606	gene1630	gene1781	gene1693	gene1957	gene1668	gene1641
+gene1530	gene1607	gene1631	gene1782	gene1697	gene1962	gene1669	gene1643
+gene1531	gene1611	gene1636	gene1784	gene1700	gene1965	gene1670	gene1644
+gene1533	gene1613	gene1637	gene1790	gene1701	gene1975	gene1672	gene1645
+gene1535	gene1614	gene1639	gene1791	gene1702	gene1978	gene1673	gene1646
+gene1536	gene1616	gene1640	gene1792	gene1703	gene1982	gene1674	gene1649
+gene1537	gene1617	gene1641	gene1795	gene1705	gene1984	gene1675	gene1650
+gene1538	gene1618	gene1642	gene1796	gene1712	gene1990	gene1678	gene1652
+gene1539	gene1620	gene1644	gene1798	gene1713	gene1991	gene1680	gene1655
+gene1540	gene1624	gene1645	gene1799	gene1714	gene1997	gene1681	gene1659
+gene1546	gene1625	gene1646	gene1803	gene1718	gene2000	gene1682	gene1663
+gene1548	gene1626	gene1649	gene1804	gene1720	gene2003	gene1683	gene1664
+gene1550	gene1628	gene1650	gene1806	gene1722	gene2005	gene1684	gene1665
+gene1551	gene1632	gene1655	gene1809	gene1725	gene2008	gene1685	gene1666
+gene1554	gene1636	gene1658	gene1810	gene1730	gene2012	gene1686	gene1667
+gene1559	gene1639	gene1659	gene1812	gene1731	gene2015	gene1687	gene1668
+gene1563	gene1641	gene1664	gene1815	gene1733	gene2021	gene1688	gene1669
+gene1564	gene1643	gene1665	gene1818	gene1741	gene2024	gene1691	gene1671
+gene1565	gene1644	gene1667	gene1819	gene1743	gene2025	gene1693	gene1673
+gene1566	gene1645	gene1668	gene1821	gene1745	gene2026	gene1695	gene1674
+gene1568	gene1649	gene1669	gene1828	gene1746	gene2030	gene1696	gene1677
+gene1571	gene1654	gene1671	gene1839	gene1747	gene2031	gene1697	gene1678
+gene1573	gene1655	gene1674	gene1840	gene1748	gene2033	gene1699	gene1679
+gene1575	gene1658	gene1676	gene1841	gene1749	gene2038	gene1700	gene1680
+gene1577	gene1659	gene1679	gene1846	gene1750	gene2040	gene1701	gene1681
+gene1578	gene1660	gene1680	gene1849	gene1757	gene2041	gene1703	gene1682
+gene1582	gene1662	gene1682	gene1852	gene1760	gene2043	gene1704	gene1687
+gene1583	gene1663	gene1686	gene1855	gene1761	gene2044	gene1705	gene1688
+gene1585	gene1665	gene1689	gene1858	gene1762	gene2046	gene1706	gene1689
+gene1588	gene1666	gene1691	gene1860	gene1766	gene2048	gene1707	gene1690
+gene1591	gene1668	gene1696	gene1861	gene1767	gene2050	gene1711	gene1691
+gene1594	gene1671	gene1697	gene1862	gene1769	gene2052	gene1713	gene1693
+gene1595	gene1672	gene1700	gene1865	gene1770	gene2055	gene1714	gene1695
+gene1597	gene1673	gene1701	gene1868	gene1771	gene2057	gene1717	gene1697
+gene1598	gene1674	gene1702	gene1870	gene1775	gene2058	gene1718	gene1700
+gene1599	gene1676	gene1703	gene1874	gene1782	gene2059	gene1720	gene1701
+gene1600	gene1678	gene1704	gene1875	gene1784	gene2063	gene1728	gene1702
+gene1602	gene1680	gene1710	gene1876	gene1788	gene2069	gene1730	gene1705
+gene1603	gene1682	gene1712	gene1879	gene1789	gene2072	gene1731	gene1709
+gene1604	gene1684	gene1713	gene1881	gene1790	gene2074	gene1732	gene1713
+gene1605	gene1685	gene1714	gene1883	gene1791	gene2076	gene1735	gene1714
+gene1606	gene1688	gene1718	gene1888	gene1793	gene2081	gene1744	gene1720
+gene1607	gene1691	gene1719	gene1889	gene1798	gene2086	gene1747	gene1722
+gene1610	gene1693	gene1720	gene1892	gene1799	gene2087	gene1750	gene1723
+gene1611	gene1696	gene1723	gene1893	gene1804	gene2089	gene1757	gene1727
+gene1612	gene1697	gene1729	gene1897	gene1806	gene2091	gene1760	gene1728
+gene1613	gene1700	gene1735	gene1900	gene1809	gene2094	gene1761	gene1732
+gene1614	gene1702	gene1739	gene1901	gene1810	gene2095	gene1764	gene1738
+gene1616	gene1703	gene1745	gene1903	gene1812	gene2096	gene1765	gene1739
+gene1618	gene1705	gene1747	gene1906	gene1814	gene2098	gene1766	gene1742
+gene1620	gene1712	gene1750	gene1907	gene1816	gene2113	gene1767	gene1747
+gene1622	gene1713	gene1753	gene1909	gene1817	gene2116	gene1768	gene1749
+gene1624	gene1714	gene1755	gene1911	gene1818	gene2120	gene1774	gene1750
+gene1627	gene1718	gene1756	gene1913	gene1819	gene2121	gene1775	gene1752
+gene1628	gene1719	gene1758	gene1915	gene1821	gene2124	gene1776	gene1753
+gene1630	gene1720	gene1760	gene1916	gene1825	gene2126	gene1779	gene1755
+gene1631	gene1722	gene1762	gene1919	gene1827	gene2129	gene1782	gene1757
+gene1632	gene1725	gene1766	gene1922	gene1828	gene2132	gene1783	gene1758
+gene1633	gene1726	gene1767	gene1925	gene1834	gene2133	gene1784	gene1760
+gene1634	gene1731	gene1770	gene1927	gene1840	gene2135	gene1791	gene1761
+gene1635	gene1732	gene1772	gene1931	gene1841	gene2136	gene1795	gene1764
+gene1636	gene1735	gene1774	gene1932	gene1843	gene2139	gene1798	gene1765
+gene1637	gene1742	gene1775	gene1934	gene1845	gene2140	gene1799	gene1766
+gene1639	gene1743	gene1776	gene1938	gene1846	gene2142	gene1804	gene1767
+gene1640	gene1745	gene1777	gene1941	gene1852	gene2149	gene1805	gene1768
+gene1641	gene1747	gene1779	gene1944	gene1853	gene2152	gene1806	gene1776
+gene1642	gene1748	gene1782	gene1946	gene1856	gene2154	gene1808	gene1779
+gene1643	gene1750	gene1784	gene1949	gene1858	gene2155	gene1810	gene1782
+gene1644	gene1755	gene1790	gene1957	gene1859	gene2158	gene1816	gene1783
+gene1645	gene1756	gene1791	gene1958	gene1860	gene2161	gene1817	gene1785
+gene1646	gene1757	gene1793	gene1960	gene1861	gene2162	gene1819	gene1786
+gene1649	gene1758	gene1795	gene1978	gene1863	gene2164	gene1820	gene1791
+gene1651	gene1760	gene1798	gene1985	gene1864	gene2168	gene1821	gene1793
+gene1653	gene1761	gene1801	gene1987	gene1865	gene2171	gene1824	gene1794
+gene1654	gene1765	gene1804	gene1990	gene1866	gene2176	gene1827	gene1795
+gene1655	gene1766	gene1805	gene1992	gene1867	gene2177	gene1831	gene1796
+gene1659	gene1767	gene1806	gene1998	gene1868	gene2183	gene1839	gene1798
+gene1660	gene1769	gene1809	gene2003	gene1869	gene2185	gene1840	gene1799
+gene1665	gene1773	gene1810	gene2006	gene1870	gene2186	gene1841	gene1803
+gene1667	gene1775	gene1812	gene2009	gene1872	gene2187	gene1842	gene1804
+gene1668	gene1776	gene1817	gene2010	gene1874	gene2189	gene1843	gene1806
+gene1669	gene1779	gene1818	gene2012	gene1876	gene2192	gene1847	gene1810
+gene1672	gene1781	gene1819	gene2015	gene1878	gene2193	gene1851	gene1812
+gene1673	gene1782	gene1821	gene2017	gene1879	gene2194	gene1852	gene1817
+gene1674	gene1784	gene1824	gene2019	gene1883	gene2195	gene1854	gene1818
+gene1675	gene1785	gene1826	gene2021	gene1885	gene2199	gene1855	gene1821
+gene1676	gene1786	gene1827	gene2022	gene1888	gene2207	gene1859	gene1823
+gene1679	gene1787	gene1829	gene2025	gene1890	gene2221	gene1861	gene1829
+gene1680	gene1790	gene1835	gene2026	gene1892	gene2223	gene1862	gene1830
+gene1681	gene1791	gene1836	gene2033	gene1901	gene2233	gene1863	gene1831
+gene1682	gene1792	gene1839	gene2035	gene1902	gene2235	gene1868	gene1834
+gene1683	gene1793	gene1840	gene2036	gene1904	gene2237	gene1870	gene1835
+gene1685	gene1795	gene1841	gene2039	gene1906	gene2243	gene1871	gene1839
+gene1688	gene1796	gene1847	gene2040	gene1912	gene2245	gene1874	gene1840
+gene1691	gene1799	gene1852	gene2041	gene1913	gene2247	gene1878	gene1841
+gene1692	gene1804	gene1853	gene2043	gene1915	gene2248	gene1881	gene1846
+gene1693	gene1805	gene1858	gene2048	gene1916	gene2249	gene1882	gene1852
+gene1696	gene1806	gene1860	gene2050	gene1919	gene2254	gene1883	gene1853
+gene1697	gene1809	gene1861	gene2052	gene1925	gene2256	gene1884	gene1854
+gene1700	gene1810	gene1862	gene2055	gene1927	gene2267	gene1892	gene1858
+gene1702	gene1812	gene1863	gene2058	gene1930	gene2272	gene1896	gene1859
+gene1703	gene1813	gene1864	gene2059	gene1931	gene2273	gene1904	gene1860
+gene1704	gene1817	gene1865	gene2067	gene1932	gene2278	gene1905	gene1861
+gene1705	gene1819	gene1866	gene2072	gene1938	gene2281	gene1906	gene1862
+gene1706	gene1820	gene1867	gene2074	gene1941	gene2292	gene1911	gene1863
+gene1707	gene1821	gene1870	gene2076	gene1942	gene2293	gene1912	gene1864
+gene1712	gene1822	gene1874	gene2081	gene1944	gene2294	gene1913	gene1865
+gene1713	gene1825	gene1876	gene2084	gene1949	gene2298	gene1915	gene1866
+gene1714	gene1827	gene1879	gene2088	gene1950	gene2299	gene1916	gene1867
+gene1716	gene1829	gene1880	gene2089	gene1951	gene2302	gene1919	gene1870
+gene1718	gene1831	gene1881	gene2096	gene1952	gene2310	gene1922	gene1874
+gene1719	gene1835	gene1883	gene2097	gene1953	gene2314	gene1924	gene1875
+gene1720	gene1839	gene1885	gene2098	gene1957	gene2321	gene1925	gene1876
+gene1721	gene1840	gene1888	gene2101	gene1961	gene2328	gene1927	gene1879
+gene1722	gene1841	gene1890	gene2106	gene1967	gene2330	gene1932	gene1883
+gene1725	gene1844	gene1897	gene2107	gene1969	gene2331	gene1934	gene1888
+gene1727	gene1847	gene1898	gene2113	gene1970	gene2333	gene1938	gene1889
+gene1730	gene1849	gene1900	gene2124	gene1974	gene2336	gene1940	gene1890
+gene1732	gene1852	gene1901	gene2132	gene1975	gene2342	gene1941	gene1892
+gene1733	gene1853	gene1903	gene2136	gene1976	gene2344	gene1946	gene1896
+gene1735	gene1854	gene1904	gene2140	gene1978	gene2347	gene1949	gene1899
+gene1741	gene1855	gene1906	gene2141	gene1979	gene2354	gene1950	gene1901
+gene1742	gene1856	gene1907	gene2142	gene1985	gene2356	gene1951	gene1904
+gene1743	gene1857	gene1911	gene2143	gene1988	gene2358	gene1952	gene1907
+gene1745	gene1858	gene1912	gene2145	gene1989	gene2359	gene1954	gene1910
+gene1746	gene1859	gene1913	gene2149	gene1992	gene2367	gene1957	gene1912
+gene1747	gene1860	gene1915	gene2152	gene1996	gene2371	gene1960	gene1913
+gene1748	gene1862	gene1916	gene2153	gene1997	gene2373	gene1969	gene1915
+gene1750	gene1863	gene1919	gene2155	gene1998	gene2374	gene1975	gene1916
+gene1756	gene1864	gene1922	gene2161	gene1999	gene2375	gene1979	gene1919
+gene1757	gene1865	gene1927	gene2163	gene2003	gene2381	gene1980	gene1923
+gene1758	gene1866	gene1931	gene2164	gene2004	gene2386	gene1986	gene1925
+gene1759	gene1868	gene1932	gene2170	gene2006	gene2387	gene1988	gene1927
+gene1760	gene1869	gene1934	gene2179	gene2009	gene2393	gene1989	gene1930
+gene1762	gene1870	gene1935	gene2187	gene2012	gene2395	gene1990	gene1932
+gene1765	gene1871	gene1936	gene2188	gene2015	gene2397	gene1992	gene1936
+gene1766	gene1873	gene1937	gene2192	gene2021	gene2399	gene1993	gene1938
+gene1767	gene1874	gene1938	gene2197	gene2022	gene2403	gene1996	gene1942
+gene1768	gene1875	gene1941	gene2198	gene2024	gene2404	gene1997	gene1946
+gene1769	gene1876	gene1945	gene2199	gene2025	gene2406	gene2003	gene1947
+gene1773	gene1879	gene1949	gene2204	gene2026	gene2410	gene2006	gene1949
+gene1774	gene1883	gene1951	gene2205	gene2029	gene2412	gene2012	gene1950
+gene1776	gene1889	gene1955	gene2208	gene2031	gene2414	gene2015	gene1952
+gene1777	gene1890	gene1956	gene2211	gene2033	gene2428	gene2019	gene1953
+gene1778	gene1892	gene1957	gene2212	gene2036	gene2430	gene2021	gene1955
+gene1779	gene1893	gene1958	gene2213	gene2037	gene2440	gene2025	gene1956
+gene1780	gene1897	gene1960	gene2215	gene2039	gene2443	gene2027	gene1957
+gene1781	gene1900	gene1964	gene2219	gene2042	gene2444	gene2029	gene1960
+gene1782	gene1901	gene1965	gene2222	gene2043	gene2451	gene2033	gene1961
+gene1784	gene1902	gene1967	gene2225	gene2046	gene2458	gene2034	gene1964
+gene1786	gene1903	gene1969	gene2232	gene2047	gene2461	gene2035	gene1965
+gene1787	gene1904	gene1970	gene2235	gene2048	gene2462	gene2037	gene1967
+gene1789	gene1912	gene1975	gene2237	gene2050	gene2464	gene2039	gene1968
+gene1790	gene1913	gene1978	gene2242	gene2052	gene2465	gene2040	gene1974
+gene1791	gene1915	gene1979	gene2245	gene2055	gene2466	gene2041	gene1975
+gene1792	gene1916	gene1987	gene2246	gene2059	gene2469	gene2042	gene1977
+gene1795	gene1919	gene1988	gene2247	gene2062	gene2471	gene2043	gene1986
+gene1798	gene1920	gene1989	gene2249	gene2063	gene2473	gene2046	gene1988
+gene1799	gene1924	gene1992	gene2254	gene2064	gene2477	gene2052	gene1990
+gene1802	gene1927	gene1994	gene2267	gene2067	gene2487	gene2055	gene1992
+gene1803	gene1929	gene1997	gene2269	gene2068	gene2488	gene2058	gene1993
+gene1804	gene1932	gene2000	gene2270	gene2072	gene2489	gene2059	gene1999
+gene1805	gene1934	gene2003	gene2271	gene2075	gene2491	gene2063	gene2003
+gene1806	gene1937	gene2004	gene2272	gene2076	gene2495	gene2067	gene2005
+gene1809	gene1938	gene2008	gene2273	gene2079	gene2508	gene2069	gene2006
+gene1810	gene1941	gene2009	gene2278	gene2081	gene2511	gene2072	gene2009
+gene1812	gene1944	gene2010	gene2279	gene2088	gene2518	gene2073	gene2012
+gene1816	gene1953	gene2012	gene2282	gene2089	gene2524	gene2074	gene2014
+gene1817	gene1954	gene2013	gene2287	gene2090	gene2529	gene2076	gene2015
+gene1818	gene1957	gene2015	gene2293	gene2095	gene2535	gene2079	gene2020
+gene1819	gene1958	gene2021	gene2295	gene2096	gene2539	gene2081	gene2021
+gene1820	gene1960	gene2022	gene2298	gene2098	gene2546	gene2084	gene2022
+gene1821	gene1964	gene2025	gene2299	gene2102	gene2547	gene2087	gene2025
+gene1825	gene1968	gene2027	gene2301	gene2103	gene2548	gene2088	gene2027
+gene1827	gene1969	gene2030	gene2302	gene2104	gene2554	gene2089	gene2029
+gene1829	gene1975	gene2033	gene2308	gene2106	gene2555	gene2090	gene2033
+gene1831	gene1976	gene2039	gene2311	gene2112	gene2557	gene2093	gene2034
+gene1835	gene1977	gene2046	gene2312	gene2113	gene2560	gene2094	gene2039
+gene1839	gene1978	gene2047	gene2314	gene2115	gene2568	gene2095	gene2040
+gene1840	gene1979	gene2048	gene2315	gene2121	gene2571	gene2096	gene2041
+gene1841	gene1985	gene2050	gene2322	gene2122	gene2572	gene2102	gene2046
+gene1846	gene1986	gene2055	gene2323	gene2124	gene2576	gene2104	gene2047
+gene1847	gene1988	gene2056	gene2324	gene2126	gene2584	gene2107	gene2048
+gene1849	gene1990	gene2058	gene2326	gene2129	gene2585	gene2112	gene2050
+gene1852	gene1992	gene2059	gene2328	gene2131	gene2588	gene2113	gene2055
+gene1853	gene1993	gene2060	gene2331	gene2135	gene2591	gene2115	gene2059
+gene1854	gene1996	gene2063	gene2332	gene2136	gene2600	gene2120	gene2061
+gene1858	gene1998	gene2066	gene2333	gene2139	gene2605	gene2121	gene2063
+gene1860	gene2000	gene2067	gene2337	gene2140	gene2607	gene2123	gene2064
+gene1861	gene2003	gene2069	gene2342	gene2141	gene2613	gene2124	gene2066
+gene1862	gene2004	gene2073	gene2344	gene2145	gene2614	gene2126	gene2067
+gene1864	gene2007	gene2075	gene2347	gene2148	gene2620	gene2128	gene2069
+gene1865	gene2009	gene2076	gene2350	gene2149	gene2625	gene2135	gene2072
+gene1868	gene2012	gene2077	gene2351	gene2151	gene2632	gene2136	gene2073
+gene1870	gene2015	gene2079	gene2354	gene2152	gene2635	gene2139	gene2074
+gene1874	gene2016	gene2080	gene2358	gene2158	gene2636	gene2140	gene2076
+gene1875	gene2020	gene2081	gene2359	gene2163	gene2639	gene2141	gene2079
+gene1876	gene2021	gene2084	gene2362	gene2164	gene2640	gene2142	gene2080
+gene1879	gene2022	gene2088	gene2367	gene2168	gene2642	gene2143	gene2081
+gene1883	gene2025	gene2089	gene2371	gene2170	gene2643	gene2145	gene2087
+gene1884	gene2027	gene2090	gene2372	gene2171	gene2656	gene2148	gene2088
+gene1887	gene2030	gene2094	gene2375	gene2179	gene2658	gene2155	gene2089
+gene1889	gene2033	gene2095	gene2378	gene2181	gene2659	gene2156	gene2091
+gene1890	gene2035	gene2096	gene2386	gene2182	gene2660	gene2157	gene2093
+gene1892	gene2036	gene2099	gene2393	gene2183	gene2662	gene2164	gene2094
+gene1896	gene2037	gene2101	gene2395	gene2186	gene2664	gene2176	gene2095
+gene1897	gene2039	gene2102	gene2399	gene2187	gene2670	gene2183	gene2096
+gene1900	gene2040	gene2103	gene2403	gene2188	gene2673	gene2185	gene2097
+gene1901	gene2041	gene2104	gene2406	gene2189	gene2687	gene2187	gene2098
+gene1903	gene2043	gene2107	gene2408	gene2190	gene2695	gene2188	gene2103
+gene1904	gene2046	gene2112	gene2410	gene2192	gene2697	gene2194	gene2106
+gene1905	gene2048	gene2121	gene2411	gene2193	gene2701	gene2195	gene2112
+gene1906	gene2049	gene2124	gene2412	gene2194	gene2710	gene2198	gene2113
+gene1912	gene2050	gene2126	gene2413	gene2198	gene2712	gene2199	gene2115
+gene1913	gene2052	gene2129	gene2420	gene2199	gene2716	gene2203	gene2120
+gene1915	gene2055	gene2135	gene2421	gene2201	gene2721	gene2204	gene2121
+gene1916	gene2056	gene2138	gene2428	gene2208	gene2722	gene2208	gene2124
+gene1919	gene2058	gene2139	gene2446	gene2210	gene2726	gene2212	gene2126
+gene1920	gene2060	gene2140	gene2447	gene2212	gene2730	gene2216	gene2132
+gene1922	gene2066	gene2142	gene2450	gene2215	gene2735	gene2217	gene2136
+gene1925	gene2067	gene2145	gene2458	gene2216	gene2737	gene2218	gene2140
+gene1927	gene2068	gene2149	gene2461	gene2219	gene2740	gene2227	gene2141
+gene1928	gene2069	gene2151	gene2462	gene2221	gene2748	gene2234	gene2143
+gene1931	gene2074	gene2152	gene2464	gene2228	gene2757	gene2235	gene2145
+gene1932	gene2076	gene2158	gene2465	gene2232	gene2758	gene2236	gene2146
+gene1936	gene2077	gene2161	gene2469	gene2234	gene2773	gene2243	gene2147
+gene1938	gene2079	gene2162	gene2470	gene2235	gene2776	gene2245	gene2149
+gene1939	gene2081	gene2164	gene2473	gene2236	gene2783	gene2247	gene2151
+gene1940	gene2085	gene2166	gene2477	gene2245	gene2790	gene2248	gene2152
+gene1941	gene2087	gene2167	gene2478	gene2247	gene2791	gene2249	gene2157
+gene1944	gene2088	gene2168	gene2481	gene2255	gene2793	gene2256	gene2158
+gene1947	gene2090	gene2180	gene2484	gene2262	gene2794	gene2258	gene2160
+gene1949	gene2094	gene2185	gene2485	gene2263	gene2800	gene2262	gene2161
+gene1951	gene2095	gene2187	gene2487	gene2269	gene2808	gene2263	gene2162
+gene1954	gene2096	gene2189	gene2491	gene2272	gene2811	gene2264	gene2163
+gene1957	gene2101	gene2190	gene2494	gene2273	gene2816	gene2266	gene2164
+gene1958	gene2104	gene2192	gene2495	gene2276	gene2820	gene2268	gene2170
+gene1960	gene2106	gene2194	gene2498	gene2278	gene2824	gene2272	gene2174
+gene1961	gene2107	gene2199	gene2501	gene2281	gene2826	gene2273	gene2178
+gene1965	gene2111	gene2203	gene2504	gene2283	gene2827	gene2277	gene2180
+gene1969	gene2112	gene2207	gene2508	gene2286	gene2829	gene2278	gene2185
+gene1975	gene2115	gene2210	gene2509	gene2288	gene2833	gene2279	gene2187
+gene1978	gene2120	gene2212	gene2511	gene2289	gene2838	gene2281	gene2191
+gene1980	gene2121	gene2216	gene2516	gene2291	gene2839	gene2282	gene2193
+gene1986	gene2124	gene2219	gene2518	gene2292	gene2845	gene2284	gene2195
+gene1988	gene2128	gene2221	gene2520	gene2293	gene2855	gene2286	gene2199
+gene1990	gene2132	gene2222	gene2523	gene2298	gene2856	gene2288	gene2200
+gene1991	gene2135	gene2227	gene2524	gene2300	gene2880	gene2293	gene2201
+gene1996	gene2139	gene2229	gene2525	gene2302	gene2891	gene2295	gene2207
+gene1997	gene2140	gene2231	gene2535	gene2306	gene2893	gene2298	gene2214
+gene2000	gene2142	gene2233	gene2539	gene2312	gene2894	gene2302	gene2216
+gene2001	gene2145	gene2235	gene2540	gene2313	gene2897	gene2303	gene2217
+gene2003	gene2147	gene2239	gene2546	gene2314	gene2900	gene2304	gene2220
+gene2004	gene2148	gene2241	gene2547	gene2319	gene2902	gene2312	gene2224
+gene2006	gene2149	gene2245	gene2548	gene2323	gene2907	gene2313	gene2235
+gene2008	gene2151	gene2247	gene2554	gene2328	gene2915	gene2314	gene2243
+gene2009	gene2152	gene2249	gene2560	gene2329	gene2920	gene2317	gene2244
+gene2012	gene2156	gene2250	gene2563	gene2331	gene2922	gene2318	gene2245
+gene2015	gene2158	gene2256	gene2565	gene2336	gene2925	gene2321	gene2247
+gene2017	gene2161	gene2258	gene2567	gene2337	gene2928	gene2323	gene2248
+gene2018	gene2162	gene2260	gene2568	gene2342	gene2933	gene2324	gene2249
+gene2019	gene2163	gene2262	gene2569	gene2350	gene2943	gene2325	gene2256
+gene2020	gene2164	gene2263	gene2570	gene2353	gene2963	gene2328	gene2258
+gene2021	gene2165	gene2265	gene2573	gene2354	gene2975	gene2329	gene2260
+gene2022	gene2166	gene2267	gene2574	gene2355	gene2979	gene2331	gene2262
+gene2025	gene2168	gene2269	gene2577	gene2357	gene2983	gene2332	gene2263
+gene2026	gene2170	gene2272	gene2581	gene2358	gene2999	gene2333	gene2266
+gene2030	gene2173	gene2273	gene2591	gene2359	gene3017	gene2335	gene2269
+gene2031	gene2175	gene2278	gene2596	gene2360	gene3019	gene2336	gene2270
+gene2033	gene2176	gene2280	gene2598	gene2365	gene3021	gene2337	gene2272
+gene2036	gene2177	gene2281	gene2614	gene2367	gene3029	gene2338	gene2273
+gene2039	gene2178	gene2286	gene2615	gene2368	gene3045	gene2340	gene2277
+gene2041	gene2186	gene2289	gene2616	gene2375	gene3068	gene2344	gene2278
+gene2042	gene2187	gene2293	gene2620	gene2386	gene3074	gene2347	gene2279
+gene2045	gene2190	gene2296	gene2630	gene2395	gene3081	gene2350	gene2281
+gene2046	gene2192	gene2298	gene2634	gene2397	gene3085	gene2351	gene2284
+gene2047	gene2193	gene2301	gene2636	gene2399	gene3095	gene2356	gene2285
+gene2048	gene2194	gene2302	gene2639	gene2400	gene3098	gene2359	gene2287
+gene2050	gene2198	gene2312	gene2642	gene2401	gene3102	gene2361	gene2289
+gene2052	gene2199	gene2313	gene2644	gene2403	gene3108	gene2366	gene2293
+gene2053	gene2200	gene2314	gene2650	gene2408	gene3109	gene2374	gene2295
+gene2055	gene2208	gene2319	gene2656	gene2410	gene3123	gene2377	gene2296
+gene2056	gene2210	gene2321	gene2657	gene2411	gene3132	gene2385	gene2298
+gene2057	gene2216	gene2323	gene2658	gene2412	gene3137	gene2386	gene2302
+gene2058	gene2217	gene2326	gene2659	gene2417	gene3138	gene2389	gene2303
+gene2059	gene2219	gene2327	gene2660	gene2419	gene3144	gene2390	gene2311
+gene2060	gene2222	gene2328	gene2673	gene2424	gene3145	gene2393	gene2314
+gene2061	gene2227	gene2331	gene2675	gene2428	gene3153	gene2395	gene2317
+gene2063	gene2230	gene2332	gene2678	gene2436	gene3177	gene2397	gene2323
+gene2066	gene2233	gene2335	gene2680	gene2437	gene3181	gene2399	gene2325
+gene2067	gene2235	gene2337	gene2691	gene2444	gene3182	gene2400	gene2328
+gene2069	gene2237	gene2338	gene2692	gene2447	gene3191	gene2401	gene2331
+gene2073	gene2239	gene2342	gene2695	gene2450	gene3193	gene2406	gene2332
+gene2075	gene2242	gene2344	gene2701	gene2459	gene3200	gene2407	gene2333
+gene2076	gene2243	gene2346	gene2702	gene2462	gene3202	gene2409	gene2337
+gene2079	gene2244	gene2347	gene2714	gene2464	gene3203	gene2412	gene2342
+gene2081	gene2245	gene2350	gene2720	gene2465	gene3205	gene2418	gene2344
+gene2085	gene2246	gene2353	gene2721	gene2466	gene3206	gene2421	gene2345
+gene2087	gene2247	gene2356	gene2728	gene2468	gene3219	gene2424	gene2350
+gene2089	gene2248	gene2358	gene2732	gene2469	gene3221	gene2428	gene2351
+gene2090	gene2249	gene2359	gene2736	gene2472	gene3246	gene2437	gene2354
+gene2093	gene2250	gene2361	gene2740	gene2473	gene3247	gene2438	gene2355
+gene2095	gene2251	gene2364	gene2743	gene2477	gene3251	gene2442	gene2358
+gene2096	gene2252	gene2367	gene2751	gene2478	gene3260	gene2446	gene2359
+gene2098	gene2258	gene2368	gene2754	gene2481	gene3272	gene2448	gene2360
+gene2101	gene2264	gene2371	gene2756	gene2485	gene3303	gene2451	gene2364
+gene2108	gene2265	gene2372	gene2758	gene2487	gene3307	gene2453	gene2367
+gene2113	gene2267	gene2374	gene2761	gene2495	gene3312	gene2456	gene2368
+gene2115	gene2269	gene2375	gene2768	gene2498	gene3325	gene2461	gene2374
+gene2124	gene2270	gene2385	gene2773	gene2501	gene3327	gene2462	gene2378
+gene2130	gene2272	gene2386	gene2776	gene2503	gene3339	gene2464	gene2381
+gene2131	gene2273	gene2390	gene2777	gene2504	gene3347	gene2465	gene2383
+gene2133	gene2276	gene2394	gene2782	gene2506	gene3349	gene2469	gene2386
+gene2135	gene2278	gene2395	gene2790	gene2508	gene3362	gene2473	gene2390
+gene2136	gene2279	gene2399	gene2794	gene2511	gene3367	gene2474	gene2392
+gene2139	gene2280	gene2400	gene2800	gene2514	gene3369	gene2484	gene2395
+gene2140	gene2282	gene2404	gene2819	gene2518	gene3372	gene2485	gene2399
+gene2145	gene2287	gene2405	gene2820	gene2520	gene3377	gene2487	gene2401
+gene2147	gene2288	gene2406	gene2823	gene2526	gene3378	gene2489	gene2403
+gene2148	gene2292	gene2407	gene2824	gene2528	gene3382	gene2490	gene2407
+gene2149	gene2293	gene2408	gene2827	gene2530	gene3396	gene2492	gene2408
+gene2150	gene2298	gene2412	gene2829	gene2535	gene3399	gene2495	gene2412
+gene2152	gene2300	gene2413	gene2838	gene2536	gene3400	gene2501	gene2414
+gene2154	gene2302	gene2420	gene2845	gene2539	gene3402	gene2503	gene2420
+gene2156	gene2305	gene2428	gene2848	gene2546	gene3403	gene2510	gene2421
+gene2162	gene2308	gene2429	gene2856	gene2548	gene3405	gene2511	gene2424
+gene2163	gene2311	gene2435	gene2857	gene2554	gene3413	gene2519	gene2425
+gene2164	gene2313	gene2442	gene2863	gene2556	gene3420	gene2521	gene2428
+gene2165	gene2314	gene2452	gene2865	gene2559	gene3434	gene2522	gene2429
+gene2166	gene2315	gene2453	gene2881	gene2560	gene3446	gene2523	gene2433
+gene2168	gene2316	gene2459	gene2891	gene2566	gene3464	gene2528	gene2435
+gene2170	gene2317	gene2461	gene2895	gene2567	gene3485	gene2534	gene2439
+gene2171	gene2322	gene2462	gene2897	gene2574	gene3493	gene2535	gene2448
+gene2172	gene2325	gene2464	gene2900	gene2581	gene3511	gene2536	gene2451
+gene2175	gene2326	gene2465	gene2904	gene2584	gene3513	gene2538	gene2456
+gene2176	gene2328	gene2469	gene2913	gene2585	gene3528	gene2544	gene2460
+gene2177	gene2331	gene2470	gene2925	gene2592	gene3535	gene2548	gene2461
+gene2179	gene2332	gene2473	gene2927	gene2593	gene3548	gene2554	gene2462
+gene2183	gene2335	gene2475	gene2929	gene2594	gene3560	gene2557	gene2465
+gene2185	gene2336	gene2477	gene2930	gene2600	gene3561	gene2565	gene2469
+gene2186	gene2337	gene2481	gene2931	gene2605	gene3566	gene2568	gene2473
+gene2187	gene2341	gene2482	gene2934	gene2607	gene3567	gene2577	gene2475
+gene2189	gene2342	gene2485	gene2940	gene2610	gene3573	gene2579	gene2484
+gene2190	gene2344	gene2487	gene2943	gene2614	gene3577	gene2585	gene2485
+gene2192	gene2345	gene2494	gene2945	gene2616	gene3589	gene2586	gene2487
+gene2195	gene2347	gene2495	gene2955	gene2617	gene3598	gene2593	gene2491
+gene2199	gene2350	gene2496	gene2959	gene2620	gene3608	gene2597	gene2495
+gene2201	gene2352	gene2498	gene2963	gene2624	gene3625	gene2602	gene2500
+gene2203	gene2354	gene2500	gene2964	gene2625	gene3634	gene2604	gene2501
+gene2207	gene2356	gene2502	gene2970	gene2635	gene3637	gene2610	gene2502
+gene2208	gene2359	gene2504	gene2973	gene2636	gene3644	gene2613	gene2503
+gene2214	gene2360	gene2507	gene2975	gene2639	gene3650	gene2616	gene2506
+gene2217	gene2361	gene2508	gene3017	gene2640	gene3660	gene2617	gene2508
+gene2219	gene2362	gene2511	gene3027	gene2642	gene3671	gene2621	gene2511
+gene2221	gene2365	gene2520	gene3029	gene2644	gene3672	gene2625	gene2519
+gene2226	gene2368	gene2524	gene3043	gene2655	gene3673	gene2626	gene2520
+gene2231	gene2373	gene2525	gene3045	gene2656	gene3675	gene2635	gene2523
+gene2233	gene2374	gene2528	gene3046	gene2660	gene3678	gene2636	gene2525
+gene2235	gene2375	gene2535	gene3050	gene2662	gene3684	gene2643	gene2535
+gene2240	gene2378	gene2539	gene3061	gene2663	gene3686	gene2644	gene2547
+gene2242	gene2384	gene2540	gene3064	gene2664	gene3688	gene2647	gene2548
+gene2244	gene2386	gene2546	gene3068	gene2667	gene3707	gene2650	gene2549
+gene2245	gene2387	gene2547	gene3074	gene2677	gene3714	gene2655	gene2554
+gene2246	gene2388	gene2548	gene3075	gene2679	gene3715	gene2656	gene2556
+gene2247	gene2389	gene2554	gene3081	gene2683	gene3721	gene2657	gene2560
+gene2248	gene2393	gene2556	gene3083	gene2695	gene3723	gene2659	gene2567
+gene2249	gene2394	gene2557	gene3103	gene2714	gene3725	gene2660	gene2568
+gene2251	gene2395	gene2565	gene3104	gene2718	gene3731	gene2662	gene2571
+gene2256	gene2399	gene2567	gene3113	gene2721	gene3732	gene2663	gene2575
+gene2259	gene2400	gene2568	gene3121	gene2722	gene3738	gene2664	gene2577
+gene2263	gene2404	gene2571	gene3132	gene2728	gene3741	gene2667	gene2579
+gene2265	gene2406	gene2573	gene3133	gene2731	gene3744	gene2673	gene2584
+gene2269	gene2407	gene2577	gene3137	gene2736	gene3745	gene2675	gene2585
+gene2271	gene2408	gene2584	gene3139	gene2740	gene3755	gene2677	gene2586
+gene2273	gene2410	gene2585	gene3140	gene2748	gene3780	gene2691	gene2593
+gene2274	gene2412	gene2596	gene3141	gene2759	gene3782	gene2695	gene2598
+gene2278	gene2417	gene2598	gene3142	gene2767	gene3799	gene2702	gene2600
+gene2280	gene2423	gene2610	gene3145	gene2768	gene3815	gene2714	gene2606
+gene2281	gene2424	gene2613	gene3146	gene2773	gene3816	gene2715	gene2614
+gene2284	gene2425	gene2614	gene3151	gene2774	gene3824	gene2716	gene2616
+gene2287	gene2428	gene2616	gene3153	gene2776	gene3832	gene2719	gene2617
+gene2293	gene2429	gene2617	gene3160	gene2777	gene3843	gene2726	gene2619
+gene2295	gene2435	gene2620	gene3161	gene2782	gene3854	gene2727	gene2622
+gene2298	gene2442	gene2622	gene3168	gene2783	gene3857	gene2736	gene2632
+gene2301	gene2444	gene2632	gene3182	gene2784	gene3869	gene2740	gene2636
+gene2302	gene2446	gene2633	gene3191	gene2787	gene3875	gene2747	gene2638
+gene2303	gene2451	gene2635	gene3196	gene2788	gene3901	gene2769	gene2642
+gene2304	gene2455	gene2636	gene3206	gene2789	gene3905	gene2773	gene2644
+gene2305	gene2457	gene2639	gene3219	gene2791	gene3911	gene2777	gene2647
+gene2307	gene2459	gene2641	gene3221	gene2793	gene3917	gene2779	gene2653
+gene2308	gene2460	gene2642	gene3225	gene2795	gene3919	gene2786	gene2655
+gene2311	gene2461	gene2643	gene3235	gene2805	gene3928	gene2800	gene2656
+gene2312	gene2462	gene2650	gene3247	gene2806	gene3944	gene2802	gene2659
+gene2313	gene2465	gene2651	gene3248	gene2810	gene3951	gene2816	gene2660
+gene2314	gene2467	gene2656	gene3249	gene2811	gene3954	gene2825	gene2663
+gene2316	gene2473	gene2659	gene3256	gene2818	gene3958	gene2826	gene2673
+gene2317	gene2474	gene2660	gene3292	gene2819	gene3960	gene2827	gene2675
+gene2328	gene2475	gene2667	gene3293	gene2823	gene3992	gene2829	gene2676
+gene2331	gene2477	gene2673	gene3307	gene2824	gene3995	gene2835	gene2677
+gene2332	gene2479	gene2677	gene3308	gene2827	gene4001	gene2838	gene2679
+gene2337	gene2481	gene2681	gene3311	gene2829	gene4037	gene2845	gene2682
+gene2338	gene2485	gene2686	gene3312	gene2832	gene4046	gene2849	gene2686
+gene2340	gene2487	gene2692	gene3313	gene2834	gene4053	gene2850	gene2695
+gene2342	gene2488	gene2694	gene3318	gene2835	gene4054	gene2852	gene2698
+gene2343	gene2491	gene2695	gene3319	gene2836	gene4065	gene2859	gene2699
+gene2344	gene2495	gene2698	gene3325	gene2838	gene4069	gene2860	gene2707
+gene2347	gene2502	gene2699	gene3327	gene2843	gene4094	gene2863	gene2708
+gene2348	gene2504	gene2701	gene3328	gene2845	gene4136	gene2865	gene2709
+gene2350	gene2511	gene2711	gene3340	gene2848	gene4137	gene2869	gene2716
+gene2352	gene2518	gene2714	gene3342	gene2856	gene4139	gene2870	gene2719
+gene2354	gene2528	gene2718	gene3355	gene2860	gene4143	gene2872	gene2720
+gene2356	gene2529	gene2721	gene3365	gene2869	gene4152	gene2878	gene2721
+gene2359	gene2535	gene2726	gene3367	gene2870	gene4162	gene2880	gene2722
+gene2360	gene2544	gene2728	gene3377	gene2875	gene4175	gene2883	gene2726
+gene2367	gene2546	gene2731	gene3378	gene2878	gene4189	gene2890	gene2730
+gene2368	gene2547	gene2740	gene3383	gene2881	gene4190	gene2893	gene2731
+gene2373	gene2548	gene2743	gene3397	gene2883	gene4210	gene2894	gene2732
+gene2375	gene2550	gene2750	gene3402	gene2886	gene4212	gene2900	gene2736
+gene2381	gene2551	gene2752	gene3403	gene2889	gene4214	gene2904	gene2738
+gene2385	gene2554	gene2753	gene3404	gene2893	gene4223	gene2907	gene2753
+gene2386	gene2563	gene2755	gene3406	gene2895	gene4234	gene2919	gene2756
+gene2389	gene2567	gene2756	gene3412	gene2897	gene4238	gene2920	gene2766
+gene2390	gene2568	gene2762	gene3431	gene2898	gene4243	gene2921	gene2769
+gene2395	gene2573	gene2776	gene3434	gene2900	gene4244	gene2924	gene2780
+gene2396	gene2576	gene2790	gene3436	gene2902	gene4246	gene2929	gene2783
+gene2397	gene2579	gene2791	gene3446	gene2907	gene4249	gene2930	gene2787
+gene2404	gene2581	gene2793	gene3447	gene2917	gene4255	gene2939	gene2789
+gene2405	gene2584	gene2805	gene3448	gene2929	gene4280	gene2943	gene2793
+gene2406	gene2591	gene2808	gene3464	gene2931	gene4282	gene2945	gene2795
+gene2407	gene2592	gene2813	gene3471	gene2933	gene4288	gene2952	gene2796
+gene2410	gene2597	gene2820	gene3485	gene2943	gene4298	gene2963	gene2812
+gene2412	gene2608	gene2823	gene3493	gene2947	gene4302	gene2969	gene2815
+gene2416	gene2610	gene2824	gene3501	gene2971	gene4307	gene2976	gene2820
+gene2422	gene2615	gene2828	gene3503	gene2979	gene4311	gene2983	gene2823
+gene2424	gene2617	gene2829	gene3508	gene2988	gene4319	gene2991	gene2827
+gene2425	gene2620	gene2837	gene3511	gene2990	gene4327	gene3005	gene2832
+gene2428	gene2633	gene2838	gene3513	gene2997	gene4365	gene3009	gene2834
+gene2429	gene2635	gene2839	gene3528	gene3009	gene4384	gene3012	gene2835
+gene2433	gene2636	gene2840	gene3530	gene3019	gene4388	gene3016	gene2838
+gene2435	gene2640	gene2848	gene3535	gene3029	gene4426	gene3019	gene2845
+gene2444	gene2642	gene2851	gene3538	gene3044	gene4448	gene3025	gene2865
+gene2446	gene2644	gene2855	gene3540	gene3045	gene4458	gene3030	gene2866
+gene2455	gene2650	gene2860	gene3542	gene3053	gene4468	gene3035	gene2869
+gene2456	gene2651	gene2865	gene3543	gene3059	gene4480	gene3045	gene2870
+gene2461	gene2655	gene2867	gene3544	gene3062	gene4496	gene3046	gene2872
+gene2462	gene2656	gene2877	gene3547	gene3064	gene4500	gene3048	gene2875
+gene2464	gene2657	gene2878	gene3548	gene3065	gene4511	gene3050	gene2877
+gene2465	gene2659	gene2883	gene3555	gene3068	gene4522	gene3055	gene2886
+gene2467	gene2660	gene2886	gene3559	gene3070	gene4541	gene3060	gene2889
+gene2473	gene2661	gene2887	gene3561	gene3074	gene4550	gene3063	gene2890
+gene2477	gene2670	gene2891	gene3564	gene3083	gene4552	gene3068	gene2891
+gene2480	gene2675	gene2897	gene3566	gene3091	gene4580	gene3070	gene2893
+gene2481	gene2677	gene2898	gene3569	gene3092	gene4581	gene3071	gene2894
+gene2485	gene2681	gene2900	gene3583	gene3097	gene4611	gene3075	gene2897
+gene2487	gene2690	gene2902	gene3598	gene3102	gene4613	gene3078	gene2898
+gene2494	gene2695	gene2903	gene3603	gene3104	gene4619	gene3082	gene2900
+gene2495	gene2699	gene2905	gene3625	gene3108	gene4632	gene3085	gene2902
+gene2501	gene2700	gene2912	gene3630	gene3112	gene4638	gene3091	gene2907
+gene2502	gene2712	gene2913	gene3637	gene3114	gene4645	gene3096	gene2911
+gene2504	gene2719	gene2917	gene3644	gene3121	gene4663	gene3101	gene2913
+gene2506	gene2722	gene2924	gene3650	gene3123	gene4674	gene3103	gene2921
+gene2511	gene2724	gene2927	gene3663	gene3125	gene4676	gene3104	gene2924
+gene2512	gene2726	gene2929	gene3671	gene3129	gene4683	gene3107	gene2929
+gene2528	gene2728	gene2930	gene3672	gene3134	gene4693	gene3109	gene2930
+gene2535	gene2734	gene2943	gene3673	gene3135	gene4697	gene3112	gene2931
+gene2538	gene2735	gene2947	gene3685	gene3136	gene4704	gene3115	gene2936
+gene2541	gene2736	gene2959	gene3693	gene3137	gene4722	gene3119	gene2941
+gene2546	gene2737	gene2970	gene3704	gene3139	gene4723	gene3121	gene2942
+gene2547	gene2740	gene2977	gene3713	gene3144	gene4724	gene3135	gene2943
+gene2548	gene2743	gene2987	gene3714	gene3145	gene4740	gene3136	gene2960
+gene2551	gene2752	gene2988	gene3719	gene3146	gene4756	gene3137	gene2963
+gene2554	gene2758	gene2994	gene3727	gene3153	gene4783	gene3140	gene2964
+gene2560	gene2770	gene2997	gene3731	gene3154	gene4800	gene3144	gene2967
+gene2567	gene2776	gene3009	gene3746	gene3166	gene4816	gene3145	gene2971
+gene2568	gene2781	gene3010	gene3762	gene3169	gene4841	gene3150	gene2972
+gene2571	gene2782	gene3016	gene3767	gene3174	gene4844	gene3153	gene2979
+gene2581	gene2784	gene3019	gene3773	gene3182	gene4853	gene3160	gene2981
+gene2584	gene2789	gene3021	gene3776	gene3191	gene4870	gene3161	gene2988
+gene2587	gene2790	gene3025	gene3782	gene3194	gene4895	gene3170	gene2996
+gene2590	gene2791	gene3027	gene3798	gene3196	gene4898	gene3171	gene2997
+gene2592	gene2793	gene3030	gene3799	gene3198	gene4913	gene3177	gene2998
+gene2596	gene2794	gene3036	gene3805	gene3207	gene4923	gene3179	gene2999
+gene2600	gene2798	gene3037	gene3826	gene3213	gene4927	gene3189	gene3001
+gene2607	gene2808	gene3045	gene3827	gene3219	gene4956	gene3191	gene3007
+gene2610	gene2812	gene3054	gene3828	gene3220	gene4960	gene3193	gene3009
+gene2612	gene2820	gene3058	gene3829	gene3221	gene4967	gene3196	gene3015
+gene2614	gene2824	gene3062	gene3839	gene3227	gene4980	gene3200	gene3016
+gene2616	gene2826	gene3067	gene3840	gene3233	gene4994	gene3205	gene3021
+gene2617	gene2827	gene3068	gene3852	gene3234	gene4997	gene3207	gene3023
+gene2620	gene2829	gene3074	gene3864	gene3246	gene4999	gene3208	gene3027
+gene2621	gene2832	gene3076	gene3870	gene3247	gene5016	gene3221	gene3028
+gene2624	gene2834	gene3082	gene3875	gene3248	gene5029	gene3227	gene3029
+gene2626	gene2838	gene3085	gene3884	gene3249	gene5056	gene3233	gene3030
+gene2632	gene2839	gene3091	gene3898	gene3252	gene5083	gene3247	gene3036
+gene2635	gene2845	gene3095	gene3901	gene3255	gene5096	gene3252	gene3045
+gene2636	gene2847	gene3099	gene3906	gene3256	gene5127	gene3258	gene3046
+gene2639	gene2848	gene3103	gene3913	gene3260	gene5147	gene3260	gene3048
+gene2642	gene2855	gene3109	gene3917	gene3275	gene5156	gene3272	gene3053
+gene2644	gene2857	gene3112	gene3919	gene3278	gene5167	gene3284	gene3055
+gene2646	gene2860	gene3113	gene3922	gene3283	gene5174	gene3293	gene3057
+gene2650	gene2863	gene3114	gene3935	gene3286	gene5194	gene3294	gene3065
+gene2653	gene2874	gene3115	gene3941	gene3290	gene5209	gene3297	gene3067
+gene2656	gene2876	gene3121	gene3943	gene3300	gene5218	gene3299	gene3068
+gene2657	gene2878	gene3130	gene3947	gene3302	gene5219	gene3301	gene3070
+gene2659	gene2886	gene3136	gene3948	gene3307	gene5261	gene3302	gene3071
+gene2660	gene2891	gene3137	gene3958	gene3311	gene5277	gene3303	gene3075
+gene2661	gene2897	gene3138	gene3961	gene3312	gene5292	gene3306	gene3078
+gene2664	gene2900	gene3140	gene3973	gene3337	gene5300	gene3307	gene3085
+gene2668	gene2902	gene3141	gene3978	gene3365	gene5314	gene3311	gene3093
+gene2675	gene2904	gene3144	gene3982	gene3369	gene5335	gene3312	gene3094
+gene2676	gene2905	gene3145	gene3994	gene3371	gene5349	gene3317	gene3102
+gene2679	gene2912	gene3150	gene3995	gene3377	gene5365	gene3318	gene3104
+gene2689	gene2922	gene3151	gene4001	gene3378	gene5375	gene3325	gene3109
+gene2691	gene2924	gene3152	gene4005	gene3387	gene5382	gene3328	gene3114
+gene2692	gene2942	gene3153	gene4008	gene3402	gene5386	gene3332	gene3118
+gene2694	gene2943	gene3162	gene4034	gene3403	gene5392	gene3342	gene3120
+gene2695	gene2947	gene3166	gene4036	gene3424	gene5397	gene3344	gene3121
+gene2696	gene2952	gene3167	gene4046	gene3430	gene5400	gene3350	gene3123
+gene2698	gene2963	gene3169	gene4049	gene3432	gene5409	gene3354	gene3129
+gene2699	gene2964	gene3171	gene4051	gene3434	gene5411	gene3355	gene3132
+gene2702	gene2968	gene3172	gene4055	gene3435	gene5439	gene3359	gene3137
+gene2714	gene2972	gene3181	gene4061	gene3450	gene5441	gene3361	gene3140
+gene2715	gene2975	gene3182	gene4066	gene3457	gene5443	gene3363	gene3141
+gene2719	gene2987	gene3191	gene4078	gene3459	gene5452	gene3364	gene3144
+gene2721	gene2988	gene3201	gene4093	gene3468	gene5462	gene3368	gene3146
+gene2727	gene2994	gene3211	gene4105	gene3471	gene5475	gene3371	gene3151
+gene2728	gene2997	gene3218	gene4116	gene3472	gene5486	gene3377	gene3153
+gene2731	gene2999	gene3219	gene4123	gene3476	gene5511	gene3378	gene3160
+gene2734	gene3005	gene3221	gene4125	gene3485	gene5512	gene3396	gene3163
+gene2736	gene3008	gene3226	gene4129	gene3487	gene5521	gene3399	gene3170
+gene2740	gene3009	gene3230	gene4135	gene3493	gene5546	gene3434	gene3171
+gene2747	gene3014	gene3234	gene4136	gene3510	gene5553	gene3442	gene3179
+gene2752	gene3017	gene3235	gene4137	gene3513	gene5585	gene3452	gene3196
+gene2756	gene3019	gene3237	gene4142	gene3518	gene5597	gene3455	gene3214
+gene2759	gene3020	gene3241	gene4143	gene3523	gene5617	gene3459	gene3218
+gene2767	gene3021	gene3247	gene4170	gene3524	gene5664	gene3471	gene3220
+gene2768	gene3023	gene3248	gene4171	gene3535	gene5673	gene3472	gene3221
+gene2773	gene3030	gene3249	gene4175	gene3538	gene5682	gene3477	gene3234
+gene2776	gene3034	gene3251	gene4182	gene3544	gene5695	gene3482	gene3247
+gene2777	gene3045	gene3252	gene4189	gene3545	gene5696	gene3485	gene3264
+gene2783	gene3056	gene3260	gene4190	gene3559	gene5697	gene3490	gene3265
+gene2784	gene3062	gene3263	gene4195	gene3560	gene5702	gene3493	gene3266
+gene2789	gene3063	gene3266	gene4208	gene3566	gene5704	gene3495	gene3269
+gene2790	gene3066	gene3290	gene4210	gene3567	gene5709	gene3501	gene3272
+gene2793	gene3067	gene3304	gene4212	gene3568	gene5712	gene3502	gene3284
+gene2796	gene3068	gene3306	gene4223	gene3577	gene5720	gene3507	gene3290
+gene2804	gene3071	gene3307	gene4230	gene3589	gene5725	gene3513	gene3296
+gene2805	gene3073	gene3308	gene4234	gene3593	gene5734	gene3518	gene3304
+gene2806	gene3075	gene3312	gene4238	gene3598	gene5758	gene3542	gene3308
+gene2812	gene3076	gene3318	gene4240	gene3604	gene5773	gene3551	gene3312
+gene2820	gene3085	gene3325	gene4243	gene3625	gene5775	gene3557	gene3317
+gene2821	gene3088	gene3327	gene4245	gene3634	gene5801	gene3559	gene3321
+gene2823	gene3090	gene3337	gene4248	gene3637	gene5811	gene3566	gene3325
+gene2824	gene3091	gene3342	gene4249	gene3640	gene5840	gene3567	gene3327
+gene2826	gene3102	gene3349	gene4266	gene3641	gene5848	gene3569	gene3330
+gene2827	gene3109	gene3351	gene4268	gene3642	gene5856	gene3577	gene3333
+gene2829	gene3112	gene3359	gene4276	gene3650	gene5866	gene3580	gene3336
+gene2830	gene3113	gene3362	gene4278	gene3656	gene5885	gene3596	gene3349
+gene2834	gene3128	gene3366	gene4298	gene3660	gene5901	gene3599	gene3350
+gene2836	gene3133	gene3371	gene4299	gene3673	gene5907	gene3600	gene3365
+gene2838	gene3136	gene3376	gene4303	gene3684	gene5934	gene3603	gene3371
+gene2839	gene3137	gene3377	gene4304	gene3688	gene5954	gene3605	gene3373
+gene2844	gene3140	gene3378	gene4327	gene3703	gene5964	gene3619	gene3377
+gene2847	gene3142	gene3382	gene4352	gene3704	gene5985	gene3621	gene3378
+gene2848	gene3145	gene3389	gene4366	gene3707	gene5992	gene3625	gene3379
+gene2857	gene3146	gene3390	gene4367	gene3710	gene5998	gene3627	gene3390
+gene2858	gene3151	gene3395	gene4388	gene3712	gene6000	gene3628	gene3399
+gene2859	gene3153	gene3399	gene4396	gene3714	gene6003	gene3637	gene3402
+gene2863	gene3157	gene3402	gene4398	gene3718	gene6004	gene3650	gene3420
+gene2865	gene3167	gene3403	gene4410	gene3721	gene6015	gene3670	gene3431
+gene2870	gene3177	gene3419	gene4411	gene3731	gene6023	gene3673	gene3432
+gene2890	gene3182	gene3420	gene4413	gene3733	gene6029	gene3687	gene3434
+gene2891	gene3183	gene3426	gene4414	gene3737	gene6041	gene3691	gene3435
+gene2894	gene3189	gene3430	gene4415	gene3739	gene6052	gene3708	gene3440
+gene2898	gene3191	gene3433	gene4428	gene3740	gene6063	gene3720	gene3449
+gene2900	gene3193	gene3434	gene4445	gene3755	gene6065	gene3728	gene3452
+gene2902	gene3196	gene3444	gene4457	gene3762	gene6075	gene3733	gene3459
+gene2908	gene3200	gene3450	gene4480	gene3770	gene6136	gene3737	gene3480
+gene2915	gene3205	gene3454	gene4482	gene3782	gene6151	gene3741	gene3482
+gene2919	gene3206	gene3456	gene4500	gene3798	gene6154	gene3747	gene3485
+gene2925	gene3207	gene3459	gene4507	gene3799	gene6162	gene3751	gene3487
+gene2928	gene3216	gene3460	gene4520	gene3805	gene6188	gene3757	gene3490
+gene2929	gene3219	gene3465	gene4522	gene3814	gene6207	gene3772	gene3491
+gene2930	gene3221	gene3471	gene4540	gene3821	gene6211	gene3782	gene3493
+gene2933	gene3224	gene3472	gene4553	gene3828	gene6212	gene3788	gene3495
+gene2943	gene3236	gene3475	gene4554	gene3833	gene6246	gene3797	gene3507
+gene2948	gene3239	gene3476	gene4581	gene3839	gene6263	gene3798	gene3508
+gene2957	gene3240	gene3493	gene4588	gene3848	gene6281	gene3800	gene3513
+gene2960	gene3242	gene3502	gene4597	gene3870	gene6309	gene3802	gene3514
+gene2970	gene3245	gene3505	gene4601	gene3871	gene6331	gene3805	gene3522
+gene2979	gene3247	gene3513	gene4602	gene3873	gene6333	gene3806	gene3524
+gene2988	gene3248	gene3522	gene4625	gene3875	gene6352	gene3815	gene3530
+gene2990	gene3249	gene3525	gene4639	gene3885	gene6354	gene3816	gene3535
+gene2994	gene3252	gene3528	gene4643	gene3892	gene6359	gene3824	gene3537
+gene2995	gene3261	gene3538	gene4644	gene3904	gene6360	gene3827	gene3538
+gene2997	gene3263	gene3540	gene4648	gene3917	gene6374	gene3831	gene3540
+gene3008	gene3283	gene3544	gene4676	gene3925	gene6416	gene3857	gene3542
+gene3009	gene3286	gene3545	gene4693	gene3928	gene6447	gene3861	gene3558
+gene3023	gene3288	gene3551	gene4699	gene3934	gene6450	gene3864	gene3559
+gene3027	gene3290	gene3555	gene4718	gene3943	gene6454	gene3870	gene3564
+gene3030	gene3303	gene3556	gene4736	gene3945	gene6496	gene3873	gene3566
+gene3034	gene3304	gene3561	gene4740	gene3951	gene6534	gene3874	gene3567
+gene3038	gene3307	gene3564	gene4746	gene3958	gene6572	gene3875	gene3568
+gene3042	gene3312	gene3566	gene4756	gene3964	gene6600	gene3879	gene3573
+gene3045	gene3323	gene3575	gene4762	gene3967	gene6660	gene3886	gene3598
+gene3046	gene3325	gene3582	gene4783	gene3992	gene6679	gene3890	gene3599
+gene3050	gene3327	gene3596	gene4807	gene3996	gene6687	gene3895	gene3601
+gene3055	gene3332	gene3599	gene4808	gene3999	gene6697	gene3904	gene3610
+gene3062	gene3333	gene3600	gene4823	gene4005	gene6702	gene3911	gene3611
+gene3065	gene3342	gene3603	gene4828	gene4008	gene6725	gene3914	gene3613
+gene3066	gene3343	gene3605	gene4838	gene4013	gene6743	gene3928	gene3617
+gene3067	gene3349	gene3613	gene4839	gene4027	gene6821	gene3935	gene3634
+gene3068	gene3354	gene3616	gene4853	gene4036	gene6844	gene3944	gene3637
+gene3070	gene3357	gene3619	gene4854	gene4046	gene6857	gene3945	gene3650
+gene3071	gene3365	gene3628	gene4871	gene4051	gene6866	gene3948	gene3652
+gene3085	gene3367	gene3631	gene4874	gene4054	gene6883	gene3954	gene3653
+gene3088	gene3368	gene3632	gene4878	gene4089	gene6887	gene3956	gene3676
+gene3091	gene3372	gene3633	gene4894	gene4094	gene6902	gene3958	gene3677
+gene3093	gene3377	gene3634	gene4895	gene4114	gene6924	gene3960	gene3688
+gene3094	gene3378	gene3637	gene4901	gene4116	gene6929	gene3964	gene3696
+gene3096	gene3382	gene3640	gene4923	gene4132	gene6943	gene3986	gene3701
+gene3098	gene3416	gene3643	gene4958	gene4140	gene6955	gene3992	gene3704
+gene3101	gene3426	gene3644	gene4967	gene4143	gene6981	gene3996	gene3710
+gene3104	gene3432	gene3650	gene4976	gene4154	gene6992	gene4001	gene3718
+gene3106	gene3434	gene3653	gene4989	gene4157	gene7017	gene4005	gene3729
+gene3109	gene3452	gene3660	gene4995	gene4159	gene7020	gene4008	gene3730
+gene3115	gene3458	gene3661	gene4999	gene4164	gene7030	gene4034	gene3734
+gene3117	gene3459	gene3664	gene5000	gene4175	gene7055	gene4037	gene3739
+gene3119	gene3461	gene3671	gene5004	gene4185	gene7057	gene4043	gene3741
+gene3121	gene3471	gene3672	gene5016	gene4186	gene7088	gene4046	gene3745
+gene3123	gene3472	gene3673	gene5029	gene4189	gene7092	gene4047	gene3746
+gene3136	gene3475	gene3688	gene5031	gene4190	gene7116	gene4051	gene3755
+gene3137	gene3485	gene3695	gene5043	gene4193	gene7124	gene4055	gene3773
+gene3140	gene3493	gene3704	gene5045	gene4198	gene7148	gene4061	gene3782
+gene3143	gene3499	gene3711	gene5056	gene4206	gene7149	gene4089	gene3788
+gene3144	gene3507	gene3714	gene5088	gene4210	gene7154	gene4092	gene3796
+gene3145	gene3513	gene3718	gene5132	gene4223	gene7191	gene4094	gene3798
+gene3150	gene3514	gene3720	gene5136	gene4231	gene7217	gene4095	gene3799
+gene3153	gene3520	gene3721	gene5137	gene4234	gene7233	gene4111	gene3806
+gene3158	gene3537	gene3722	gene5147	gene4238	gene7240	gene4113	gene3822
+gene3160	gene3538	gene3731	gene5169	gene4254	gene7254	gene4114	gene3824
+gene3161	gene3539	gene3742	gene5171	gene4255	gene7287	gene4123	gene3834
+gene3167	gene3544	gene3753	gene5172	gene4265	gene7288	gene4126	gene3839
+gene3168	gene3545	gene3775	gene5177	gene4267	gene7297	gene4128	gene3855
+gene3171	gene3555	gene3782	gene5200	gene4298	gene7300	gene4132	gene3856
+gene3172	gene3562	gene3795	gene5209	gene4310	gene7309	gene4134	gene3857
+gene3182	gene3563	gene3798	gene5217	gene4317	gene7324	gene4135	gene3864
+gene3185	gene3564	gene3799	gene5218	gene4327	gene7341	gene4136	gene3868
+gene3191	gene3565	gene3805	gene5219	gene4336	gene7350	gene4137	gene3879
+gene3196	gene3566	gene3827	gene5234	gene4349	gene7352	gene4143	gene3901
+gene3197	gene3567	gene3834	gene5241	gene4370	gene7368	gene4150	gene3904
+gene3219	gene3568	gene3846	gene5252	gene4374	gene7394	gene4155	gene3928
+gene3221	gene3575	gene3854	gene5267	gene4388	gene7433	gene4160	gene3929
+gene3224	gene3577	gene3860	gene5270	gene4389	gene7452	gene4168	gene3939
+gene3235	gene3586	gene3861	gene5272	gene4393	gene7503	gene4174	gene3943
+gene3239	gene3598	gene3870	gene5277	gene4405	gene7529	gene4175	gene3945
+gene3240	gene3605	gene3874	gene5316	gene4410	gene7539	gene4177	gene3952
+gene3242	gene3624	gene3885	gene5323	gene4411	gene7594	gene4181	gene3956
+gene3246	gene3625	gene3886	gene5335	gene4424	gene7667	gene4189	gene3958
+gene3247	gene3630	gene3890	gene5349	gene4438	gene7706	gene4190	gene3987
+gene3249	gene3634	gene3892	gene5367	gene4442	gene7746	gene4193	gene3994
+gene3252	gene3637	gene3908	gene5382	gene4443	gene7768	gene4210	gene3995
+gene3260	gene3638	gene3912	gene5383	gene4455	gene7886	gene4214	gene4001
+gene3261	gene3640	gene3919	gene5386	gene4480	gene7893	gene4218	gene4004
+gene3266	gene3641	gene3932	gene5390	gene4483	gene7902	gene4219	gene4005
+gene3276	gene3644	gene3945	gene5400	gene4486	gene7912	gene4222	gene4037
+gene3278	gene3650	gene3958	gene5434	gene4489	gene7918	gene4223	gene4041
+gene3285	gene3658	gene3961	gene5443	gene4491	gene7978	gene4225	gene4045
+gene3290	gene3660	gene3962	gene5458	gene4500	gene7997	gene4228	gene4046
+gene3307	gene3671	gene3999	gene5464	gene4511	gene8009	gene4229	gene4048
+gene3312	gene3677	gene4001	gene5467	gene4517	gene8022	gene4234	gene4051
+gene3314	gene3678	gene4004	gene5475	gene4520	gene8049	gene4240	gene4053
+gene3317	gene3679	gene4005	gene5508	gene4522	gene8063	gene4241	gene4070
+gene3321	gene3686	gene4013	gene5512	gene4541	gene8070	gene4242	gene4080
+gene3327	gene3688	gene4014	gene5521	gene4558	gene8076	gene4247	gene4094
+gene3328	gene3691	gene4025	gene5530	gene4580	gene8098	gene4285	gene4111
+gene3329	gene3697	gene4034	gene5532	gene4581	gene8182	gene4297	gene4114
+gene3333	gene3700	gene4036	gene5534	gene4588	gene8215	gene4298	gene4115
+gene3349	gene3701	gene4040	gene5546	gene4606	gene8219	gene4310	gene4118
+gene3367	gene3704	gene4041	gene5553	gene4611	gene8252	gene4311	gene4123
+gene3377	gene3710	gene4044	gene5580	gene4630	gene8259	gene4316	gene4124
+gene3378	gene3714	gene4046	gene5597	gene4632	gene8264	gene4317	gene4128
+gene3382	gene3719	gene4051	gene5604	gene4653	gene8285	gene4327	gene4129
+gene3397	gene3720	gene4053	gene5606	gene4661	gene8303	gene4347	gene4134
+gene3399	gene3721	gene4054	gene5636	gene4669	gene8315	gene4361	gene4135
+gene3402	gene3723	gene4057	gene5665	gene4674	gene8322	gene4367	gene4136
+gene3403	gene3725	gene4060	gene5668	gene4676	gene8324	gene4387	gene4137
+gene3410	gene3731	gene4073	gene5682	gene4683	gene8348	gene4388	gene4139
+gene3420	gene3739	gene4077	gene5696	gene4693	gene8353	gene4389	gene4140
+gene3430	gene3746	gene4083	gene5702	gene4732	gene8371	gene4402	gene4142
+gene3431	gene3755	gene4094	gene5706	gene4736	gene8442	gene4404	gene4143
+gene3434	gene3757	gene4096	gene5710	gene4740	gene8481	gene4410	gene4148
+gene3442	gene3765	gene4097	gene5714	gene4748	gene8487	gene4411	gene4164
+gene3444	gene3776	gene4100	gene5731	gene4782	gene8531	gene4424	gene4168
+gene3452	gene3781	gene4108	gene5775	gene4783	gene8541	gene4440	gene4174
+gene3459	gene3782	gene4111	gene5779	gene4792	gene8580	gene4442	gene4175
+gene3461	gene3798	gene4120	gene5787	gene4795	gene8582	gene4445	gene4178
+gene3472	gene3799	gene4121	gene5796	gene4801	gene8610	gene4447	gene4179
+gene3475	gene3800	gene4129	gene5835	gene4808	gene8615	gene4458	gene4183
+gene3483	gene3808	gene4136	gene5846	gene4811	gene8630	gene4468	gene4184
+gene3484	gene3809	gene4137	gene5853	gene4816	gene8638	gene4473	gene4189
+gene3485	gene3810	gene4140	gene5865	gene4817	gene8641	gene4480	gene4190
+gene3490	gene3811	gene4142	gene5876	gene4823	gene8655	gene4496	gene4198
+gene3493	gene3826	gene4143	gene5877	gene4826	gene8656	gene4497	gene4200
+gene3498	gene3828	gene4164	gene5912	gene4838	gene8713	gene4500	gene4206
+gene3503	gene3829	gene4175	gene5934	gene4853	gene8731	gene4507	gene4208
+gene3507	gene3839	gene4177	gene5954	gene4856	gene8778	gene4511	gene4210
+gene3513	gene3856	gene4183	gene5962	gene4867	gene8780	gene4522	gene4218
+gene3522	gene3859	gene4186	gene5964	gene4873	gene8791	gene4536	gene4223
+gene3535	gene3863	gene4187	gene5968	gene4874	gene8808	gene4552	gene4234
+gene3538	gene3868	gene4189	gene5992	gene4878	gene8849	gene4553	gene4238
+gene3539	gene3870	gene4190	gene5998	gene4892	gene8892	gene4561	gene4242
+gene3540	gene3872	gene4192	gene6000	gene4895	gene8893	gene4580	gene4249
+gene3542	gene3875	gene4200	gene6006	gene4903	gene8909	gene4581	gene4253
+gene3545	gene3899	gene4208	gene6007	gene4907	gene8939	gene4582	gene4258
+gene3555	gene3904	gene4209	gene6009	gene4921	gene8941	gene4584	gene4264
+gene3564	gene3905	gene4210	gene6029	gene4923	gene8946	gene4587	gene4276
+gene3566	gene3907	gene4223	gene6064	gene4931	gene8960	gene4597	gene4287
+gene3567	gene3945	gene4234	gene6065	gene4938	gene8974	gene4598	gene4299
+gene3572	gene3958	gene4238	gene6097	gene4967	gene9029	gene4609	gene4306
+gene3576	gene3961	gene4241	gene6100	gene4989	gene9032	gene4611	gene4310
+gene3577	gene3979	gene4243	gene6104	gene4998	gene9074	gene4612	gene4311
+gene3580	gene3992	gene4245	gene6127	gene5029	gene9112	gene4623	gene4339
+gene3584	gene4000	gene4246	gene6151	gene5031	gene9153	gene4630	gene4347
+gene3591	gene4002	gene4253	gene6175	gene5056	gene9158	gene4638	gene4349
+gene3598	gene4004	gene4271	gene6197	gene5092	gene9160	gene4651	gene4361
+gene3599	gene4005	gene4276	gene6211	gene5096	gene9164	gene4657	gene4366
+gene3606	gene4015	gene4280	gene6233	gene5128	gene9196	gene4658	gene4388
+gene3613	gene4024	gene4282	gene6241	gene5132	gene9208	gene4662	gene4389
+gene3620	gene4032	gene4307	gene6246	gene5147	gene9237	gene4663	gene4407
+gene3625	gene4041	gene4310	gene6263	gene5156	gene9248	gene4676	gene4411
+gene3626	gene4046	gene4311	gene6277	gene5157	gene9287	gene4693	gene4415
+gene3630	gene4049	gene4312	gene6281	gene5171	gene9288	gene4700	gene4420
+gene3634	gene4051	gene4315	gene6291	gene5174	gene9321	gene4702	gene4435
+gene3637	gene4053	gene4347	gene6306	gene5178	gene9327	gene4704	gene4440
+gene3640	gene4055	gene4350	gene6309	gene5193	gene9366	gene4707	gene4447
+gene3643	gene4060	gene4369	gene6311	gene5195	gene9382	gene4712	gene4454
+gene3644	gene4105	gene4371	gene6331	gene5202	gene9388	gene4713	gene4460
+gene3650	gene4113	gene4379	gene6333	gene5218	gene9398	gene4717	gene4480
+gene3651	gene4116	gene4384	gene6353	gene5226	gene9404	gene4722	gene4485
+gene3659	gene4123	gene4388	gene6354	gene5229	gene9461	gene4732	gene4486
+gene3660	gene4127	gene4392	gene6360	gene5241	gene9466	gene4752	gene4496
+gene3670	gene4134	gene4393	gene6374	gene5253	gene9583	gene4758	gene4499
+gene3673	gene4135	gene4418	gene6375	gene5274	gene9628	gene4775	gene4500
+gene3684	gene4136	gene4424	gene6380	gene5277	gene9695	gene4783	gene4511
+gene3685	gene4137	gene4436	gene6392	gene5310	gene9699	gene4793	gene4520
+gene3691	gene4146	gene4438	gene6395	gene5335	gene9704	gene4795	gene4530
+gene3693	gene4148	gene4456	gene6406	gene5339	gene9716	gene4801	gene4541
+gene3702	gene4166	gene4470	gene6450	gene5347	gene9744	gene4809	gene4547
+gene3704	gene4175	gene4480	gene6459	gene5349	gene9747	gene4810	gene4554
+gene3706	gene4177	gene4491	gene6484	gene5353	gene9762	gene4812	gene4561
+gene3710	gene4189	gene4494	gene6496	gene5371	gene9780	gene4814	gene4565
+gene3711	gene4190	gene4500	gene6501	gene5375	gene9837	gene4823	gene4623
+gene3714	gene4198	gene4501	gene6513	gene5382	gene9845	gene4847	gene4632
+gene3715	gene4201	gene4506	gene6524	gene5386	gene9857	gene4857	gene4635
+gene3720	gene4202	gene4507	gene6534	gene5390	gene9891	gene4871	gene4645
+gene3721	gene4205	gene4511	gene6544	gene5400	gene9907	gene4873	gene4676
+gene3722	gene4208	gene4538	gene6553	gene5411	gene9921	gene4874	gene4686
+gene3733	gene4211	gene4541	gene6611	gene5415	gene9978	gene4876	gene4693
+gene3738	gene4216	gene4562	gene6624	gene5420	gene10033	gene4878	gene4712
+gene3741	gene4223	gene4566	gene6659	gene5427	gene10055	gene4894	gene4736
+gene3742	gene4231	gene4580	gene6660	gene5434	gene10074	gene4895	gene4738
+gene3743	gene4232	gene4581	gene6671	gene5439	gene10107	gene4921	gene4739
+gene3755	gene4234	gene4611	gene6679	gene5446	gene10154	gene4923	gene4748
+gene3757	gene4235	gene4638	gene6687	gene5447	gene10169	gene4938	gene4770
+gene3760	gene4238	gene4643	gene6702	gene5475	gene10206	gene4943	gene4773
+gene3770	gene4239	gene4645	gene6716	gene5483	gene10238	gene4955	gene4777
+gene3772	gene4240	gene4676	gene6725	gene5507	gene10241	gene4960	gene4783
+gene3776	gene4243	gene4700	gene6749	gene5512	gene10250	gene4967	gene4785
+gene3782	gene4245	gene4712	gene6780	gene5527	gene10252	gene4978	gene4788
+gene3787	gene4249	gene4722	gene6813	gene5546	gene10272	gene4989	gene4793
+gene3788	gene4253	gene4736	gene6854	gene5553	gene10276	gene4990	gene4816
+gene3790	gene4257	gene4788	gene6874	gene5606	gene10298	gene4996	gene4823
+gene3791	gene4265	gene4800	gene6929	gene5640	gene10301	gene4999	gene4826
+gene3796	gene4269	gene4810	gene6940	gene5669	gene10314	gene5033	gene4856
+gene3799	gene4276	gene4813	gene6952	gene5675	gene10356	gene5046	gene4858
+gene3805	gene4280	gene4816	gene6965	gene5682	gene10364	gene5053	gene4874
+gene3808	gene4300	gene4823	gene6978	gene5688	gene10395	gene5056	gene4877
+gene3815	gene4303	gene4844	gene6980	gene5697	gene10416	gene5077	gene4882
+gene3816	gene4310	gene4856	gene6981	gene5702	gene10436	gene5080	gene4892
+gene3824	gene4313	gene4870	gene6992	gene5711	gene10463	gene5088	gene4895
+gene3826	gene4331	gene4874	gene6996	gene5714	gene10500	gene5113	gene4909
+gene3827	gene4336	gene4878	gene7020	gene5720	gene10520	gene5129	gene4923
+gene3828	gene4337	gene4895	gene7030	gene5725	gene10524	gene5131	gene4942
+gene3837	gene4342	gene4912	gene7057	gene5733	gene10550	gene5135	gene4945
+gene3838	gene4352	gene4921	gene7060	gene5748	gene10628	gene5141	gene4950
+gene3839	gene4363	gene4923	gene7116	gene5775	gene10636	gene5147	gene4953
+gene3857	gene4365	gene4925	gene7123	gene5779	gene10642	gene5148	gene4967
+gene3866	gene4370	gene4943	gene7124	gene5815	gene10664	gene5156	gene4983
+gene3870	gene4374	gene4947	gene7148	gene5830	gene10684	gene5174	gene5029
+gene3885	gene4382	gene4950	gene7149	gene5856	gene10692	gene5189	gene5031
+gene3894	gene4383	gene4967	gene7154	gene5857	gene10693	gene5197	gene5044
+gene3901	gene4384	gene4989	gene7175	gene5877	gene10723	gene5200	gene5056
+gene3904	gene4388	gene4996	gene7191	gene5882	gene10767	gene5209	gene5107
+gene3907	gene4392	gene5013	gene7217	gene5902	gene10788	gene5218	gene5147
+gene3908	gene4400	gene5031	gene7224	gene5916	gene10798	gene5222	gene5151
+gene3919	gene4404	gene5045	gene7240	gene5934	gene10809	gene5229	gene5156
+gene3923	gene4411	gene5058	gene7245	gene5937	gene10818	gene5241	gene5170
+gene3943	gene4420	gene5089	gene7273	gene5954	gene10820	gene5252	gene5171
+gene3945	gene4426	gene5109	gene7288	gene5962	gene10832	gene5298	gene5172
+gene3955	gene4440	gene5144	gene7294	gene5964	gene10850	gene5321	gene5174
+gene3958	gene4455	gene5147	gene7320	gene5974	gene10908	gene5331	gene5178
+gene3980	gene4463	gene5150	gene7324	gene5992	gene10911	gene5335	gene5184
+gene3983	gene4468	gene5155	gene7326	gene5998	gene10920	gene5339	gene5200
+gene3999	gene4480	gene5156	gene7341	gene6000	gene10965	gene5344	gene5218
+gene4002	gene4482	gene5168	gene7352	gene6003	gene11006	gene5349	gene5226
+gene4004	gene4483	gene5172	gene7368	gene6004	gene11030	gene5375	gene5235
+gene4005	gene4486	gene5174	gene7378	gene6015	gene11038	gene5382	gene5240
+gene4009	gene4497	gene5200	gene7387	gene6022	gene11080	gene5400	gene5241
+gene4013	gene4505	gene5201	gene7394	gene6029	gene11132	gene5411	gene5246
+gene4016	gene4508	gene5218	gene7400	gene6040	gene11135	gene5440	gene5250
+gene4032	gene4511	gene5219	gene7419	gene6044	gene11147	gene5446	gene5260
+gene4037	gene4512	gene5240	gene7425	gene6049	gene11175	gene5466	gene5263
+gene4038	gene4520	gene5247	gene7452	gene6052	gene11208	gene5475	gene5270
+gene4039	gene4541	gene5255	gene7473	gene6063	gene11323	gene5503	gene5273
+gene4045	gene4545	gene5318	gene7492	gene6065	gene11343	gene5512	gene5277
+gene4046	gene4551	gene5330	gene7494	gene6097	gene11395	gene5531	gene5279
+gene4049	gene4559	gene5335	gene7503	gene6108	gene11408	gene5544	gene5290
+gene4051	gene4571	gene5344	gene7572	gene6151	gene11411	gene5546	gene5298
+gene4053	gene4574	gene5349	gene7582	gene6172	gene11437	gene5553	gene5299
+gene4054	gene4580	gene5356	gene7594	gene6182	gene11440	gene5556	gene5303
+gene4055	gene4581	gene5357	gene7596	gene6196	gene11456	gene5598	gene5308
+gene4077	gene4586	gene5364	gene7601	gene6211	gene11470	gene5605	gene5315
+gene4078	gene4601	gene5375	gene7629	gene6254	gene11483	gene5606	gene5328
+gene4079	gene4605	gene5382	gene7632	gene6263	gene11502	gene5641	gene5335
+gene4083	gene4619	gene5392	gene7639	gene6281	gene11508	gene5655	gene5341
+gene4090	gene4625	gene5400	gene7667	gene6291	gene11511	gene5665	gene5344
+gene4105	gene4636	gene5410	gene7702	gene6296	gene11516	gene5668	gene5349
+gene4115	gene4640	gene5433	gene7734	gene6302	gene11520	gene5669	gene5357
+gene4120	gene4642	gene5446	gene7745	gene6314	gene11521	gene5682	gene5364
+gene4124	gene4645	gene5475	gene7818	gene6331	gene11537	gene5696	gene5382
+gene4133	gene4671	gene5511	gene7838	gene6333	gene11546	gene5697	gene5390
+gene4136	gene4676	gene5512	gene7848	gene6360	gene11570	gene5702	gene5402
+gene4137	gene4682	gene5513	gene7853	gene6374	gene11573	gene5725	gene5441
+gene4145	gene4688	gene5521	gene7885	gene6390	gene11593	gene5737	gene5443
+gene4155	gene4692	gene5541	gene7893	gene6414	gene11598	gene5739	gene5444
+gene4162	gene4708	gene5546	gene7902	gene6438	gene11601	gene5748	gene5446
+gene4163	gene4729	gene5553	gene7912	gene6446	gene11634	gene5763	gene5466
+gene4170	gene4734	gene5577	gene7958	gene6450	gene11640	gene5775	gene5467
+gene4171	gene4736	gene5585	gene7967	gene6516	gene11645	gene5807	gene5475
+gene4174	gene4783	gene5606	gene7978	gene6534	gene11710	gene5810	gene5512
+gene4175	gene4799	gene5629	gene7996	gene6544	gene11719	gene5813	gene5517
+gene4176	gene4806	gene5640	gene7997	gene6573	gene11737	gene5821	gene5533
+gene4177	gene4811	gene5641	gene8016	gene6590	gene11753	gene5830	gene5546
+gene4178	gene4833	gene5644	gene8022	gene6609	gene11759	gene5832	gene5553
+gene4179	gene4845	gene5666	gene8049	gene6619	gene11834	gene5848	gene5558
+gene4182	gene4850	gene5669	gene8063	gene6638	gene11840	gene5856	gene5594
+gene4189	gene4853	gene5682	gene8074	gene6643	gene11845	gene5857	gene5595
+gene4190	gene4859	gene5689	gene8076	gene6650	gene11936	gene5859	gene5597
+gene4197	gene4860	gene5702	gene8091	gene6679	gene11960	gene5869	gene5600
+gene4211	gene4895	gene5720	gene8116	gene6687	gene11971	gene5876	gene5606
+gene4218	gene4902	gene5744	gene8215	gene6725	gene11981	gene5877	gene5617
+gene4223	gene4909	gene5765	gene8219	gene6821	gene11997	gene5878	gene5629
+gene4229	gene4912	gene5775	gene8234	gene6828	gene12011	gene5881	gene5647
+gene4230	gene4913	gene5779	gene8252	gene6863	gene12017	gene5888	gene5650
+gene4234	gene4922	gene5810	gene8256	gene6893	gene12022	gene5897	gene5680
+gene4238	gene4923	gene5813	gene8259	gene6929	gene12027	gene5911	gene5682
+gene4240	gene4926	gene5830	gene8264	gene6943	gene12035	gene5921	gene5691
+gene4243	gene4941	gene5856	gene8285	gene6957	gene12042	gene5934	gene5695
+gene4253	gene4945	gene5869	gene8303	gene6965	gene12082	gene5943	gene5702
+gene4255	gene4963	gene5876	gene8315	gene6981	gene12094	gene5954	gene5720
+gene4265	gene4967	gene5884	gene8324	gene7013	gene12105	gene5964	gene5745
+gene4271	gene4970	gene5934	gene8342	gene7020	gene12131	gene5974	gene5748
+gene4276	gene4989	gene5953	gene8348	gene7030	gene12166	gene5992	gene5810
+gene4280	gene4998	gene5954	gene8442	gene7060	gene12206	gene5998	gene5823
+gene4288	gene4999	gene5956	gene8461	gene7064	gene12217	gene6000	gene5856
+gene4292	gene5007	gene5964	gene8480	gene7089	gene12218	gene6003	gene5863
+gene4297	gene5017	gene5980	gene8487	gene7096	gene12226	gene6022	gene5875
+gene4298	gene5020	gene5992	gene8510	gene7124	gene12231	gene6029	gene5891
+gene4303	gene5028	gene5998	gene8531	gene7148	gene12268	gene6048	gene5928
+gene4310	gene5029	gene6000	gene8560	gene7158	gene12271	gene6049	gene5933
+gene4311	gene5036	gene6002	gene8583	gene7172	gene12284	gene6065	gene5934
+gene4321	gene5039	gene6017	gene8630	gene7187	gene12295	gene6094	gene5954
+gene4347	gene5043	gene6029	gene8638	gene7191	gene12356	gene6097	gene5964
+gene4370	gene5063	gene6047	gene8641	gene7217	gene12370	gene6130	gene5974
+gene4374	gene5077	gene6049	gene8697	gene7243	gene12376	gene6145	gene5992
+gene4381	gene5088	gene6052	gene8720	gene7266	gene12396	gene6151	gene5998
+gene4383	gene5093	gene6063	gene8780	gene7287	gene12404	gene6159	gene6000
+gene4385	gene5097	gene6064	gene8834	gene7288	gene12411	gene6164	gene6029
+gene4387	gene5116	gene6065	gene8840	gene7294	gene12414	gene6174	gene6040
+gene4388	gene5137	gene6097	gene8846	gene7305	gene12429	gene6195	gene6049
+gene4392	gene5147	gene6107	gene8887	gene7326	gene12446	gene6196	gene6052
+gene4393	gene5149	gene6151	gene8892	gene7341	gene12477	gene6211	gene6063
+gene4411	gene5156	gene6152	gene8893	gene7348	gene12480	gene6214	gene6064
+gene4417	gene5161	gene6177	gene8909	gene7350	gene12489	gene6230	gene6065
+gene4420	gene5162	gene6180	gene8917	gene7368	gene12513	gene6237	gene6067
+gene4428	gene5171	gene6186	gene8945	gene7369	gene12534	gene6256	gene6069
+gene4430	gene5174	gene6191	gene8960	gene7378	gene12547	gene6263	gene6093
+gene4434	gene5181	gene6192	gene8969	gene7394	gene12551	gene6278	gene6097
+gene4436	gene5192	gene6211	gene8974	gene7401	gene12619	gene6281	gene6111
+gene4440	gene5206	gene6215	gene8975	gene7422	gene12652	gene6284	gene6151
+gene4450	gene5207	gene6245	gene9032	gene7423	gene12677	gene6291	gene6193
+gene4468	gene5212	gene6254	gene9048	gene7424	gene12707	gene6319	gene6206
+gene4480	gene5215	gene6263	gene9074	gene7425	gene12736	gene6331	gene6211
+gene4481	gene5218	gene6281	gene9075	gene7473	gene12738	gene6333	gene6231
+gene4490	gene5221	gene6291	gene9090	gene7494	gene12743	gene6349	gene6235
+gene4492	gene5239	gene6302	gene9113	gene7551	gene12746	gene6360	gene6237
+gene4496	gene5270	gene6309	gene9143	gene7558	gene12757	gene6370	gene6261
+gene4498	gene5277	gene6323	gene9158	gene7594	gene12769	gene6371	gene6263
+gene4511	gene5300	gene6331	gene9159	gene7601	gene12822	gene6374	gene6281
+gene4512	gene5302	gene6333	gene9160	gene7617	gene12851	gene6392	gene6291
+gene4552	gene5314	gene6335	gene9164	gene7636	gene12873	gene6407	gene6309
+gene4567	gene5315	gene6360	gene9196	gene7667	gene12885	gene6446	gene6325
+gene4578	gene5318	gene6361	gene9208	gene7674		gene6447	gene6331
+gene4580	gene5321	gene6371	gene9237	gene7692		gene6450	gene6333
+gene4586	gene5328	gene6374	gene9239	gene7734		gene6468	gene6360
+gene4588	gene5335	gene6375	gene9287	gene7768		gene6496	gene6370
+gene4589	gene5339	gene6376	gene9288	gene7845		gene6534	gene6374
+gene4595	gene5346	gene6406	gene9321	gene7853		gene6537	gene6419
+gene4609	gene5349	gene6407	gene9327	gene7885		gene6544	gene6429
+gene4611	gene5357	gene6446	gene9331	gene7893		gene6550	gene6446
+gene4615	gene5367	gene6450	gene9364	gene7902		gene6552	gene6448
+gene4619	gene5371	gene6474	gene9366	gene7912		gene6563	gene6450
+gene4629	gene5382	gene6475	gene9382	gene7978		gene6578	gene6475
+gene4661	gene5385	gene6516	gene9398	gene7997		gene6585	gene6496
+gene4662	gene5390	gene6534	gene9422	gene8005		gene6660	gene6516
+gene4676	gene5400	gene6537	gene9461	gene8016		gene6666	gene6534
+gene4677	gene5419	gene6544	gene9482	gene8017		gene6674	gene6544
+gene4693	gene5443	gene6550	gene9483	gene8022		gene6679	gene6569
+gene4700	gene5446	gene6605	gene9485	gene8048		gene6687	gene6586
+gene4714	gene5453	gene6610	gene9583	gene8049		gene6725	gene6599
+gene4724	gene5454	gene6661	gene9596	gene8053		gene6743	gene6601
+gene4726	gene5467	gene6664	gene9602	gene8059		gene6770	gene6616
+gene4727	gene5468	gene6667	gene9613	gene8074		gene6813	gene6625
+gene4729	gene5475	gene6671	gene9614	gene8076		gene6821	gene6659
+gene4736	gene5486	gene6679	gene9628	gene8103		gene6826	gene6667
+gene4739	gene5503	gene6687	gene9629	gene8197		gene6837	gene6671
+gene4756	gene5511	gene6689	gene9695	gene8215		gene6865	gene6672
+gene4768	gene5512	gene6709	gene9697	gene8219		gene6870	gene6679
+gene4783	gene5531	gene6725	gene9717	gene8236		gene6874	gene6687
+gene4788	gene5546	gene6795	gene9744	gene8252		gene6876	gene6720
+gene4801	gene5556	gene6821	gene9762	gene8259		gene6887	gene6725
+gene4806	gene5577	gene6825	gene9777	gene8264		gene6898	gene6740
+gene4807	gene5583	gene6866	gene9810	gene8283		gene6908	gene6813
+gene4808	gene5585	gene6870	gene9825	gene8285		gene6920	gene6834
+gene4822	gene5593	gene6874	gene9845	gene8317		gene6924	gene6850
+gene4823	gene5599	gene6876	gene9857	gene8322		gene6929	gene6870
+gene4847	gene5602	gene6916	gene9891	gene8324		gene6965	gene6875
+gene4849	gene5605	gene6944	gene9907	gene8348		gene6981	gene6879
+gene4853	gene5649	gene6974	gene9921	gene8353		gene6987	gene6887
+gene4855	gene5651	gene6981	gene9978	gene8368		gene7020	gene6919
+gene4856	gene5657	gene6992	gene10029	gene8391		gene7030	gene6929
+gene4878	gene5669	gene7005	gene10033	gene8442		gene7035	gene6943
+gene4895	gene5682	gene7020	gene10050	gene8480		gene7060	gene6981
+gene4921	gene5695	gene7030	gene10055	gene8487		gene7096	gene6992
+gene4923	gene5702	gene7055	gene10103	gene8500		gene7103	gene7020
+gene4943	gene5706	gene7060	gene10107	gene8508		gene7124	gene7030
+gene4948	gene5709	gene7085	gene10154	gene8531		gene7130	gene7064
+gene4960	gene5720	gene7136	gene10158	gene8538		gene7146	gene7077
+gene4967	gene5725	gene7148	gene10206	gene8580		gene7154	gene7124
+gene4980	gene5748	gene7149	gene10231	gene8582		gene7175	gene7146
+gene4989	gene5810	gene7154	gene10245	gene8630		gene7191	gene7148
+gene4994	gene5811	gene7166	gene10276	gene8638		gene7217	gene7149
+gene4999	gene5813	gene7191	gene10298	gene8641		gene7219	gene7154
+gene5026	gene5823	gene7217	gene10301	gene8656		gene7240	gene7168
+gene5029	gene5833	gene7224	gene10309	gene8668		gene7254	gene7173
+gene5045	gene5837	gene7262	gene10314	gene8778		gene7263	gene7191
+gene5046	gene5856	gene7266	gene10324	gene8788		gene7273	gene7216
+gene5056	gene5877	gene7288	gene10346	gene8791		gene7287	gene7217
+gene5084	gene5881	gene7300	gene10356	gene8827		gene7300	gene7243
+gene5092	gene5885	gene7305	gene10368	gene8834		gene7313	gene7266
+gene5096	gene5891	gene7309	gene10395	gene8840		gene7324	gene7287
+gene5120	gene5922	gene7324	gene10406	gene8849		gene7326	gene7288
+gene5137	gene5931	gene7327	gene10411	gene8861		gene7346	gene7300
+gene5147	gene5932	gene7330	gene10416	gene8866		gene7349	gene7316
+gene5156	gene5934	gene7335	gene10424	gene8892		gene7350	gene7321
+gene5171	gene5937	gene7341	gene10436	gene8893		gene7361	gene7324
+gene5172	gene5950	gene7355	gene10448	gene8897		gene7368	gene7329
+gene5179	gene5954	gene7368	gene10452	gene8898		gene7378	gene7366
+gene5200	gene5964	gene7393	gene10463	gene8909		gene7382	gene7368
+gene5218	gene5974	gene7394	gene10494	gene8939		gene7387	gene7387
+gene5227	gene5985	gene7401	gene10500	gene8945		gene7394	gene7394
+gene5246	gene5992	gene7419	gene10520	gene8974		gene7422	gene7457
+gene5251	gene5998	gene7420	gene10524	gene9010		gene7452	gene7477
+gene5267	gene6000	gene7427	gene10550	gene9032		gene7461	gene7521
+gene5270	gene6008	gene7452	gene10628	gene9048		gene7511	gene7536
+gene5276	gene6009	gene7473	gene10636	gene9061		gene7521	gene7537
+gene5282	gene6010	gene7479	gene10640	gene9075		gene7594	gene7539
+gene5298	gene6013	gene7494	gene10642	gene9078		gene7601	gene7570
+gene5300	gene6017	gene7522	gene10664	gene9083		gene7604	gene7578
+gene5309	gene6018	gene7539	gene10669	gene9090		gene7655	gene7588
+gene5334	gene6029	gene7546	gene10670	gene9120		gene7657	gene7590
+gene5335	gene6041	gene7594	gene10684	gene9158		gene7676	gene7594
+gene5349	gene6046	gene7627	gene10692	gene9160		gene7691	gene7611
+gene5366	gene6049	gene7635	gene10693	gene9164		gene7724	gene7622
+gene5375	gene6052	gene7667	gene10723	gene9189		gene7730	gene7644
+gene5382	gene6063	gene7670	gene10767	gene9196		gene7742	gene7674
+gene5386	gene6064	gene7687	gene10782	gene9237		gene7760	gene7711
+gene5396	gene6065	gene7704	gene10818	gene9284		gene7762	gene7733
+gene5400	gene6074	gene7724	gene10850	gene9287		gene7805	gene7734
+gene5419	gene6075	gene7734	gene10878	gene9288		gene7838	gene7751
+gene5420	gene6084	gene7768	gene10882	gene9321		gene7893	gene7755
+gene5427	gene6097	gene7843	gene10904	gene9325		gene7902	gene7771
+gene5440	gene6100	gene7853	gene10911	gene9345		gene7912	gene7805
+gene5443	gene6101	gene7893	gene10920	gene9366		gene7943	gene7853
+gene5444	gene6127	gene7902	gene10952	gene9377		gene7978	gene7893
+gene5446	gene6128	gene7912	gene10965	gene9382		gene7997	gene7902
+gene5450	gene6151	gene7921	gene11000	gene9398		gene8005	gene7912
+gene5459	gene6152	gene7939	gene11024	gene9404		gene8017	gene7939
+gene5466	gene6154	gene7975	gene11030	gene9406		gene8020	gene7958
+gene5475	gene6192	gene7978	gene11053	gene9463		gene8022	gene7978
+gene5507	gene6196	gene7997	gene11080	gene9466		gene8030	gene7996
+gene5512	gene6211	gene8005	gene11146	gene9475		gene8049	gene7997
+gene5524	gene6232	gene8009	gene11147	gene9493		gene8074	gene8017
+gene5525	gene6237	gene8016	gene11152	gene9515		gene8076	gene8022
+gene5536	gene6241	gene8017	gene11184	gene9574		gene8080	gene8037
+gene5546	gene6263	gene8022	gene11199	gene9583		gene8099	gene8049
+gene5553	gene6264	gene8031	gene11208	gene9628		gene8102	gene8070
+gene5576	gene6267	gene8047	gene11212	gene9656		gene8142	gene8076
+gene5579	gene6281	gene8048	gene11291	gene9704		gene8184	gene8095
+gene5580	gene6291	gene8049	gene11303	gene9744		gene8191	gene8119
+gene5606	gene6309	gene8070	gene11308	gene9760		gene8215	gene8139
+gene5669	gene6328	gene8074	gene11356	gene9762		gene8219	gene8187
+gene5682	gene6331	gene8076	gene11380	gene9797		gene8232	gene8191
+gene5695	gene6333	gene8185	gene11395	gene9817		gene8252	gene8197
+gene5696	gene6343	gene8215	gene11411	gene9818		gene8259	gene8215
+gene5702	gene6360	gene8219	gene11417	gene9845		gene8264	gene8219
+gene5706	gene6374	gene8252	gene11440	gene9891		gene8285	gene8259
+gene5709	gene6384	gene8257	gene11456	gene9907		gene8293	gene8264
+gene5720	gene6385	gene8259	gene11466	gene9921		gene8303	gene8285
+gene5726	gene6390	gene8264	gene11502	gene9978		gene8324	gene8292
+gene5737	gene6404	gene8276	gene11511	gene10055		gene8348	gene8324
+gene5754	gene6442	gene8285	gene11515	gene10107		gene8383	gene8348
+gene5775	gene6443	gene8297	gene11516	gene10206		gene8411	gene8376
+gene5805	gene6446	gene8303	gene11520	gene10231		gene8442	gene8421
+gene5810	gene6447	gene8315	gene11521	gene10250		gene8470	gene8442
+gene5811	gene6450	gene8324	gene11526	gene10276		gene8474	gene8474
+gene5813	gene6482	gene8334	gene11537	gene10285		gene8487	gene8487
+gene5823	gene6486	gene8337	gene11552	gene10314		gene8523	gene8491
+gene5830	gene6516	gene8348	gene11570	gene10319		gene8531	gene8531
+gene5831	gene6534	gene8442	gene11573	gene10356		gene8536	gene8556
+gene5851	gene6544	gene8480	gene11580	gene10381		gene8538	gene8560
+gene5856	gene6556	gene8487	gene11593	gene10395		gene8580	gene8565
+gene5857	gene6590	gene8508	gene11601	gene10416		gene8630	gene8568
+gene5863	gene6614	gene8531	gene11609	gene10436		gene8638	gene8576
+gene5876	gene6632	gene8563	gene11628	gene10448		gene8641	gene8630
+gene5881	gene6669	gene8615	gene11640	gene10452		gene8649	gene8638
+gene5885	gene6671	gene8630	gene11645	gene10500		gene8672	gene8641
+gene5934	gene6687	gene8638	gene11695	gene10520		gene8749	gene8672
+gene5950	gene6721	gene8641	gene11719	gene10529		gene8773	gene8716
+gene5954	gene6725	gene8656	gene11753	gene10550		gene8778	gene8732
+gene5955	gene6762	gene8672	gene11759	gene10568		gene8780	gene8767
+gene5964	gene6778	gene8706	gene11804	gene10577		gene8791	gene8778
+gene5992	gene6784	gene8713	gene11834	gene10636		gene8801	gene8791
+gene5998	gene6787	gene8771	gene11840	gene10684		gene8849	gene8801
+gene6000	gene6797	gene8778	gene11845	gene10692		gene8851	gene8805
+gene6009	gene6812	gene8780	gene11955	gene10693		gene8874	gene8849
+gene6022	gene6837	gene8782	gene11958	gene10695		gene8892	gene8866
+gene6029	gene6840	gene8849	gene11981	gene10705		gene8893	gene8872
+gene6046	gene6864	gene8863	gene11997	gene10707		gene8909	gene8879
+gene6052	gene6873	gene8879	gene12011	gene10723		gene8946	gene8892
+gene6063	gene6887	gene8892	gene12022	gene10766		gene8974	gene8893
+gene6065	gene6905	gene8893	gene12035	gene10767		gene8984	gene8909
+gene6090	gene6924	gene8896	gene12042	gene10782		gene9010	gene8918
+gene6097	gene6929	gene8909	gene12052	gene10818		gene9013	gene8939
+gene6127	gene6940	gene8939	gene12081	gene10828		gene9025	gene8941
+gene6136	gene6943	gene8945	gene12094	gene10850		gene9032	gene8946
+gene6151	gene6959	gene8946	gene12105	gene10911		gene9047	gene8960
+gene6196	gene6973	gene8974	gene12118	gene10920		gene9116	gene8974
+gene6203	gene6976	gene9032	gene12121	gene10952		gene9117	gene9005
+gene6211	gene6981	gene9048	gene12131	gene10965		gene9120	gene9032
+gene6231	gene6991	gene9054	gene12206	gene11006		gene9153	gene9048
+gene6263	gene7003	gene9081	gene12217	gene11026		gene9158	gene9074
+gene6277	gene7015	gene9112	gene12226	gene11053		gene9160	gene9075
+gene6281	gene7018	gene9120	gene12285	gene11080		gene9164	gene9084
+gene6291	gene7020	gene9153	gene12296	gene11135		gene9196	gene9121
+gene6302	gene7023	gene9158	gene12306	gene11139		gene9208	gene9158
+gene6309	gene7030	gene9159	gene12356	gene11147		gene9237	gene9159
+gene6331	gene7064	gene9160	gene12370	gene11152		gene9272	gene9160
+gene6333	gene7069	gene9164	gene12376	gene11208		gene9282	gene9164
+gene6354	gene7096	gene9196	gene12396	gene11291		gene9287	gene9196
+gene6356	gene7121	gene9237	gene12411	gene11380		gene9288	gene9201
+gene6360	gene7124	gene9287	gene12414	gene11395		gene9304	gene9221
+gene6382	gene7153	gene9288	gene12429	gene11411		gene9321	gene9232
+gene6385	gene7178	gene9321	gene12441	gene11417		gene9345	gene9237
+gene6422	gene7191	gene9327	gene12446	gene11423		gene9354	gene9287
+gene6428	gene7195	gene9354	gene12477	gene11456		gene9366	gene9310
+gene6436	gene7217	gene9366	gene12489	gene11470		gene9382	gene9321
+gene6438	gene7233	gene9382	gene12513	gene11472		gene9398	gene9339
+gene6440	gene7240	gene9388	gene12534	gene11473		gene9407	gene9354
+gene6446	gene7262	gene9398	gene12547	gene11482		gene9461	gene9359
+gene6447	gene7266	gene9406	gene12619	gene11483		gene9466	gene9366
+gene6450	gene7278	gene9461	gene12651	gene11502		gene9475	gene9382
+gene6468	gene7300	gene9466	gene12652	gene11511		gene9499	gene9391
+gene6470	gene7303	gene9475	gene12677	gene11520		gene9506	gene9398
+gene6507	gene7309	gene9572	gene12707	gene11532		gene9557	gene9408
+gene6534	gene7324	gene9583	gene12743	gene11537		gene9583	gene9438
+gene6539	gene7326	gene9603	gene12745	gene11570		gene9626	gene9461
+gene6544	gene7327	gene9613	gene12747	gene11572		gene9628	gene9466
+gene6568	gene7341	gene9628	gene12754	gene11573		gene9643	gene9475
+gene6605	gene7348	gene9651	gene12769	gene11578		gene9695	gene9491
+gene6615	gene7355	gene9656	gene12783	gene11582		gene9699	gene9519
+gene6660	gene7361	gene9694	gene12817	gene11593		gene9704	gene9524
+gene6661	gene7368	gene9695	gene12822	gene11616		gene9716	gene9532
+gene6671	gene7394	gene9716	gene12860	gene11640		gene9744	gene9533
+gene6679	gene7397	gene9744	gene12873	gene11645		gene9754	gene9583
+gene6687	gene7406	gene9762	gene12881	gene11737		gene9755	gene9614
+gene6697	gene7437	gene9832	gene12886	gene11753		gene9766	gene9628
+gene6702	gene7451	gene9837	gene12887	gene11759		gene9845	gene9704
+gene6708	gene7452	gene9845		gene11783		gene9848	gene9716
+gene6713	gene7454	gene9891		gene11834		gene9857	gene9719
+gene6715	gene7463	gene9894		gene11840		gene9891	gene9744
+gene6717	gene7476	gene9907		gene11845		gene9907	gene9754
+gene6725	gene7494	gene9908		gene11850		gene9921	gene9760
+gene6731	gene7495	gene9909		gene11976		gene9926	gene9761
+gene6779	gene7511	gene9921		gene11997		gene9978	gene9762
+gene6827	gene7522	gene9978		gene12011		gene9991	gene9845
+gene6837	gene7550	gene10030		gene12020		gene10033	gene9857
+gene6845	gene7560	gene10033		gene12022		gene10052	gene9866
+gene6875	gene7568	gene10055		gene12035		gene10055	gene9877
+gene6876	gene7583	gene10107		gene12042		gene10107	gene9891
+gene6887	gene7594	gene10154		gene12052		gene10128	gene9907
+gene6895	gene7604	gene10172		gene12082		gene10133	gene9921
+gene6896	gene7613	gene10206		gene12089		gene10154	gene9950
+gene6908	gene7625	gene10250		gene12094		gene10206	gene9978
+gene6926	gene7658	gene10252		gene12105		gene10250	gene10006
+gene6929	gene7670	gene10272		gene12115		gene10275	gene10018
+gene6947	gene7684	gene10276		gene12137		gene10276	gene10031
+gene6968	gene7691	gene10314		gene12193		gene10279	gene10033
+gene6974	gene7712	gene10324		gene12206		gene10312	gene10055
+gene6981	gene7734	gene10356		gene12217		gene10314	gene10071
+gene6986	gene7742	gene10368		gene12226		gene10319	gene10107
+gene6992	gene7763	gene10395		gene12255		gene10324	gene10154
+gene7010	gene7792	gene10416		gene12268		gene10346	gene10206
+gene7013	gene7831	gene10436		gene12285		gene10356	gene10276
+gene7020	gene7838	gene10452		gene12306		gene10368	gene10301
+gene7030	gene7853	gene10500		gene12349		gene10372	gene10312
+gene7053	gene7873	gene10520		gene12356		gene10381	gene10314
+gene7075	gene7878	gene10550		gene12370		gene10395	gene10319
+gene7077	gene7879	gene10559		gene12376		gene10416	gene10346
+gene7088	gene7885	gene10636		gene12396		gene10424	gene10356
+gene7090	gene7892	gene10642		gene12404		gene10430	gene10364
+gene7130	gene7893	gene10657		gene12429		gene10436	gene10368
+gene7148	gene7902	gene10684		gene12446		gene10452	gene10372
+gene7165	gene7912	gene10692		gene12477		gene10462	gene10381
+gene7166	gene7939	gene10693		gene12489		gene10463	gene10386
+gene7191	gene7944	gene10713		gene12534		gene10483	gene10395
+gene7196	gene7958	gene10723		gene12547		gene10493	gene10405
+gene7208	gene7978	gene10767		gene12583		gene10500	gene10406
+gene7216	gene7983	gene10781		gene12619		gene10516	gene10424
+gene7217	gene7996	gene10787		gene12652		gene10520	gene10430
+gene7224	gene7997	gene10798		gene12677		gene10525	gene10434
+gene7225	gene8005	gene10818		gene12689		gene10545	gene10436
+gene7230	gene8017	gene10850		gene12707		gene10550	gene10452
+gene7233	gene8049	gene10882		gene12743		gene10596	gene10455
+gene7245	gene8074	gene10911		gene12769		gene10623	gene10469
+gene7254	gene8076	gene10920		gene12786		gene10636	gene10494
+gene7266	gene8086	gene10952		gene12873		gene10664	gene10500
+gene7279	gene8095	gene10965		gene12885		gene10684	gene10520
+gene7287	gene8105	gene11006		gene12887		gene10692	gene10529
+gene7324	gene8129	gene11080				gene10693	gene10550
+gene7336	gene8138	gene11147				gene10703	gene10553
+gene7348	gene8149	gene11152				gene10723	gene10578
+gene7353	gene8177	gene11199				gene10766	gene10597
+gene7368	gene8190	gene11208				gene10767	gene10636
+gene7378	gene8191	gene11257				gene10768	gene10678
+gene7394	gene8197	gene11274				gene10793	gene10684
+gene7401	gene8215	gene11291				gene10806	gene10692
+gene7419	gene8219	gene11303				gene10818	gene10693
+gene7420	gene8236	gene11340				gene10850	gene10703
+gene7448	gene8252	gene11343				gene10856	gene10723
+gene7494	gene8259	gene11380				gene10882	gene10729
+gene7501	gene8264	gene11395				gene10886	gene10766
+gene7527	gene8285	gene11408				gene10906	gene10767
+gene7594	gene8297	gene11409				gene10908	gene10768
+gene7603	gene8302	gene11411				gene10911	gene10818
+gene7604	gene8303	gene11417				gene10920	gene10820
+gene7627	gene8317	gene11456				gene10965	gene10828
+gene7734	gene8324	gene11483				gene10984	gene10850
+gene7750	gene8348	gene11508				gene11030	gene10894
+gene7805	gene8355	gene11511				gene11067	gene10907
+gene7823	gene8372	gene11516				gene11074	gene10911
+gene7853	gene8406	gene11520				gene11080	gene10920
+gene7893	gene8414	gene11537				gene11106	gene10965
+gene7902	gene8442	gene11566				gene11132	gene11006
+gene7912	gene8450	gene11570				gene11139	gene11038
+gene7966	gene8487	gene11573				gene11147	gene11067
+gene7975	gene8531	gene11593				gene11152	gene11080
+gene7978	gene8538	gene11601				gene11175	gene11081
+gene7996	gene8610	gene11614				gene11208	gene11147
+gene7997	gene8630	gene11628				gene11274	gene11208
+gene8000	gene8638	gene11638				gene11291	gene11257
+gene8016	gene8641	gene11645				gene11303	gene11291
+gene8017	gene8656	gene11690				gene11338	gene11312
+gene8048	gene8684	gene11693				gene11380	gene11380
+gene8049	gene8691	gene11695				gene11386	gene11386
+gene8070	gene8706	gene11719				gene11388	gene11395
+gene8074	gene8753	gene11738				gene11395	gene11411
+gene8076	gene8773	gene11753				gene11407	gene11417
+gene8106	gene8778	gene11754				gene11409	gene11418
+gene8144	gene8780	gene11759				gene11411	gene11422
+gene8182	gene8787	gene11773				gene11417	gene11423
+gene8191	gene8788	gene11834				gene11423	gene11437
+gene8215	gene8799	gene11840				gene11437	gene11456
+gene8218	gene8849	gene11845				gene11456	gene11483
+gene8219	gene8850	gene11907				gene11470	gene11488
+gene8245	gene8881	gene11981				gene11483	gene11502
+gene8252	gene8892	gene12011				gene11502	gene11507
+gene8259	gene8893	gene12017				gene11508	gene11511
+gene8264	gene8898	gene12035				gene11511	gene11520
+gene8275	gene8909	gene12042				gene11520	gene11526
+gene8285	gene8933	gene12052				gene11531	gene11531
+gene8293	gene8940	gene12064				gene11537	gene11537
+gene8303	gene8941	gene12094				gene11558	gene11570
+gene8324	gene8960	gene12105				gene11560	gene11573
+gene8329	gene8972	gene12115				gene11570	gene11593
+gene8348	gene8974	gene12121				gene11573	gene11616
+gene8349	gene9013	gene12160				gene11593	gene11628
+gene8442	gene9032	gene12217				gene11601	gene11640
+gene8474	gene9061	gene12226				gene11614	gene11645
+gene8481	gene9117	gene12236				gene11617	gene11693
+gene8487	gene9151	gene12260				gene11628	gene11695
+gene8500	gene9153	gene12268				gene11645	gene11719
+gene8531	gene9158	gene12272				gene11679	gene11737
+gene8541	gene9159	gene12285				gene11710	gene11753
+gene8568	gene9160	gene12302				gene11727	gene11759
+gene8571	gene9164	gene12356				gene11737	gene11834
+gene8630	gene9168	gene12370				gene11741	gene11840
+gene8638	gene9196	gene12376				gene11753	gene11845
+gene8640	gene9237	gene12396				gene11759	gene11848
+gene8641	gene9245	gene12404				gene11822	gene11907
+gene8649	gene9280	gene12429				gene11834	gene11981
+gene8656	gene9287	gene12438				gene11840	gene11997
+gene8683	gene9288	gene12446				gene11845	gene12011
+gene8716	gene9301	gene12457				gene11911	gene12017
+gene8773	gene9321	gene12477				gene11928	gene12023
+gene8778	gene9325	gene12489				gene11942	gene12035
+gene8791	gene9354	gene12534				gene11981	gene12042
+gene8816	gene9366	gene12547				gene11997	gene12052
+gene8833	gene9382	gene12619				gene12011	gene12094
+gene8849	gene9398	gene12652				gene12022	gene12105
+gene8852	gene9401	gene12677				gene12035	gene12115
+gene8871	gene9404	gene12707				gene12042	gene12121
+gene8892	gene9442	gene12717				gene12052	gene12133
+gene8893	gene9461	gene12718				gene12082	gene12191
+gene8900	gene9467	gene12743				gene12094	gene12206
+gene8909	gene9475	gene12746				gene12105	gene12217
+gene8910	gene9583	gene12757				gene12121	gene12226
+gene8925	gene9628	gene12769				gene12131	gene12255
+gene8941	gene9664	gene12817				gene12193	gene12268
+gene8960	gene9680	gene12822				gene12206	gene12284
+gene8974	gene9695	gene12860				gene12217	gene12299
+gene8975	gene9704	gene12873				gene12226	gene12304
+gene9013	gene9719	gene12887				gene12255	gene12356
+gene9032	gene9744					gene12262	gene12376
+gene9040	gene9750					gene12263	gene12387
+gene9047	gene9754					gene12268	gene12396
+gene9061	gene9762					gene12285	gene12401
+gene9074	gene9766					gene12311	gene12411
+gene9090	gene9788					gene12356	gene12429
+gene9112	gene9837					gene12370	gene12446
+gene9113	gene9845					gene12376	gene12477
+gene9117	gene9857					gene12383	gene12489
+gene9153	gene9860					gene12396	gene12513
+gene9158	gene9891					gene12404	gene12520
+gene9160	gene9907					gene12429	gene12534
+gene9164	gene9921					gene12446	gene12547
+gene9196	gene9978					gene12477	gene12628
+gene9237	gene10033					gene12489	gene12652
+gene9287	gene10055					gene12501	gene12677
+gene9288	gene10107					gene12505	gene12702
+gene9321	gene10206					gene12513	gene12707
+gene9327	gene10209					gene12534	gene12743
+gene9332	gene10252					gene12547	gene12793
+gene9343	gene10276					gene12551	gene12817
+gene9354	gene10297					gene12616	gene12822
+gene9366	gene10313					gene12628	gene12835
+gene9382	gene10318					gene12652	gene12873
+gene9398	gene10319					gene12677	
+gene9404	gene10356					gene12694	
+gene9406	gene10362					gene12707	
+gene9407	gene10364					gene12734	
+gene9448	gene10372					gene12743	
+gene9475	gene10381					gene12746	
+gene9486	gene10395					gene12756	
+gene9505	gene10416					gene12807	
+gene9510	gene10436					gene12822	
+gene9515	gene10448					gene12832	
+gene9557	gene10452					gene12847	
+gene9583	gene10454					gene12857	
+gene9602	gene10463					gene12873	
+gene9609	gene10469						
+gene9628	gene10489						
+gene9671	gene10500						
+gene9695	gene10520						
+gene9704	gene10550						
+gene9744	gene10578						
+gene9762	gene10597						
+gene9837	gene10629						
+gene9845	gene10636						
+gene9857	gene10640						
+gene9891	gene10657						
+gene9907	gene10664						
+gene9921	gene10684						
+gene9974	gene10692						
+gene9978	gene10693						
+gene10008	gene10710						
+gene10033	gene10723						
+gene10055	gene10767						
+gene10075	gene10786						
+gene10105	gene10807						
+gene10107	gene10818						
+gene10145	gene10823						
+gene10154	gene10850						
+gene10156	gene10882						
+gene10206	gene10892						
+gene10250	gene10911						
+gene10276	gene10920						
+gene10298	gene10936						
+gene10314	gene10952						
+gene10319	gene10962						
+gene10346	gene10965						
+gene10356	gene10982						
+gene10371	gene11006						
+gene10381	gene11080						
+gene10395	gene11135						
+gene10436	gene11137						
+gene10452	gene11147						
+gene10500	gene11152						
+gene10520	gene11184						
+gene10550	gene11199						
+gene10553	gene11208						
+gene10565	gene11250						
+gene10577	gene11269						
+gene10578	gene11343						
+gene10628	gene11386						
+gene10636	gene11395						
+gene10642	gene11401						
+gene10649	gene11409						
+gene10664	gene11411						
+gene10684	gene11417						
+gene10692	gene11423						
+gene10693	gene11430						
+gene10723	gene11433						
+gene10731	gene11437						
+gene10767	gene11439						
+gene10768	gene11440						
+gene10784	gene11456						
+gene10786	gene11470						
+gene10818	gene11472						
+gene10820	gene11482						
+gene10828	gene11502						
+gene10882	gene11511						
+gene10897	gene11520						
+gene10911	gene11526						
+gene10920	gene11531						
+gene10924	gene11537						
+gene10952	gene11552						
+gene10965	gene11570						
+gene11039	gene11573						
+gene11049	gene11593						
+gene11080	gene11601						
+gene11109	gene11628						
+gene11147	gene11644						
+gene11152	gene11645						
+gene11188	gene11695						
+gene11208	gene11708						
+gene11236	gene11719						
+gene11257	gene11737						
+gene11278	gene11741						
+gene11303	gene11745						
+gene11343	gene11759						
+gene11380	gene11834						
+gene11386	gene11840						
+gene11395	gene11845						
+gene11408	gene11850						
+gene11411	gene11868						
+gene11417	gene11897						
+gene11434	gene11949						
+gene11456	gene11981						
+gene11472	gene12011						
+gene11482	gene12017						
+gene11511	gene12035						
+gene11520	gene12052						
+gene11526	gene12080						
+gene11537	gene12094						
+gene11570	gene12103						
+gene11573	gene12105						
+gene11593	gene12115						
+gene11601	gene12121						
+gene11616	gene12193						
+gene11618	gene12206						
+gene11640	gene12217						
+gene11645	gene12226						
+gene11710	gene12231						
+gene11717	gene12246						
+gene11719	gene12255						
+gene11737	gene12268						
+gene11753	gene12284						
+gene11759	gene12285						
+gene11804	gene12356						
+gene11834	gene12370						
+gene11837	gene12371						
+gene11840	gene12376						
+gene11845	gene12383						
+gene11957	gene12396						
+gene11981	gene12429						
+gene12011	gene12438						
+gene12017	gene12446						
+gene12022	gene12477						
+gene12023	gene12489						
+gene12035	gene12513						
+gene12042	gene12521						
+gene12052	gene12534						
+gene12082	gene12547						
+gene12094	gene12551						
+gene12103	gene12606						
+gene12105	gene12628						
+gene12115	gene12652						
+gene12134	gene12677						
+gene12144	gene12707						
+gene12206	gene12734						
+gene12217	gene12743						
+gene12226	gene12757						
+gene12285	gene12777						
+gene12318	gene12810						
+gene12356	gene12817						
+gene12370	gene12835						
+gene12376	gene12847						
+gene12396	gene12867						
+gene12404	gene12873						
+gene12414	gene12887						
+gene12429							
+gene12446							
+gene12477							
+gene12489							
+gene12532							
+gene12534							
+gene12547							
+gene12593							
+gene12636							
+gene12652							
+gene12677							
+gene12707							
+gene12734							
+gene12743							
+gene12758							
+gene12769							
+gene12783							
+gene12817							
+gene12822							
+gene12873							
+gene12885							
+gene12887							
