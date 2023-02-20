@@ -439,7 +439,8 @@ GO<-enrichGO( ids$ENTREZID,
               ont = "ALL",
               pvalueCutoff = 0.05,
               qvalueCutoff = 0.2, #默认值
-              readable = T) # 可读性 # minGSSize = 10 # 默认值，最小的基因数量
+              minGSSize = 10, #  默认值，最小的基因富集数量
+              readable = T) # 可读性 
 
 #barplot(GO)
 #write.csv(GO,file="GO_enrich.csv")
@@ -453,6 +454,7 @@ goCC <- enrichGO(ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 goBP <- enrichGO(ids$ENTREZID,
@@ -461,6 +463,7 @@ goBP <- enrichGO(ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 goMF <- enrichGO(ids$ENTREZID,
@@ -469,6 +472,7 @@ goMF <- enrichGO(ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 
@@ -566,6 +570,7 @@ GO<-enrichGO( Up_ids$ENTREZID,
               ont = "ALL",
               pvalueCutoff = 0.05,
               qvalueCutoff = 0.2,
+              minGSSize = 10, #  默认值，最小的基因富集数量
               readable = T)
 
 
@@ -593,6 +598,7 @@ goCC <- enrichGO(Up_ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 goBP <- enrichGO(Up_ids$ENTREZID,
@@ -601,6 +607,7 @@ goBP <- enrichGO(Up_ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 goMF <- enrichGO(Up_ids$ENTREZID,
@@ -609,6 +616,7 @@ goMF <- enrichGO(Up_ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 GO_bar<- barplot(GO, split="ONTOLOGY")+ facet_grid(ONTOLOGY~.,scale="free")
@@ -643,6 +651,7 @@ GO<-enrichGO( Down_ids$ENTREZID,
               ont = "ALL",
               pvalueCutoff = 0.05,
               qvalueCutoff = 0.2,
+              minGSSize = 10, #  默认值，最小的基因富集数量
               readable = T)
 
 
@@ -671,6 +680,7 @@ goCC <- enrichGO(Down_ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 goBP <- enrichGO(Down_ids$ENTREZID,
@@ -679,6 +689,7 @@ goBP <- enrichGO(Down_ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 goMF <- enrichGO(Down_ids$ENTREZID,
@@ -687,6 +698,7 @@ goMF <- enrichGO(Down_ids$ENTREZID,
                  pAdjustMethod = 'BH',
                  pvalueCutoff = 0.05,
                  qvalueCutoff = 0.2,
+                 minGSSize = 10, #  默认值，最小的基因富集数量
                  keyType = 'ENTREZID')
 
 GO_bar<- barplot(GO, split="ONTOLOGY")+ facet_grid(ONTOLOGY~.,scale="free")
@@ -722,7 +734,9 @@ dev.off()
 kegg_enrich <- enrichKEGG( ids$ENTREZID,
               organism   = "rno", #需要小写，https://www.genome.jp/kegg/catalog/org_list.html
               pvalueCutoff = 0.05,
-              qvalueCutoff = 0.2)
+              qvalueCutoff = 0.2,
+              minGSSize = 10, #  默认值，最小的基因富集数量
+              )
 
 kk_read <- DOSE::setReadable(kegg_enrich, 
                              OrgDb="org.Rn.eg.db", 
@@ -765,7 +779,9 @@ ggsave(paste(KEGG_dir, paste(group_str,'KEGG_cnet.pdf', sep = "."), sep = "/"),p
 kegg_enrich <- enrichKEGG( Up_ids$ENTREZID,
                            organism   = "rno", #需要小写，https://www.genome.jp/kegg/catalog/org_list.html
                            pvalueCutoff = 0.05,
-                           qvalueCutoff = 0.2)
+                           qvalueCutoff = 0.2,
+                           minGSSize = 10, #  默认值，最小的基因富集数量
+                         )
 
 kk_read <- DOSE::setReadable(kegg_enrich, 
                              OrgDb="org.Rn.eg.db", 
@@ -804,7 +820,9 @@ ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_cnet.pdf', sep = "."), sep = 
 kegg_enrich <- enrichKEGG( Down_ids$ENTREZID,
                            organism   = "rno", #需要小写，https://www.genome.jp/kegg/catalog/org_list.html
                            pvalueCutoff = 0.05,
-                           qvalueCutoff = 0.2)
+                           qvalueCutoff = 0.2,
+                           minGSSize = 10, #  默认值，最小的基因富集数量
+                         )
 
 kk_read <- DOSE::setReadable(kegg_enrich, 
                              OrgDb="org.Rn.eg.db", 
