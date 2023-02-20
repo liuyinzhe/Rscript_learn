@@ -53,7 +53,7 @@ suppressMessages({
   library(topGO)
 })
 
-# all.counts.txt 多个bam 的featurecounts 结果
+# 多个hisat2 比对bam 按照 处理组3个样品与对照组3个样品bam 顺序作为featurecounts输入 后的结果是 all.counts.txt
 #样品整体，相关系数
 raw_data = read.table('all.counts.txt',header = T,row.names='Geneid',check.names=F)
 # 取6列及之后内容
