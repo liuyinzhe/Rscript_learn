@@ -1,14 +1,15 @@
+
 rm(list = ls())
 options(stringsAsFactors = F)
-setwd('D:\\Rscript\\A_vs_B')
-group_str <- 'A_vs_B'
+setwd('D:\\Rscript\\A_vs_WT')
+group_str <- 'A_vs_WT'
 #paste("group_str", "xiaoming", sep = ".")
 
 par(ask=T)
 ##################需要修改的 ###########
-#[0] 分组信息condition <- factor(c(rep("Cre",3),rep("WT",3))) #condition <- factor(c(rep("Cre",3),rep("WT",3)),levels = c("Cre","WT"))
-#[1] 分组最重要的地方，有时候上面分组会混乱，这里一锤定音 res <- results(dds1,contrast = c('condition', 'Cre', 'WT'))
-#[2] 物种数据库 org.Rn.eg.db替换org.Smaltophilia.eg.db  # 只能对应两个字母，并且第一个字母大写
+#[0] 分组信息condition <- factor(c(rep("A",3),rep("WT",3))) #condition <- factor(c(rep("A",3),rep("WT",3)),levels = c("A","WT"))
+#[1] 分组最重要的地方，有时候上面分组会混乱，这里一锤定音 res <- results(dds1,contrast = c('condition', 'A', 'WT'))
+#[2] 物种数据库 org.Rn.eg.db替换org.Saureus.eg.db  # 只能对应两个字母，并且第一个字母大写
 #[3] KEGG 注释enrichKEGG 函数 organism   = "mmu", #Rno #三个字母#需要小写，https://www.genome.jp/kegg/catalog/org_list.html
 #
 #####################
@@ -51,6 +52,7 @@ suppressMessages({
   library(topGO)
 })
 
+# 多个bam 按照 处理组3个样品与对照组3个样品bam 顺序作为featurecounts输入 后的结果是 all.counts.txt
 #样品整体，相关系数
 raw_data = read.table('all.counts.txt',header = T,row.names='Geneid',check.names=F)
 countData <- as.matrix(raw_data[,6:ncol(raw_data)])
@@ -130,7 +132,7 @@ write.table(gene_TPM, file =paste(group_str, "gene_TPM.tsv", sep = "."), sep="\t
 ##########################################  分组信息 ################################################
 #绘制 箱式图
 # 列分组信息
-condition <- factor(c(rep("A",3),rep("B",3)),levels = c("A","B"))
+condition <- factor(c(rep("A",3),rep("WT",3)),levels = c("A","WT"))
 # 合成列分组信息
 colData <- data.frame(row.names=colnames(countData), condition)
 
@@ -271,7 +273,7 @@ ggsave(paste(group_str, 'PCA.pdf', sep = "."),plot=pcaData,height=6, width=8,uni
 #标准化
 dds1 <- DESeq(dds, fitType = 'mean', minReplicatesForReplace = 7, parallel = FALSE) 
 #将结果用result()函数来获取，contrast 控制顺序，处理组与对照组
-res <- results(dds1,contrast = c('condition', 'A', 'B'))
+res <- results(dds1,contrast = c('condition', 'A', 'WT'))
 #summary(res) 
 
 
@@ -354,7 +356,7 @@ volcano <- ggplot(
   theme_bw() +
   scale_color_manual(values = color) +
   # 辅助线
-  labs(x="log2 (fold change)",y="-log10 (q-value)") +
+  labs(x="log2 (fold change)",y="-log10 (p-value)") +
   geom_hline(yintercept = -log10(0.05), lty=4,col="grey",lwd=0.6) +
   geom_vline(xintercept = c(-1, 1), lty=4,col="grey",lwd=0.6) +
   # 图例
@@ -364,7 +366,7 @@ volcano <- ggplot(
         axis.title = element_text(size = 16),
         axis.text = element_text(size = 14)
         
-  ) +
+  ) + coord_cartesian(xlim =c(-10, 10))+
   # 添加 top10
   geom_label_repel(data = top_10,
                    aes(log2FoldChange, -log10(pvalue), label = symbol,color = color),
@@ -393,17 +395,20 @@ library(dplyr)
 load(file = "kegg_info.RData")
 write.table(pathway2name,file = "./pathway2name.txt", sep = "\t", quote = F, row.names = F)
 
-install.packages("./org.Smaltophilia.eg.db", repos=NULL,type='source')
-library(org.Smaltophilia.eg.db)
-columns(org.Smaltophilia.eg.db)
+remove.packages("org.Saureus.eg.db")
+install.packages("./org.Saureus.eg.db", repos=NULL,type='source')
+
+library(org.Saureus.eg.db)
+columns(org.Saureus.eg.db)
+
 # 查看所有基因
-keys(org.Smaltophilia.eg.db)
+keys(org.Saureus.eg.db)
 # 查看特定基因的信息
 # library(dplyr)
-#select(org.Smaltophilia.eg.db, keys = "CW07G09620", columns = c("GO"))
+#select(org.Saureus.eg.db, keys = "CW07G09620", columns = c("GO"))
 
-pathway2gene <- AnnotationDbi::select(org.Smaltophilia.eg.db, 
-                                      keys = keys(org.Smaltophilia.eg.db), 
+pathway2gene <- AnnotationDbi::select(org.Saureus.eg.db, 
+                                      keys = keys(org.Saureus.eg.db), 
                                       columns = c("Pathway","Ko")) %>%
   na.omit() %>%
   dplyr::select(Pathway, GID)
@@ -416,28 +421,29 @@ write.table(pathway2gene,file = "./pathway2gene.txt", sep = "\t", quote = F, row
 suppressMessages({
   library(clusterProfiler)
   library(AnnotationDbi)
-  library(org.Smaltophilia.eg.db)
+  library(org.Saureus.eg.db)
   library(enrichplot)
 })
 # ID 转换
 ids<-rownames(res1_total)
 Up_ids<-rownames(res1_up)
 Down_ids<-rownames(res1_down)      
-#ids<- bitr(rownames(res1_total), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Smaltophilia.eg.db ,drop = T)
+#ids<- bitr(rownames(res1_total), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Saureus.eg.db ,drop = T)
 
-#Up_ids<- bitr(rownames(res1_up), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Smaltophilia.eg.db ,drop = T)
-#Down_ids<- bitr(rownames(res1_down), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Smaltophilia.eg.db ,drop = T)
+#Up_ids<- bitr(rownames(res1_up), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Saureus.eg.db ,drop = T)
+#Down_ids<- bitr(rownames(res1_down), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Saureus.eg.db ,drop = T)
 
 ############################总的GO############################
 # GO富集分析
 
 GO <- enrichGO(gene=ids,
-               OrgDb=org.Smaltophilia.eg.db,
+               OrgDb=org.Saureus.eg.db,
                keyType="GID",
                ont="ALL",   #CC/BP/MF可选
-               qvalueCutoff = 1,
-               pvalueCutoff = 1,
-               minGSSize = 1)
+               pvalueCutoff = 0.05, # 默认值0.05
+               qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+               minGSSize = 10)  # 默认值，富集的最小基因数量
+
 
 
 #barplot(GO)
@@ -447,32 +453,33 @@ write.table(GO, file =paste(GO_dir, "GO_enrich.tsv", sep = "/"), sep="\t",
             row.names = FALSE,col.names =TRUE, quote =TRUE)
 
 goCC <- enrichGO(gene=ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='CC',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
+
 
 goBP <- enrichGO(gene=ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='BP',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
+
 
 goMF <- enrichGO(gene=ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='MF',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
-
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
 
 ################################  barplot #####################################
 GO_bar<- barplot(GO, split="ONTOLOGY")+ facet_grid(ONTOLOGY~.,scale="free")
@@ -563,12 +570,13 @@ dev.off()
 ############################UP GO############################
 
 GO <- enrichGO(gene=Up_ids,
-               OrgDb=org.Smaltophilia.eg.db,
+               OrgDb=org.Saureus.eg.db,
                keyType="GID",
                ont="ALL",   #CC/BP/MF可选
-               qvalueCutoff = 1,
-               pvalueCutoff = 1,
-               minGSSize = 1)
+               pvalueCutoff = 0.05, # 默认值0.05
+               qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+               minGSSize = 10)  # 默认值，富集的最小基因数量
+
 
 
 #barplot(GO)
@@ -590,31 +598,34 @@ ggsave(paste(GO_dir_up, paste(group_str,'Up_GO_emap.png', sep = "."), sep = "/")
 ggsave(paste(GO_dir_up, paste(group_str,'Up_GO_emap.pdf', sep = "."), sep = "/"),plot=emap,height=12, width=16, units="in",dpi=300)
 
 goCC <- enrichGO(gene=Up_ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='CC',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
+
 
 goBP <- enrichGO(gene=Up_ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='BP',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
+
 
 goMF <- enrichGO(gene=Up_ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='MF',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
+
 
 GO_bar<- barplot(GO, split="ONTOLOGY")+ facet_grid(ONTOLOGY~.,scale="free")
 
@@ -643,12 +654,12 @@ dev.off()
 
 ############################down GO############################
 GO<-enrichGO( gene=Down_ids,
-              OrgDb = org.Smaltophilia.eg.db,
+              OrgDb = org.Saureus.eg.db,
               keyType = "GID",
               ont = "ALL",
-              pvalueCutoff = 1,
-              qvalueCutoff = 1,
-              minGSSize = 1)
+              pvalueCutoff = 0.05, # 默认值0.05
+              qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+              minGSSize = 10)  # 默认值，富集的最小基因数量
 
 
 #barplot(GO)
@@ -671,31 +682,31 @@ ggsave(paste(GO_dir_down, paste(group_str,'Down_GO_emap.pdf', sep = "."), sep = 
 
 
 goCC <- enrichGO(gene=Down_ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='CC',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
 
 goBP <- enrichGO(gene=Down_ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='BP',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
 
 goMF <- enrichGO(gene=Down_ids,
-                 OrgDb = org.Smaltophilia.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='MF',
                  pAdjustMethod = 'BH',
-                 pvalueCutoff = 1,
-                 qvalueCutoff = 1,
-                 minGSSize = 1)
+                 pvalueCutoff = 0.05, # 默认值0.05
+                 qvalueCutoff = 0.2,  # 默认值0.2，是pvalue 的校正值 更严格
+                 minGSSize = 10)  # 默认值，富集的最小基因数量
 
 GO_bar<- barplot(GO, split="ONTOLOGY")+ facet_grid(ONTOLOGY~.,scale="free")
 
@@ -735,13 +746,13 @@ dev.off()
 kegg_enrich <- enricher(gene=ids, 
                         TERM2GENE = pathway2gene, 
                         TERM2NAME = pathway2name, 
-                        pvalueCutoff = 1,  # 表示全部保留，可以设为0.05作为阈值
-                        qvalueCutoff = 1, # 表示全部保留，可以设为0.05作为阈值
+                        pvalueCutoff = 0.05,  # 表示全部保留，可以设为0.05作为阈值
+                        qvalueCutoff = 0.2, # 表示全部保留，可以设为0.2作为阈值
                         pAdjustMethod = "BH",
-                        minGSSize = 1)
+                        minGSSize = 10) # 默认值10，最小富集的基因数量
 
 #kk_read <- DOSE::setReadable(kegg_enrich, 
-#OrgDb="org.Smaltophilia.eg.db", 
+#OrgDb="org.Saureus.eg.db", 
 #keyType='ENTREZID')#ENTREZID to gene Symbol
 
 write.table(kegg_enrich, file =paste(KEGG_dir, paste(group_str,'KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
@@ -759,7 +770,7 @@ ggsave(paste(KEGG_dir, paste(group_str,'KEGG_emap.png', sep = "."), sep = "/"),p
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_emap.pdf', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 
 
-kegg_bar<- barplot(kegg_enrich)
+kegg_bar<- barplot(kegg_enrich,showCategory=10)
 
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_bar.png', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_bar.pdf', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
@@ -782,10 +793,10 @@ ggsave(paste(KEGG_dir, paste(group_str,'KEGG_cnet.pdf', sep = "."), sep = "/"),p
 kegg_enrich <- enricher(gene=Up_ids, 
                         TERM2GENE = pathway2gene, 
                         TERM2NAME = pathway2name, 
-                        pvalueCutoff = 1,  # 表示全部保留，可以设为0.05作为阈值
-                        qvalueCutoff = 1, # 表示全部保留，可以设为0.05作为阈值
+                        pvalueCutoff = 0.05,  # 表示全部保留，可以设为0.05作为阈值
+                        qvalueCutoff = 0.2, # 表示全部保留，可以设为0.2作为阈值
                         pAdjustMethod = "BH",
-                        minGSSize = 1)
+                        minGSSize = 10) # 默认值10，最小富集的基因数量
 
 
 write.table(kegg_enrich, file =paste(KEGG_dir_up, paste(group_str,'Up_KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
@@ -803,7 +814,7 @@ ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_emap.png', sep = "."), sep = 
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_emap.pdf', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 
 
-kegg_bar<- barplot(kegg_enrich)
+kegg_bar<- barplot(kegg_enrich,showCategory=10)
 
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_bar.png', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_bar.pdf', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
@@ -825,10 +836,10 @@ ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_cnet.pdf', sep = "."), sep = 
 kegg_enrich <- enricher(gene=Down_ids, 
                         TERM2GENE = pathway2gene, 
                         TERM2NAME = pathway2name, 
-                        pvalueCutoff = 1,  # 表示全部保留，可以设为0.05作为阈值
-                        qvalueCutoff = 1, # 表示全部保留，可以设为0.05作为阈值
+                        pvalueCutoff = 0.05,  # 表示全部保留，可以设为0.05作为阈值
+                        qvalueCutoff = 0.2, # 表示全部保留，可以设为0.2作为阈值
                         pAdjustMethod = "BH",
-                        minGSSize = 1)
+                        minGSSize = 10) # 默认值10，最小富集的基因数量
 
 
 
@@ -847,7 +858,7 @@ ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_emap.png', sep = "."), se
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_emap.pdf', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 
 
-kegg_bar<- barplot(kegg_enrich)
+kegg_bar<- barplot(kegg_enrich,showCategory=10)
 
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_bar.png', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_bar.pdf', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
@@ -859,3 +870,4 @@ ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_cnet.pdf', sep = "."), se
 
 ############################down kegg############################
 #https://zhuanlan.zhihu.com/p/518134934
+
