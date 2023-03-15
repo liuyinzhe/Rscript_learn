@@ -746,27 +746,27 @@ kk_read <- DOSE::setReadable(kegg_enrich,
 #OrgDb="org.Rn.eg.db", 
 #keyType='ENTREZID')#ENTREZID to gene Symbol
 
-write.table(kegg_enrich, file =paste(KEGG_dir, paste(group_str,'KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
+write.table(kk_read, file =paste(KEGG_dir, paste(group_str,'KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
             row.names = FALSE,col.names =TRUE, quote =TRUE)
 
 
-KEGG_dot<- dotplot(kegg_enrich,showCategory=10)
+KEGG_dot<- dotplot(kk_read,showCategory=10)
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_dot.png', sep = "."), sep = "/"),plot=KEGG_dot,height=8, width=12, units="in",dpi=300)
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_dot.pdf', sep = "."), sep = "/"),plot=KEGG_dot,height=8, width=12, units="in",dpi=300)
 
-KEGG_pt <- pairwise_termsim(kegg_enrich)
+KEGG_pt <- pairwise_termsim(kk_read)
 kegg_emap <- emapplot(KEGG_pt)
 
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_emap.png', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_emap.pdf', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 
 
-kegg_bar<- barplot(kegg_enrich)
+kegg_bar<- barplot(kk_read)
 
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_bar.png', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_bar.pdf', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 
-kegg_cnet<- cnetplot(kegg_enrich)
+kegg_cnet<- cnetplot(kk_read)
 
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_cnet.png', sep = "."), sep = "/"),plot=kegg_cnet,height=12, width=18, units="in",dpi=300)
 ggsave(paste(KEGG_dir, paste(group_str,'KEGG_cnet.pdf', sep = "."), sep = "/"),plot=kegg_cnet,height=12, width=18, units="in",dpi=300)
@@ -788,27 +788,27 @@ kk_read <- DOSE::setReadable(kegg_enrich,
                              keyType='ENTREZID')#ENTREZID to gene Symbol
 
 
-write.table(kegg_enrich, file =paste(KEGG_dir_up, paste(group_str,'Up_KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
+write.table(kk_read, file =paste(KEGG_dir_up, paste(group_str,'Up_KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
             row.names = FALSE,col.names =TRUE, quote =TRUE)
 
 
-KEGG_dot<- dotplot(kegg_enrich,showCategory=10)
+KEGG_dot<- dotplot(kk_read,showCategory=10)
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_dot.png', sep = "."), sep = "/"),plot=KEGG_dot,height=8, width=12, units="in",dpi=300)
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_dot.pdf', sep = "."), sep = "/"),plot=KEGG_dot,height=8, width=12, units="in",dpi=300)
 
-KEGG_pt <- pairwise_termsim(kegg_enrich)
+KEGG_pt <- pairwise_termsim(kk_read)
 kegg_emap <- emapplot(KEGG_pt)
 
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_emap.png', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_emap.pdf', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 
 
-kegg_bar<- barplot(kegg_enrich)
+kegg_bar<- barplot(kk_read)
 
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_bar.png', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_bar.pdf', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 
-kegg_cnet<- cnetplot(kegg_enrich)
+kegg_cnet<- cnetplot(kk_read)
 
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_cnet.png', sep = "."), sep = "/"),plot=kegg_cnet,height=12, width=18, units="in",dpi=300)
 ggsave(paste(KEGG_dir_up, paste(group_str,'Up_KEGG_cnet.pdf', sep = "."), sep = "/"),plot=kegg_cnet,height=12, width=18, units="in",dpi=300)
@@ -830,27 +830,27 @@ kk_read <- DOSE::setReadable(kegg_enrich,
 
 
 
-write.table(kegg_enrich, file =paste(KEGG_dir_down, paste(group_str,'Down_KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
+write.table(kk_read, file =paste(KEGG_dir_down, paste(group_str,'Down_KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
             row.names = FALSE,col.names =TRUE, quote =TRUE)
 
 
-KEGG_dot<- dotplot(kegg_enrich,showCategory=10)
+KEGG_dot<- dotplot(kk_read,showCategory=10)
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_dot.png', sep = "."), sep = "/"),plot=KEGG_dot,height=8, width=12, units="in",dpi=300)
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_dot.pdf', sep = "."), sep = "/"),plot=KEGG_dot,height=8, width=12, units="in",dpi=300)
 
-KEGG_pt <- pairwise_termsim(kegg_enrich)
+KEGG_pt <- pairwise_termsim(kk_read)
 kegg_emap <- emapplot(KEGG_pt)
 
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_emap.png', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_emap.pdf', sep = "."), sep = "/"),plot=kegg_emap,height=12, width=16, units="in",dpi=300)
 
 
-kegg_bar<- barplot(kegg_enrich)
+kegg_bar<- barplot(kk_read)
 
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_bar.png', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_bar.pdf', sep = "."), sep = "/"),plot=kegg_bar,height=12, width=16, units="in",dpi=300)
 
-kegg_cnet<- cnetplot(kegg_enrich)
+kegg_cnet<- cnetplot(kk_read)
 
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_cnet.png', sep = "."), sep = "/"),plot=kegg_cnet,height=12, width=18, units="in",dpi=300)
 ggsave(paste(KEGG_dir_down, paste(group_str,'Down_KEGG_cnet.pdf', sep = "."), sep = "/"),plot=kegg_cnet,height=12, width=18, units="in",dpi=300)
