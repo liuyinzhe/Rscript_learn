@@ -1,45 +1,5 @@
-
-
-
 library(ggplot2)
 setwd("D:\\Rscript\\example")
-
-#样品整体，相关系数
-raw_data = read.table('all.counts.txt',header = T,row.names='Geneid',check.names=F)
-# 取6列及之后内容
-countData <- as.matrix(raw_data[,6:ncol(raw_data)])
-
-
-############################### Count 数据过滤 #################################
-# 去除表达量过低的基因
-countData <- countData[rowMeans(countData)>0,]
-
-########################################## 转换函数 ################################################
-#Counts FPKM RPKM TPM CPM 的转化
-#http://events.jianshu.io/p/2474dec2ab2f
-
-#FPKM/RPKM (Fragments/Reads Per Kilobase Million )  每千个碱基的转录每百万映射读取的Fragments/reads
-#RPKM与FPKM分别针对单端与双端测序而言，计算公式是一样的
-counts2FPKM <- function(count=count, efflength=efflen){
-  PMSC_counts <- sum(count)/1e6   #counts的每百万缩放因子 (“per million” scaling factor) 深度标准化
-  FPM <- count/PMSC_counts        #每百万reads/Fragments (Reads/Fragments Per Million) 长度标准化
-  FPM/(efflength/1000)
-}
-
-# 去掉染色体坐标与外显子长度列
-xcout=raw_data[,6:ncol(raw_data)]
-
-fpkm <- as.data.frame(apply(xcout,2,counts2FPKM,efflength=x$Length))
-# 过滤掉全为0的
-fpkm <- fpkm[rowMeans(fpkm)>0,]
-
-
-# 写 FPKM 
-# cbind 行index 加入新列变量名GeneID，就是新名字
-gene_FPKM=cbind(GeneID=row.names(fpkm), fpkm)
-write.table(gene_FPKM, file =paste(group_str, "gene_FPKM.tsv", sep = "."), sep="\t",
-            row.names = FALSE,col.names =TRUE, quote =TRUE)
-
 
 # 指定第一列Geneid作为行index
 fpkm = read.table('all.gene_FPKM.tsv',header = T,row.names='Geneid',check.names=F)
@@ -64,8 +24,8 @@ write.table(n_fpkm, file =paste(group_str, "fpkm_plot.tsv", sep = "."), sep="\t"
 }
 ##################### fpkm  密度分布图 #########################
 ### 密度分布图 版本1 
-library(ggplot2)
 library(reshape2)
+
 density_input = n_fpkm
 colnames(density_input) <-c("Sample","value")
 #density_input['value'] = log10(density_input['value']+1)
