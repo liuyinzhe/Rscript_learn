@@ -288,7 +288,7 @@ res1 <- res1[order(res1$pvalue, res1$log2FoldChange, decreasing = c(FALSE, TRUE)
 res1_w = gene_diff_data=cbind(GeneId=row.names(res1), res1)
 #输出
 write.table(res1_w, file ="all_gene_pvalue.tsv", sep="\t",
-            row.names = TRUE,col.names =TRUE, quote =TRUE)
+            row.names = FALSE,col.names =TRUE, quote =TRUE)
 
 #筛选结果
 # 获取padj（p值经过多重校验校正后的值）小于0.05，表达倍数取以2为对数后大于1或者小于-1的差异表达基因。
@@ -303,9 +303,9 @@ res1_up_w=cbind(GeneId=row.names(res1_up), res1_up)
 res1_down_w=cbind(GeneId=row.names(res1_down), res1_down)
 
 write.table(res1_up_w, file ="up_gene_pvalue.tsv", sep="\t",
-            row.names = TRUE,col.names =TRUE, quote =TRUE)
+            row.names = FALSE,col.names =TRUE, quote =TRUE)
 write.table(res1_down_w, file ="down_gene_pvalue.tsv", sep="\t",
-            row.names = TRUE,col.names =TRUE, quote =TRUE)
+            row.names = FALSE,col.names =TRUE, quote =TRUE)
 
 ################################# 差异基因热图 #####################################
 df <- countData[intersect(rownames(countData),rownames(res1_total)),]    
