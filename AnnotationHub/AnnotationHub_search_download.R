@@ -4,7 +4,7 @@ rm(list = ls())
 options(stringsAsFactors = F)
 setwd('D:\\Rscript\\AnnotationHub')
 
-# 除非模式如$title: org.Hs.eg.db.sqlite 这种，其它类型有时候会不行，找到和使用基因组使用上有问题，clusterProfiler(4.6.1) GO富集会是空的，应该是格式有问题,还是用emapper_annotations 注释的方法更好
+# 除非模式如$title: org.Hs.eg.db.sqlite 这种，其它类型有时候会不行，找到和使用基因组使用上有问题，clusterProfiler(4.6.1) GO富集会是空的，应该是名字对应问题(参考基因组来源不同),还是用emapper_annotations 注释的方法更好
 # loadDb 找不到函数，不确定原因，直接脚本里临时下载 Zea.OrgDb <- hub[["AH107469"]]，然后直接使用
 library(AnnotationHub)
 ah <- AnnotationHub()
