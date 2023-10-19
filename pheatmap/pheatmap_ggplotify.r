@@ -53,12 +53,12 @@ p <- pheatmap(df, scale = "row", ##AF3160
               ) 
 # 转换为ggplot对象，调整右边距
 # https://www.jianshu.com/p/0ddd67343bdb
-pobj <- as.ggplot(p) + theme(plot.margin = margin(l = 5, r = 15)) #+theme(axis.text.y = element_markdown())
+pobj <- as.ggplot(p) + theme(plot.margin = margin(l = 5, r = 5, t= 5, b= 5)) #+theme(axis.text.y = element_markdown())
 pobj
 
-png(paste("phylum.pheatmap",".png",sep=""),width =1350,height =900,res=150,units = "px")
+png(paste("species.pheatmap",".png",sep=""),width =5500,height =5500,res=600,units = "px") 
 print(pobj)
 dev.off()
-pdf(paste("phylum.pheatmap",".pdf",sep=""),width =10,height =7)
+pdf(paste("species.pheatmap",".pdf",sep=""),width =10,height =10)
 print(pobj)
 dev.off()
