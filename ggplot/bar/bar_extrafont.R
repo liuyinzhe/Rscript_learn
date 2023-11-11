@@ -67,10 +67,13 @@ p<- ggplot(data = md,aes(Sample,weight=Percent,fill=factor(Taxa,levels = list)))
         #panel.grid 绘图区网格线
         #panel.grid.major 主网格线
         #panel.grid.minor 次网格线
-            panel.grid.major.x = element_blank(),
-            panel.grid.major.y = element_line(colour = "grey60",linetype ="dotted"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey60",linetype ="dotted"),
         panel.grid.minor = element_blank(),
         panel.background = element_blank(),
+        # 分页标签
+        strip.text.x = element_text(family = "Arial",size = 10),
+        strip.text.y = element_text(family = "Arial",size = 10),
         #axis.line 主轴线
         axis.line = element_line(colour = "black",linetype = "solid"),
         axis.title.x = element_blank(),
@@ -139,6 +142,9 @@ p<- ggplot(data = md,aes(Sample,weight=Percent,fill=factor(Taxa,levels = list)))
     panel.grid.minor = element_blank(),
     axis.ticks.x = element_blank(),
     panel.background = element_blank(),
+    # 分页标签
+    strip.text.x = element_text(family = "Arial",size = 10),
+    strip.text.y = element_text(family = "Arial",size = 10),
     #axis.line 主轴线
     axis.line = element_line(colour = "black",linetype = "solid"),
     axis.title.x = element_blank(),
