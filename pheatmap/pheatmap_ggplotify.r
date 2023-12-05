@@ -45,6 +45,7 @@ p <- pheatmap(df, scale = "row", ##AF3160
               #fontsize_row = 8,
               #fontsize_col = 12,
               #fontsize = 8, #统一字体大小
+              #fontsize_number = 8, #热图上数值的字体大小
               
               angle_col = 0,
               # 边框
