@@ -2,6 +2,9 @@ rm(list = ls())
 options(stringsAsFactors = F)
 setwd('D:\\Rscript\\fmsb')
 
+# https://zhuanlan.zhihu.com/p/563773138
+# https://zhuanlan.zhihu.com/p/464010168
+
 df <- read.csv('xx.tsv',sep='\t',row.names=1)
 #加载包
 library(fmsb)
