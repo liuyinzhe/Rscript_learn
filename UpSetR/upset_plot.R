@@ -12,7 +12,7 @@ setwd('D:\\Rscript')
 
 head(mydata)
 
-png(paste('upset_draw',".png",sep=""),width =1200,height =800,res=120,units = "px")
+png(paste('upset_draw',".png",sep=""),bg = "white",width =1200,height =800,res=120,units = "px")
 a<-dev.cur()#记录png device
 pdf(paste('upset_draw',".pdf",sep=""),width =12,height =8)
 dev.control('enable')#打开图形设备控制
