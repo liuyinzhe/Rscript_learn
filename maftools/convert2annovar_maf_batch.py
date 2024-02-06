@@ -25,14 +25,19 @@ def convert2annovar(sample_name,new_name,ref_ver='hg19'):
         #'Tumor_Sample_Barcode',
         #'Func.ensGene' # 'Func.refGene'
     ]
-    multianno_snp_df = pd.read_csv(sample_name+'.snp.'+ref_ver+'_multianno.txt',sep='\t',encoding='utf-8',usecols=usecols_lst)
-    #print(multianno_snp_df)
-    multianno_snp_df['Tumor_Sample_Barcode'] = new_name
+    try:
+        multianno_snp_df = pd.read_csv(sample_name+'.snp.'+ref_ver+'_multianno.txt',sep='\t',encoding='utf-8',usecols=usecols_lst)
+        #print(multianno_snp_df)
+        multianno_snp_df['Tumor_Sample_Barcode'] = new_name
+    except pd.errors.EmptyDataError:
+        multianno_snp_df = pd.DataFrame()
 
-
-    multianno_indel_df = pd.read_csv(sample_name+'.indel.'+ref_ver+'_multianno.txt',sep='\t',encoding='utf-8',usecols=usecols_lst)
-    #print(multianno_indel_df)
-    multianno_indel_df['Tumor_Sample_Barcode'] = new_name
+    try:
+        multianno_indel_df = pd.read_csv(sample_name+'.indel.'+ref_ver+'_multianno.txt',sep='\t',encoding='utf-8',usecols=usecols_lst)
+        #print(multianno_indel_df)
+        multianno_indel_df['Tumor_Sample_Barcode'] = new_name
+    except pd.errors.EmptyDataError:
+        multianno_indel_df = pd.DataFrame()
 
     return multianno_snp_df,multianno_indel_df
 
@@ -54,8 +59,18 @@ def main():
             name_dic[sample_name] = sample_id
             out.write('\t'.join([sample_name,organization])+'\n')
             snp_df,indel_df = convert2annovar(sample_id,sample_name,ref_ver='hg19')
-            multianno_df = pd.concat([snp_df,indel_df], ignore_index = True, join='outer')
-            multianno_df.to_csv(sample_name+'.annovar',sep='\t',index=False)
+
+            if snp_df.shape != (0,0) and indel_df.shape != (0,0) :
+                multianno_df = pd.concat([snp_df,indel_df], ignore_index = True, join='outer')
+                multianno_df.to_csv(sample_name+'.annovar',sep='\t',index=False)
+            elif snp_df.shape == (0,0) and indel_df.shape == (0,0) :
+                continue
+            elif indel_df.shape == (0,0) and snp_df.shape != (0,0) :
+                multianno_df = snp_df
+                multianno_df.to_csv(sample_name+'.annovar',sep='\t',index=False)
+            elif indel_df.shape != (0,0) and snp_df.shape == (0,0) :
+                multianno_df = indel_df
+                multianno_df.to_csv(sample_name+'.annovar',sep='\t',index=False)
             all_annovar_df_list.append(multianno_df)
     
     multianno_all = pd.concat(all_annovar_df_list, ignore_index = True, join='outer') 
