@@ -27,17 +27,27 @@ for(p in package_list){
   }
 }
 
+#自己更新自己
+BiocManager::install(version="3.9") 
+
 # 指定网址
 packageurl = 'https://cran.r-project.org/src/contrib/vctrs_0.5.2.tar.gz'
 install.packages(packageurl, repos = NULL, type = 'source')
 
 # 指定安装路径
 
-# 本地安装
+# local 安装
 BiocManager::install("devtools")
 library(devtools)
 devtools::install_local("C:\\Downloads\\Compressed\\GenomeInfoDb_1.34.9.zip")
 #install.packages('GenomeInfoDbData')
+# github 安装
+BiocManager::install("curl")
+#windows 用户自己手动下载安装Rtools
+#[https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/)
+devtools::install_github("ricardo-bion/ggtech", dependencies=TRUE)
+
 
 # 二进制安装，针对源码安装非0返回值问题
 install.packages("pkgload",type="binary")
+
