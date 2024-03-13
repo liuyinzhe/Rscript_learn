@@ -39,3 +39,5 @@ library(devtools)
 devtools::install_local("C:\\Downloads\\Compressed\\GenomeInfoDb_1.34.9.zip")
 #install.packages('GenomeInfoDbData')
 
+# 二进制安装
+install.packages("pkgload",type="binary")
