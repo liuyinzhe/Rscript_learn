@@ -1,4 +1,4 @@
-
+# 另外可参考https://www.bilibili.com/read/cv21650670/
 options(repos="https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
 
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
