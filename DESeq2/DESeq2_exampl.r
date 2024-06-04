@@ -423,7 +423,15 @@ suppressMessages({
   library(org.Rn.eg.db)
   library(enrichplot)
 })
-    
+
+# #### 转化基因名为entrez ID ####
+# #org.Hs.eg.db\org.Mm.eg.db包含着各大主流数据库的数据，如entrez ID和ensembl,
+# #keytypes(org.Hs.eg.db) #查看所有支持及可转化类型 常用 "ENTREZID","ENSEMBL","SYMBOL"
+# gene_up_entrez <- as.character(na.omit(bitr(gene_up, #数据集
+#                                             fromType="SYMBOL", #输入格式
+#                                             toType="ENTREZID", # 转为ENTERZID格式
+#                                             OrgDb="org.Mm.eg.db")[,2])) #"org.Hs.eg.db" "org.Mm.eg.db"
+
 # ID 转换
 ids<- bitr(rownames(res1_total), fromType = "SYMBOL",toType = c( "ENTREZID"),OrgDb = org.Rn.eg.db ,drop = T)
 
