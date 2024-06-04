@@ -406,13 +406,13 @@ keys(org.Rn.eg.db)
 # library(dplyr)
 #select(org.Rn.eg.db, keys = "CW07G09620", columns = c("GO"))
 
-pathway2gene <- AnnotationDbi::select(org.Rn.eg.db, 
-                                      keys = keys(org.Rn.eg.db), 
-                                      columns = c("Pathway","Ko")) %>%
-  na.omit() %>%
-  dplyr::select(Pathway, GID)
+# pathway2gene <- AnnotationDbi::select(org.Rn.eg.db, 
+#                                       keys = keys(org.Rn.eg.db), 
+#                                       columns = c("Pathway","Ko")) %>%
+#   na.omit() %>%
+#   dplyr::select(Pathway, GID)
 
-write.table(pathway2gene,file = "./pathway2gene.txt", sep = "\t", quote = F, row.names = F)
+# write.table(pathway2gene,file = "./pathway2gene.txt", sep = "\t", quote = F, row.names = F)
 
 ################################# GO注释 #####################################
 # GO 分析
