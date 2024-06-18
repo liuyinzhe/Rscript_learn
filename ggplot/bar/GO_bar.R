@@ -73,4 +73,5 @@ p <- ggplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) +
   )
 #coord_flip(...)横向转换坐标：把x轴和y轴互换，没有特殊参数
 
-p
+ggsave('GO_class_bar.png',plot=p,height=10, width=15, units="in",dpi=300)
+ggsave('GO_class_bar.pdf',plot=p,height=10, width=15, units="in",dpi=300)
