@@ -3,7 +3,7 @@ rm(list = ls())
 options(stringsAsFactors = F)
 setwd('D:\\Rscript\\LV2\\class')
 
-data = read.table('KEGG_bar_plot.tsv',header = T,sep='\t',check.names=F)
+data = read.table('data\\KEGG_bar_plot.tsv',header = T,sep='\t',check.names=F)
 
 #条件创建label,0 填写NA
 data$label[data$gene_count == 0 ] = NA
