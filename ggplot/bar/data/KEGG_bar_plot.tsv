@@ -1,0 +1,27 @@
+description	kegg_class	GeneRatio	BgRatio	p_value	q_value	gene_count
+ECM-receptor interaction	Environmental Information Processing	24/350	87/8989	1.23531631268993e-14	3.59477046992769e-12	24
+Focal adhesion	Cellular Processes	34/350	200/8989	2.09592749538777e-13	3.04957450578921e-11	34
+Protein digestion and absorption	Organismal Systems	22/350	103/8989	4.30150441318305e-11	3.54990612392924e-09	22
+Dilated cardiomyopathy	Human Diseases	21/350	94/8989	4.87959604663813e-11	3.54990612392924e-09	21
+Hypertrophic cardiomyopathy	Human Diseases	19/350	91/8989	1.4183761909601e-09	8.25494943138776e-08	19
+PI3K-Akt signaling pathway	Environmental Information Processing	34/350	345/8989	5.01695897023671e-07	2.43322510056481e-05	34
+Arrhythmogenic right ventricular cardiomyopathy	Human Diseases	14/350	77/8989	1.28349631133651e-06	4.84554740092898e-05	14
+Apelin signaling pathway	Environmental Information Processing	19/350	137/8989	1.3321092511145e-06	4.84554740092898e-05	19
+Proteoglycans in cancer	Human Diseases	23/350	207/8989	5.27628126991738e-06	0.000170599761060662	23
+Vascular smooth muscle contraction	Organismal Systems	18/350	139/8989	6.84099906210286e-06	0.000199073072707193	18
+cGMP-PKG signaling pathway	Environmental Information Processing	20/350	171/8989	1.01713492021698e-05	0.000269078419802855	20
+Amoebiasis	Human Diseases	14/350	96/8989	1.86828436976157e-05	0.000453058959667181	14
+Malaria	Human Diseases	10/350	55/8989	4.30790303164025e-05	0.000964307524774857	10
+Human papillomavirus infection	Human Diseases	29/350	353/8989	0.000110621773760865	0.00229935258317226	29
+AGE-RAGE signaling pathway in diabetic complications	Human Diseases	13/350	101/8989	0.000138868198503486	0.00261529333652459	13
+Calcium signaling pathway	Environmental Information Processing	22/350	238/8989	0.000143796197197228	0.00261529333652459	22
+Adrenergic signaling in cardiomyocytes	Organismal Systems	16/350	148/8989	0.000199939626513943	0.00342249595973867	16
+Regulation of actin cytoskeleton	Cellular Processes	21/350	234/8989	0.000305236576431492	0.00493465798564246	21
+Cell adhesion molecules	Environmental Information Processing	17/350	180/8989	0.000634753295652539	0.00972174784394152	17
+Relaxin signaling pathway	Organismal Systems	13/350	128/8989	0.00140042427988332	0.0203761732723023	13
+Cytokine-cytokine receptor interaction	Environmental Information Processing	21/350	269/8989	0.00185774224291754	0.0257429996518573	21
+Complement and coagulation cascades	Organismal Systems	10/350	87/8989	0.00195436548218669	0.0258509252416512	10
+Fluid shear stress and atherosclerosis	Human Diseases	14/350	151/8989	0.00223037164219765	0.028219049907805	14
+Neuroactive ligand-receptor interaction	Environmental Information Processing	27/350	390/8989	0.00259044509279259	0.0314091467501101	27
+Platelet activation	Organismal Systems	12/350	126/8989	0.00361879282747663	0.0420063924168824	12
+TGF-beta signaling pathway	Environmental Information Processing	10/350	95/8989	0.00375314846336406	0.0420063924168824	10
