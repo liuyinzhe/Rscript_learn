@@ -40,6 +40,11 @@ p <- pheatmap(df, scale = "row", ##AF3160
               # 图例
               legend = TRUE, # 隐藏图例
               annotation_names_col = TRUE,
+
+              # x y 轴显示自定义
+              labels_col = c("", "", "", "", "", ""),
+              labels_row = NULL,
+              
               # 标签
               
               #fontsize_row = 8,
