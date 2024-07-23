@@ -14,6 +14,21 @@ library(AnnotationForge)
 options(stringsAsFactors = F)#设置一下options
 #https://www.jianshu.com/p/9d38cb9f1d02
 
+# run.01.emapper.sh
+# cd /data/home/06.emapper_annotations
+# mkdir -p output
+# unset PYTHONPATH
+# /data/home/liuyinzhe/envs/rna_seq/bin/emapper.py \
+#  -m diamond \
+#  -i GCF_000014225.1_ASM132v1_protein.faa  \
+#  --itype proteins \
+#  --cpu 30 \
+#  --output_dir /data/home/liuyinzhe/project/RNA_seq/RS23IMWY02/06.emapper_annotations/output \
+#  --excel \
+#  -o Sao  >log 2>err
+
+# 对 emapper 注释结果 Sao.emapper.annotations 处理，选取特定列
+# sed '/^##/d' *.emapper.annotations| sed 's/#//g'| awk -vFS="\t" -vOFS="\t" '{print $1,$9,$10,$12}' > Sao.annotations
 
 emapper <- read.table("cds.annotations",header = TRUE,sep = "\t",quote = "",stringsAsFactor = FALSE)
 #将空值替换为NA，方便后续使用na.omit()函数提出没有注释到的行
