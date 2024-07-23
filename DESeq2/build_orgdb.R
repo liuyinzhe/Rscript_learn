@@ -1,6 +1,11 @@
+
 rm(list = ls())
 options(stringsAsFactors = F)
-setwd('/data/home/build_db')
+
+argv <- commandArgs(TRUE)
+# Rscript build_db.r ./  1234 Escherichia coli
+setwd(argv[1]) 
+
 
 library(dplyr)
 library(stringr)
@@ -9,23 +14,8 @@ library(AnnotationForge)
 options(stringsAsFactors = F)#设置一下options
 #https://www.jianshu.com/p/9d38cb9f1d02
 
-# run.01.emapper.sh
-# cd /data/home/06.emapper_annotations
-# mkdir -p output
-# unset PYTHONPATH
-# /data/home/liuyinzhe/envs/rna_seq/bin/emapper.py \
-#  -m diamond \
-#  -i GCF_000014225.1_ASM132v1_protein.faa  \
-#  --itype proteins \
-#  --cpu 30 \
-#  --output_dir /data/home/liuyinzhe/project/RNA_seq/RS23IMWY02/06.emapper_annotations/output \
-#  --excel \
-#  -o Sao  >log 2>err
 
-# 对 emapper 注释结果 Sao.emapper.annotations 处理，选取特定列
-# sed '/^##/d' *.emapper.annotations| sed 's/#//g'| awk -vFS="\t" -vOFS="\t" '{print $1,$9,$10,$12}' > Sao.annotations
-
-emapper <- read.table("Sao.annotations",header = TRUE,sep = "\t",quote = "",stringsAsFactor = FALSE)
+emapper <- read.table("cds.annotations",header = TRUE,sep = "\t",quote = "",stringsAsFactor = FALSE)
 #将空值替换为NA，方便后续使用na.omit()函数提出没有注释到的行
 emapper[emapper==""]<-NA
 emapper[emapper=="-"]<-NA
@@ -61,25 +51,6 @@ gene2ko <- gene2kol_df[,1:2]
 colnames(gene2ko) <- c("GID","Ko")
 gene2ko$Ko <- gsub("ko:","",gene2ko$Ko)
 
-# 从以下网址，点击 Download json 下载
-# https://www.genome.jp/kegg-bin/get_htext?ko00001
-
-# 或者 以下命令直接下载
-# curl 'https://www.genome.jp/kegg-bin/download_htext?htext=ko00001&format=json&filedir=' \
-#   -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
-#   -H 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-CA;q=0.7,en-AU;q=0.6,en-US;q=0.5' \
-#   -H 'Connection: keep-alive' \
-#   -H 'Referer: https://www.genome.jp/kegg-bin/get_htext?ko00001' \
-#   -H 'Sec-Fetch-Dest: document' \
-#   -H 'Sec-Fetch-Mode: navigate' \
-#   -H 'Sec-Fetch-Site: same-origin' \
-#   -H 'Sec-Fetch-User: ?1' \
-#   -H 'Upgrade-Insecure-Requests: 1' \
-#   -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50' \
-#   -H 'sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Microsoft Edge";v="110"' \
-#   -H 'sec-ch-ua-mobile: ?0' \
-#   -H 'sec-ch-ua-platform: "Windows"' \
-#   --compressed
 
 
 # library(jsonlite)
@@ -197,3 +168,4 @@ makeOrgPackage(gene_info=gene_info,
                genus=genus, 
                species=species,
                goTable="go")
+
