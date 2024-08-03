@@ -21,11 +21,25 @@ par(ask=T)
 ##################需要修改的 ###########
 #[0] 分组信息condition <- factor(c(rep("A",3),rep("WT",3))) #condition <- factor(c(rep("A",3),rep("WT",3)),levels = c("A","WT"))
 #[1] 分组最重要的地方，有时候上面分组会混乱，这里一锤定音 res <- results(dds1,contrast = c('condition', 'A', 'WT'))
-#[2] 物种数据库 org.Bvallismortis.eg.db替换org.Bvallismortis.eg.db  # 只能对应两个字母，并且第一个字母大写
+#[2] 物种数据库 org.Saureus.eg.db替换org.Saureus.eg.db  # 只能对应两个字母，并且第一个字母大写
 #[3] KEGG 注释enrichKEGG 函数 organism   = "mmu", #Rno #三个字母#需要小写，https://www.genome.jp/kegg/catalog/org_list.html
 #
-#####################
+#####################     GO  up down 绘图  ##################### 
 
+## shorten the names of GO terms
+shorten_names <- function(x, n_word=4, n_char=40){
+  if (length(strsplit(x, " ")[[1]]) > n_word || (nchar(x) > 40))
+  {
+    if (nchar(x) > 40) x <- substr(x, 1, 40)
+    x <- paste(paste(strsplit(x, " ")[[1]][1:min(length(strsplit(x," ")[[1]]), n_word)],
+                       collapse=" "), "...", sep="")
+    return(x)
+  } 
+  else
+  {
+    return(x)
+  }
+}
 ############################### 创建目录   ############################
 
 
@@ -38,6 +52,11 @@ mkdir <- function(new_dir=new_dir){
 KEGG_dir="./KEGG/"
 GO_dir="./GO/"
 
+KEGG_dir_up="./KEGG/Up"
+KEGG_dir_down="./KEGG/Down"
+
+GO_dir_up="./GO/Up"
+GO_dir_down="./GO/Down"
 
 
 mkdir(KEGG_dir_up)
@@ -57,11 +76,12 @@ suppressMessages({
   library(ggrepel)   # geom_text_repel
   library(tidyr)     # 数据处理 gather 函数
   library(topGO)
+  #library(tidyverse)
 })
 
 # 多个hisat2 比对bam 按照 处理组3个样品与对照组3个样品bam 顺序作为featurecounts输入 后的结果是 all.counts.txt
 #样品整体，相关系数
-raw_data = read.table('all.counts.txt',header = T,row.names='Geneid',check.names=F)
+raw_data = read.table( paste("all",group_str, "counts.txt", sep = "."),header = T,row.names='Geneid',check.names=F)
 countData <- as.matrix(raw_data[,6:ncol(raw_data)])
 
 
@@ -403,20 +423,20 @@ library(dplyr)
 load(file = "kegg_info.RData")
 write.table(pathway2name,file = "./pathway2name.txt", sep = "\t", quote = F, row.names = F)
 
-#remove.packages("org.Bvallismortis.eg.db")
-install.packages("./org.Bvallismortis.eg.db", repos=NULL,type='source')
+#remove.packages("org.Saureus.eg.db")
+install.packages("./org.Saureus.eg.db", repos=NULL,type='source')
 
-library(org.Bvallismortis.eg.db)
-columns(org.Bvallismortis.eg.db)
+library(org.Saureus.eg.db)
+columns(org.Saureus.eg.db)
 
 # 查看所有基因
-keys(org.Bvallismortis.eg.db)
+keys(org.Saureus.eg.db)
 # 查看特定基因的信息
 # library(dplyr)
-#select(org.Bvallismortis.eg.db, keys = "CW07G09620", columns = c("GO"))
+#select(org.Saureus.eg.db, keys = "CW07G09620", columns = c("GO"))
 
-pathway2gene <- AnnotationDbi::select(org.Bvallismortis.eg.db, 
-                                      keys = keys(org.Bvallismortis.eg.db), 
+pathway2gene <- AnnotationDbi::select(org.Saureus.eg.db, 
+                                      keys = keys(org.Saureus.eg.db), 
                                       columns = c("Pathway","Ko")) %>%
   na.omit() %>%
   dplyr::select(Pathway, GID)
@@ -429,23 +449,22 @@ write.table(pathway2gene,file = "./pathway2gene.txt", sep = "\t", quote = F, row
 suppressMessages({
   library(clusterProfiler)
   library(AnnotationDbi)
-  library(org.Bvallismortis.eg.db)
+  library(org.Saureus.eg.db)
   library(enrichplot)
 })
 # ID 转换
 ids<-rownames(res1_total)
 Up_ids<-rownames(res1_up)
 Down_ids<-rownames(res1_down)      
-#ids<- bitr(rownames(res1_total), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Bvallismortis.eg.db ,drop = T)
+#ids<- bitr(rownames(res1_total), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Saureus.eg.db ,drop = T)
 
-#Up_ids<- bitr(rownames(res1_up), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Bvallismortis.eg.db ,drop = T)
-#Down_ids<- bitr(rownames(res1_down), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Bvallismortis.eg.db ,drop = T)
+#Up_ids<- bitr(rownames(res1_up), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Saureus.eg.db ,drop = T)
+#Down_ids<- bitr(rownames(res1_down), fromType = "SYMBOL",toType = c( "GID"),OrgDb = org.Saureus.eg.db ,drop = T)
 
 ############################总的GO############################
 # GO富集分析
-
 GO <- enrichGO(gene=ids,
-               OrgDb=org.Bvallismortis.eg.db,
+               OrgDb=org.Saureus.eg.db,
                keyType="GID",
                ont="ALL",   #CC/BP/MF可选
                pvalueCutoff = 1, # 默认值0.05
@@ -461,7 +480,7 @@ write.table(GO, file =paste(GO_dir, "GO_enrich.tsv", sep = "/"), sep="\t",
             row.names = FALSE,col.names =TRUE, quote =TRUE)
 
 goCC <- enrichGO(gene=ids,
-                 OrgDb = org.Bvallismortis.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='CC',
                  pAdjustMethod = 'BH',
@@ -471,7 +490,7 @@ goCC <- enrichGO(gene=ids,
 
 
 goBP <- enrichGO(gene=ids,
-                 OrgDb = org.Bvallismortis.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='BP',
                  pAdjustMethod = 'BH',
@@ -481,7 +500,7 @@ goBP <- enrichGO(gene=ids,
 
 
 goMF <- enrichGO(gene=ids,
-                 OrgDb = org.Bvallismortis.eg.db,
+                 OrgDb = org.Saureus.eg.db,
                  keyType="GID",
                  ont='MF',
                  pAdjustMethod = 'BH',
@@ -574,149 +593,9 @@ pdf(file=paste(GO_dir, paste(group_str,'enrich.go.MP.DGA.tree.pdf', sep = "."), 
 plotGOgraph(goMF)
 dev.off()
 ############################总的 GO ############################
-## shorten the names of GO terms
-
-shorten_names <- function(x, n_word=4, n_char=40){
-  if (length(strsplit(x, " ")[[1]]) > n_word || (nchar(x) > 40))
-  {
-    if (nchar(x) > 40) x <- substr(x, 1, 40)
-    x <- paste(paste(strsplit(x, " ")[[1]][1:min(length(strsplit(x," ")[[1]]), n_word)],
-                       collapse=" "), "...", sep="")
-    return(x)
-  } 
-  else
-  {
-    return(x)
-  }
-}
-
-GO_Up <- enrichGO(gene=Up_ids,
-               OrgDb=org.Saureus.eg.db,
-               keyType="GID",
-               ont="ALL",   #CC/BP/MF可选
-               pvalueCutoff = 1, # 默认值0.05
-               qvalueCutoff = 1,  # 默认值0.2，是pvalue 的校正值 更严格
-               minGSSize = 10)  # 默认值，富集的最小基因数量
-
-go_MF<-GO_Up[GO_Up$ONTOLOGY=="MF",][1:10,]
-go_CC<-GO_Up[GO_Up$ONTOLOGY=="CC",][1:10,]
-go_BP<-GO_Up[GO_Up$ONTOLOGY=="BP",][1:10,]
-
-go_enrich_df<-data.frame(ID=c(go_BP$ID, go_CC$ID, go_MF$ID),
-                         Description=c(go_BP$Description, go_CC$Description, go_MF$Description),
-                         GeneNumber=c(go_BP$Count, go_CC$Count, go_MF$Count),
-                         type=factor(
-                            c(rep("biological process", 10),
-                            rep("cellular component", 10),
-                            rep("molecular function",10)),
-                            levels=c("molecular function", "cellular component", "biological process")
-                            )
-                        )
-
-
-## numbers as data on x axis
-
-go_enrich_df$number <- factor(rev(1:nrow(go_enrich_df)))
-
-
-## shorten the names of GO terms
-# shorten_names <- function(x, n_word=4) {
-#     if (length(strsplit(x, " ")[[1]]) > n_word){
-#         return(paste(paste(strsplit(x, " ")[[1]][1:n_word], collapse=" "), "...", sep=""))
-#     }else{
-#         return(x)
-#     }
-# }
-
-labels=(sapply(
-  levels(as.factor(go_enrich_df$Description))[as.numeric(as.factor(go_enrich_df$Description))],
-  shorten_names))
-  
-names(labels) = rev(1:nrow(go_enrich_df))
-
-## colors for bar // green, blue, orange
-
-CPCOLS <- c("#8DA1CB", "#FD8D62", "#66C3A5")
-
-GO_Up_bar <- ggplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) +
-  geom_bar(stat="identity", width=0.8) + coord_flip() + 
-  scale_fill_manual(values = CPCOLS) + theme_test() + 
-  scale_x_discrete(labels=labels) +
-  xlab("GO term") + 
-  theme(axis.text=element_text(face = "bold", color="gray50")) +
-  labs(title = "The Most Enriched GO Terms")+
-  theme(
-    legend.position = "top",
-    legend.title=element_blank()
-  )
-
-ggsave(paste(GO_dir, paste(group_str,'GO_class_Up_bar.png', sep = "."), sep = "/"),plot=GO_Up_bar,height=10, width=15, units="in",dpi=300)
-ggsave(paste(GO_dir, paste(group_str,'GO_class_Up_bar.pdf', sep = "."), sep = "/"),plot=GO_Up_bar,height=10, width=15, units="in",dpi=300)
-
-GO_Down <- enrichGO(gene=Down_ids,
-               OrgDb=org.Saureus.eg.db,
-               keyType="GID",
-               ont="ALL",   #CC/BP/MF可选
-               pvalueCutoff = 1, # 默认值0.05
-               qvalueCutoff = 1,  # 默认值0.2，是pvalue 的校正值 更严格
-               minGSSize = 10)  # 默认值，富集的最小基因数量
-
-go_MF<-GO_Down[GO_Down$ONTOLOGY=="MF",][1:10,]
-go_CC<-GO_Down[GO_Down$ONTOLOGY=="CC",][1:10,]
-go_BP<-GO_Down[GO_Down$ONTOLOGY=="BP",][1:10,]
-
-go_enrich_df<-data.frame(ID=c(go_BP$ID, go_CC$ID, go_MF$ID),
-                         Description=c(go_BP$Description, go_CC$Description, go_MF$Description),
-                         GeneNumber=c(go_BP$Count, go_CC$Count, go_MF$Count),
-                         type=factor(
-                            c(rep("biological process", 10),
-                            rep("cellular component", 10),
-                            rep("molecular function",10)),
-                            levels=c("molecular function", "cellular component", "biological process")
-                            )
-                        )
-
-
-## numbers as data on x axis
-
-go_enrich_df$number <- factor(rev(1:nrow(go_enrich_df)))
-
-
-## shorten the names of GO terms
-# shorten_names <- function(x, n_word=4) {
-#     if (length(strsplit(x, " ")[[1]]) > n_word){
-#         return(paste(paste(strsplit(x, " ")[[1]][1:n_word], collapse=" "), "...", sep=""))
-#     }else{
-#         return(x)
-#     }
-# }
-
-labels=(sapply(
-  levels(as.factor(go_enrich_df$Description))[as.numeric(as.factor(go_enrich_df$Description))],
-  shorten_names))
-  
-names(labels) = rev(1:nrow(go_enrich_df))
-
-## colors for bar // green, blue, orange
-
-CPCOLS <- c("#8DA1CB", "#FD8D62", "#66C3A5")
-
-GO_Down_bar <- ggplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) +
-  geom_bar(stat="identity", width=0.8) + coord_flip() + 
-  scale_fill_manual(values = CPCOLS) + theme_test() + 
-  scale_x_discrete(labels=labels) +
-  xlab("GO term") + 
-  theme(axis.text=element_text(face = "bold", color="gray50")) +
-  labs(title = "The Most Enriched GO Terms")+
-  theme(
-    legend.position = "top",
-    legend.title=element_blank()
-  )
-
-ggsave(paste(GO_dir, paste(group_str,'GO_class_Down_bar.png', sep = "."), sep = "/"),plot=GO_Down_bar,height=10, width=15, units="in",dpi=300)
-ggsave(paste(GO_dir, paste(group_str,'GO_class_Down_bar.pdf', sep = "."), sep = "/"),plot=GO_Down_bar,height=10, width=15, units="in",dpi=300)
 
 ################################# Kegg注释 #####################################
+
 # kegg_enrich 富集分析
 #kegg_enrich <- enrichKEGG( ids,
 #              organism   = "mmu", #需要小写，https://www.genome.jp/kegg/catalog/org_list.html
@@ -732,7 +611,7 @@ kegg_enrich <- enricher(gene=ids,
                         minGSSize = 10) # 默认值10，最小富集的基因数量
 
 #kk_read <- DOSE::setReadable(kegg_enrich, 
-#OrgDb="org.Bvallismortis.eg.db", 
+#OrgDb="org.Saureus.eg.db", 
 #keyType='ENTREZID')#ENTREZID to gene Symbol
 
 write.table(kegg_enrich, file =paste(KEGG_dir, paste(group_str,'KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
@@ -766,3 +645,255 @@ ggsave(paste(KEGG_dir, paste(group_str,'KEGG_cnet.pdf', sep = "."), sep = "/"),p
 
 ############################down kegg############################
 #https://zhuanlan.zhihu.com/p/518134934
+
+
+
+
+
+############GO up############################
+
+go<-enrichGO( gene=Up_ids,
+              OrgDb = org.Saureus.eg.db,
+               keyType="GID",
+              ont = "ALL",
+              pvalueCutoff = 1,
+              qvalueCutoff = 1,
+              minGSSize = 10)
+
+write.table(go, file =paste(GO_dir_up, paste(group_str,'Up_GO_enrich.tsv.tsv', sep = "."), sep = "/"), sep="\t",
+            row.names = FALSE,col.names =TRUE, quote =TRUE)
+#  Up 绘图
+#######################################  Up 绘图  ####################################### 
+go_MF<-go[go$ONTOLOGY=="MF",][1:10,]
+go_CC<-go[go$ONTOLOGY=="CC",][1:10,]
+go_BP<-go[go$ONTOLOGY=="BP",][1:10,]
+go_enrich_df<-data.frame(ID=c(go_BP$ID, go_CC$ID, go_MF$ID),
+                         Description=c(go_BP$Description, go_CC$Description, go_MF$Description),
+                         GeneNumber=c(go_BP$Count, go_CC$Count, go_MF$Count),
+                         type=factor(
+                            c(rep("biological process", 10),
+                            rep("cellular component", 10),
+                            rep("molecular function",10)),
+                            levels=c("molecular function", "cellular component", "biological process")
+                            )
+                        )
+## numbers as data on x axis
+go_enrich_df$number <- factor(rev(1:nrow(go_enrich_df)))
+labels=(sapply(
+  levels(as.factor(go_enrich_df$Description))[as.numeric(as.factor(go_enrich_df$Description))],
+  shorten_names))
+names(labels) = rev(1:nrow(go_enrich_df))
+## colors for bar // green, blue, orange
+CPCOLS <- c("#8DA1CB", "#FD8D62", "#66C3A5")
+p <- ggplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) +
+  geom_bar(stat="identity", width=0.8) + coord_flip() + 
+  scale_fill_manual(values = CPCOLS) + theme_test() + 
+  scale_x_discrete(labels=labels) +
+  xlab("GO term") + 
+  theme(axis.text=element_text(face = "bold", color="gray50")) +
+  labs(title = "The Most Enriched GO Terms (Up)")+
+  theme(
+    legend.position = "top",
+    legend.title=element_blank()
+  )
+#coord_flip(...)横向转换坐标：把x轴和y轴互换，没有特殊参数
+
+
+ggsave(paste(GO_dir_up, paste(group_str,'GO_Terms_Up_bar.png', sep = "."), sep = "/"),plot=p,height=10, width=15, units="in",dpi=300)
+ggsave(paste(GO_dir_up, paste(group_str,'GO_Terms_Up_bar.pdf', sep = "."), sep = "/"),plot=p,height=10, width=15, units="in",dpi=300)
+
+#######################################  Up 绘图  ####################################### 
+
+############GO down############################
+# GO down
+go<-enrichGO( gene=Down_ids,
+              OrgDb = org.Saureus.eg.db,
+               keyType="GID",
+              ont = "ALL",
+              pvalueCutoff = 1,
+              qvalueCutoff = 1,
+              minGSSize = 10)
+
+
+write.table(go, file =paste(GO_dir_down, paste(group_str,'Down_GO_enrich.tsv', sep = "."), sep = "/"), sep="\t",
+            row.names = FALSE,col.names =TRUE, quote =TRUE)
+
+#  Up 绘图
+#######################################  Up 绘图  ####################################### 
+go_MF<-go[go$ONTOLOGY=="MF",][1:10,]
+go_CC<-go[go$ONTOLOGY=="CC",][1:10,]
+go_BP<-go[go$ONTOLOGY=="BP",][1:10,]
+go_enrich_df<-data.frame(ID=c(go_BP$ID, go_CC$ID, go_MF$ID),
+                         Description=c(go_BP$Description, go_CC$Description, go_MF$Description),
+                         GeneNumber=c(go_BP$Count, go_CC$Count, go_MF$Count),
+                         type=factor(
+                            c(rep("biological process", 10),
+                            rep("cellular component", 10),
+                            rep("molecular function",10)),
+                            levels=c("molecular function", "cellular component", "biological process")
+                            )
+                        )
+## numbers as data on x axis
+go_enrich_df$number <- factor(rev(1:nrow(go_enrich_df)))
+labels=(sapply(
+  levels(as.factor(go_enrich_df$Description))[as.numeric(as.factor(go_enrich_df$Description))],
+  shorten_names))
+names(labels) = rev(1:nrow(go_enrich_df))
+## colors for bar // green, blue, orange
+CPCOLS <- c("#8DA1CB", "#FD8D62", "#66C3A5")
+p <- ggplot(data=go_enrich_df, aes(x=number, y=GeneNumber, fill=type)) +
+  geom_bar(stat="identity", width=0.8) + coord_flip() + 
+  scale_fill_manual(values = CPCOLS) + theme_test() + 
+  scale_x_discrete(labels=labels) +
+  xlab("GO term") + 
+  theme(axis.text=element_text(face = "bold", color="gray50")) +
+  labs(title = "The Most Enriched GO Terms (Down)")+
+  theme(
+    legend.position = "top",
+    legend.title=element_blank()
+  )
+#coord_flip(...)横向转换坐标：把x轴和y轴互换，没有特殊参数
+
+
+ggsave(paste(GO_dir_down, paste(group_str,'GO_Terms_Down_bar.png', sep = "."), sep = "/"),plot=p,height=10, width=15, units="in",dpi=300)
+ggsave(paste(GO_dir_down, paste(group_str,'GO_Terms_Down_bar.pdf', sep = "."), sep = "/"),plot=p,height=10, width=15, units="in",dpi=300)
+
+#######################################  Down 绘图  ####################################### 
+
+
+
+
+############ kegg up ############################
+
+# kegg_enrich UP富集分析
+kegg_enrich <- enricher(gene=Up_ids,
+                        TERM2GENE = pathway2gene,
+                        TERM2NAME = pathway2name,
+                        pvalueCutoff = 1,  # 表示全部保留，可以设为0.05作为阈值
+                        qvalueCutoff = 1, # 表示全部保留，可以设为0.2作为阈值
+                        pAdjustMethod = "BH",
+                        minGSSize = 10) # 默认值10，最小富集的基因数量
+
+write.table(kegg_enrich, file =paste(KEGG_dir_up, paste(group_str,'Up_KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
+            row.names = FALSE,col.names =TRUE, quote =TRUE)
+# 生成绘图 文件
+python_script_path<-"/data/home/liuyinzhe/project/RNA_seq/database/kegg_convert.py"
+system2("/data/home/liuyinzhe/software/miniconda3/bin/python3.8", args=python_script_path)
+######################### kegg up 绘图 ################################
+data = read.table(paste(KEGG_dir_up,'KEGG_bar_plot.tsv', sep = "/"),header = T,sep='\t',check.names=F)
+
+#条件创建label,0 填写NA
+data$label[data$gene_count == 0 ] = NA
+data$label[data$gene_count != 0 ] = data$gene_count
+
+#数据框转换成tibble
+kegg_data<-as_tibble(data)
+#R 语言中的 class() 函数用于返回用作参数的数据类
+#class(kegg_data)
+
+if(FALSE){
+#按照pvalue -log10(p_value)升序排序
+  
+#原始数据筛选（kegg_class,description，p_value)散列，按照kegg_class，-log10(p_value)排序
+data<-kegg_data%>%select(kegg_class,description,p_value)%>%arrange(kegg_class,desc(-log10(p_value)))
+#画图时改变geom_bar的自动排序
+data$description<-factor(data$description,levels = unique(data$description),ordered = T)
+}
+
+if(TRUE){
+  #按照gene_count 升序排序
+  
+  #原始数据筛选（kegg_class,description，gene_count)散列，按照kegg_class，gene_count排序
+  data<-kegg_data%>%select(kegg_class,description,gene_count)%>%arrange(kegg_class,desc(gene_count))
+  #画图时改变geom_bar的自动排序
+  data$description<-factor(data$description,levels = unique(data$description),ordered = T)
+}
+
+
+#作图
+P<- ggplot(data)+
+  geom_bar(aes(x=description,y=gene_count,fill=kegg_class),stat = 'identity')+
+  labs(x="Description",
+       y="Number of Gene",
+       fill="Classification",
+       colour = "Number of cylinders",
+  ) + ##title="KEGG pathway anotation",
+  coord_flip() # 翻转
+
+
+ggsave(paste(KEGG_dir_up, paste(group_str,'kegg_leve2_class_up.png', sep = "."), sep = "/"),plot=P, height=12, width=12, units="in",dpi=600)
+ggsave(paste(KEGG_dir_up, paste(group_str,'kegg_leve2_class_up.pdf', sep = "."), sep = "/"),plot=P, height=12, width=12, units="in",dpi=600)
+
+
+
+#https://zhuanlan.zhihu.com/p/497293882
+#颜色按categroy分类、并且p_value由小到大排序
+#https://www.jb51.net/article/208762.htm
+#################################  kegg down 绘图 ################################
+# kegg_enrich Down富集分析
+
+############ kegg donw ############################
+kegg_enrich <- enricher(gene=Down_ids,
+                        TERM2GENE = pathway2gene,
+                        TERM2NAME = pathway2name,
+                        pvalueCutoff = 1,  # 表示全部保留，可以设为0.05作为阈值
+                        qvalueCutoff = 1, # 表示全部保留，可以设为0.2作为阈值
+                        pAdjustMethod = "BH",
+                        minGSSize = 10) # 默认值10，最小富集的基因数量
+
+
+write.table(kegg_enrich, file =paste(KEGG_dir_down, paste(group_str,'Down_KEGG_enrich.tsv', sep = "."), sep = "/"), sep="\t",
+            row.names = FALSE,col.names =TRUE, quote =TRUE)
+# 生成绘图 文件
+python_script_path<-"/data/home/liuyinzhe/project/RNA_seq/database/kegg_convert.py"
+system2("/data/home/liuyinzhe/software/miniconda3/bin/python3.8", args=python_script_path)
+######################### kegg down 绘图 ################################
+data = read.table(paste(KEGG_dir_down,'KEGG_bar_plot.tsv', sep = "/"),header = T,sep='\t',check.names=F)
+
+#条件创建label,0 填写NA
+data$label[data$gene_count == 0 ] = NA
+data$label[data$gene_count != 0 ] = data$gene_count
+
+#数据框转换成tibble
+kegg_data<-as_tibble(data)
+#R 语言中的 class() 函数用于返回用作参数的数据类
+#class(kegg_data)
+
+if(FALSE){
+#按照pvalue -log10(p_value)升序排序
+  
+#原始数据筛选（kegg_class,description，p_value)散列，按照kegg_class，-log10(p_value)排序
+data<-kegg_data%>%select(kegg_class,description,p_value)%>%arrange(kegg_class,desc(-log10(p_value)))
+#画图时改变geom_bar的自动排序
+data$description<-factor(data$description,levels = unique(data$description),ordered = T)
+}
+
+if(TRUE){
+  #按照gene_count 升序排序
+  
+  #原始数据筛选（kegg_class,description，gene_count)散列，按照kegg_class，gene_count排序
+  data<-kegg_data%>%select(kegg_class,description,gene_count)%>%arrange(kegg_class,desc(gene_count))
+  #画图时改变geom_bar的自动排序
+  data$description<-factor(data$description,levels = unique(data$description),ordered = T)
+}
+
+
+#作图
+P<- ggplot(data)+
+  geom_bar(aes(x=description,y=gene_count,fill=kegg_class),stat = 'identity')+
+  labs(x="Description",
+       y="Number of Gene",
+       fill="Classification",
+       colour = "Number of cylinders",
+  ) + ##title="KEGG pathway anotation",
+  coord_flip() # 翻转
+
+ggsave(paste(KEGG_dir_down, paste(group_str,'kegg_leve2_class_down.png', sep = "."), sep = "/"),plot=P, height=12, width=12, units="in",dpi=600)
+ggsave(paste(KEGG_dir_down, paste(group_str,'kegg_leve2_class_down.pdf', sep = "."), sep = "/"),plot=P, height=12, width=12, units="in",dpi=600)
+
+
+
+#https://zhuanlan.zhihu.com/p/497293882
+#颜色按categroy分类、并且p_value由小到大排序
+#https://www.jb51.net/article/208762.htm
+#################################  kegg up 绘图 ################################
