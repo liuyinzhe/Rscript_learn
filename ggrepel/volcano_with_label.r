@@ -89,6 +89,7 @@ p2 <- p1 + geom_label_repel(
     point.padding = unit(0.8, "lines"),  # 连线与文字之间 留白
     #color="black",
     segment.color = "black", 
+    #fill="white", # 标签填充
     show.legend = FALSE ) # 都是stable 则设置 color="black",
 p2 #出图
 
