@@ -173,3 +173,7 @@ dev.off()
 # https://www.cnblogs.com/lzryhc/articles/17871031.html  # 数据读取
 # https://www.cnblogs.com/lzryhc/category/2363576.html # 02暴露数据过滤 所在目录
 ##################
+
+################## 孟德尔随机化系列文章 ##################
+https://mp.weixin.qq.com/s/Dd3jlAcWRUrrBdoMZwpiHw
+################## 孟德尔随机化系列文章 ##################
