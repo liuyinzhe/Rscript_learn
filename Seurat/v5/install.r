@@ -40,3 +40,6 @@ remotes::install_github('satijalab/azimuth', ref = 'master')
 #remotes::install_github("stuart-lab/signac", "seurat5", quiet = TRUE)
 setRepositories(ind=1:3) # needed to automatically install Bioconductor dependencies
 install.packages("Signac")
+
+# 自动注释包
+BiocManager::install('celldex')
