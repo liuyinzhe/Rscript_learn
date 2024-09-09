@@ -43,4 +43,4 @@ install.packages("Signac")
 
 # 自动注释包
 BiocManager::install('celldex')
-devtools::install_github('dviraran/SingleR')
+BiocManager::install('SingleR')
