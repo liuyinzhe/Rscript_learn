@@ -122,13 +122,13 @@ saveRDS(scRNA_harmony,"After_auto_anno_mmRNA_harmony.rds")
 
 ###
 #绘制堆叠图##########
-cluster_colors <- scales::hue_pal()(length(levels(mmRNA_harmony$seurat_clusters)))
+cluster_colors <- scales::hue_pal()(length(levels(scRNA_harmony$seurat_clusters)))
 
 # 将颜色与簇名称对应起来
-cluster_color_map <- setNames(cluster_colors, levels(mmRNA_harmony$seurat_clusters))
+cluster_color_map <- setNames(cluster_colors, levels(scRNA_harmony$seurat_clusters))
 
 # 打印UMAP图
-umap_integrated_split <- DimPlot(mmRNA_harmony, 
+umap_integrated_split <- DimPlot(scRNA_harmony, 
                                  reduction = "umap", 
                                  label = TRUE, 
                                  split.by = "orig.ident",  # 按样本拆分
@@ -143,8 +143,8 @@ ggsave("umap_integrated_split.pdf", plot = combined_plot, width = 20, height = 5
 cat("Cluster color mapping:\n")
 print(cluster_color_map)
 # 计算每个样本中每个细胞类型的占比
-head(mmRNA_harmony@meta.data)
-df <- mmRNA_harmony@meta.data %>%
+head(scRNA_harmony@meta.data)
+df <- scRNA_harmony@meta.data %>%
   group_by(orig.ident, seurat_clusters)
 
 # 重命名列名
@@ -155,12 +155,11 @@ colnames(df) <- c("Sample", "Cluster", "Number", "ratio")
 
 
 ###查看某个基因的表达情况
-VlnPlot(mmRNA_harmony,features = c("CD32B"))
-VlnPlot(mmRNA_harmony,features = c("FcγRIIB"))
-VlnPlot(mmRNA_harmony,features = c("BCAN"))
+VlnPlot(scRNA_harmony,features = c("KIRREL3"))
+VlnPlot(scRNA_harmony,features = c("EPHA2"))
+#VlnPlot(scRNA_harmony,features = c("KRT5"))
 ###umap图展示某个基因的表达情况
-FeaturePlot(mmRNA_harmony, 
-            features = c("BCAN"))
+FeaturePlot(scRNA_harmony, 
+            features = c("KRT5"))
 
 }
-
