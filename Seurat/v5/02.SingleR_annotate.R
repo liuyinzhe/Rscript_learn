@@ -158,8 +158,12 @@ colnames(df) <- c("Sample", "Cluster", "Number", "ratio")
 VlnPlot(scRNA_harmony,features = c("KIRREL3"))
 VlnPlot(scRNA_harmony,features = c("EPHA2"))
 #VlnPlot(scRNA_harmony,features = c("KRT5"))
+
+
+pdf("KRT5_gene.pdf")
 ###umap图展示某个基因的表达情况
 FeaturePlot(scRNA_harmony, 
             features = c("KRT5"))
 
 }
+dev.off()
