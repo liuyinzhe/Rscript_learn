@@ -51,7 +51,7 @@ p1 <- ggplot(data, aes(x =Log2FoldChange, y=log10pval, colour=Sig)) + #x、y轴�
   geom_vline(xintercept=c(-cut_off_log2FC,cut_off_log2FC),lty=4,col="grey",lwd=0.6) + #添加x轴辅助线,lty函数调整线的类型："twodash"、"longdash"、"dotdash"、"dotted"、"dashed"、"solid"、"blank"
   geom_hline(yintercept = -log10(cut_off_FDR), lty=4,col="grey",lwd=0.6) +  #添加y轴辅助线
   labs(x="log2(Fold Change)", y="-log10(P-value)") +  #x、y轴标签
-  ggtitle("B053D_B052D") + #标题
+  ggtitle("Sample") + #标题
   theme_bw() + # 主题，help(theme)查找其他个性化设置
   theme(plot.title = element_text(hjust = 0.5),
         #plot.title = element_text(size = 16) # 图表标题文字大小
@@ -99,8 +99,8 @@ p3 <- p2 + geom_point(data=target_gene_df,aes(x =Log2FoldChange, y=log10pval),
 
 p3
 
-ggsave('B053D_B052D.volcano_gene.png',plot=p3,height=8, width=12, units="in",dpi=200)
-ggsave('B053D_B052D.volcano_gene.pdf',plot=p3,height=8, width=12, units="in",dpi=100)
+ggsave('Sample.volcano_gene.png',plot=p3,height=8, width=12, units="in",dpi=200)
+ggsave('Sample.volcano_gene.pdf',plot=p3,height=8, width=12, units="in",dpi=100)
 
 
 
