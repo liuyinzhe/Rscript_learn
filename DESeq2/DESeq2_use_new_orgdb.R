@@ -249,8 +249,8 @@ PCOA_plot<- ggplot(data,aes(x = A1,
 ))+
   geom_point(aes(colour=group,shape=group,fill=group),size=5)+
   theme_classic()+
-  geom_vline(xintercept = 0, color = 'gray', size = 0.4) +   # 在0处添加垂直线条
-  geom_hline(yintercept = 0, color = 'gray', size = 0.4) +
+  geom_vline(xintercept = 0, color = 'gray', linewidth = 0.4) +   # 在0处添加垂直线条
+  geom_hline(yintercept = 0, color = 'gray', linewidth = 0.4) +
   stat_ellipse(aes(x=A1,    # 添加置信区间圈
                    y=A2,
   ),
