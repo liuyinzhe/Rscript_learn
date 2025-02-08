@@ -8,7 +8,7 @@ library(ggrepel)
 #读取基因表达值矩阵
 #推荐使用 log 转化后的基因表达值，降低不同基因表达水平数量级相差过大的问题
 gene <- read.delim('all.counts.txt', row.names = 1, sep = '\t')
-
+# gene <- log2(gene + 1)
 #将基因表达值矩阵作个转置，使行为样本，列为基因
 gene <- t(gene)
 
