@@ -32,19 +32,45 @@ coordinates$Sample <- data$Sample
 coordinates$Group <- data$Group
 
 # 绘制PCoA图
-ggplot(coordinates, aes(x = PCoA1, y = PCoA2, color = Group)) +
-  geom_point(size = 4) +
+ggplot(coordinates, aes(x = PCoA1, y = PCoA2, color = Group, shape = Group)) +
+  # 隐藏散点但保留图例映射
+  geom_point(size = 0, alpha = 0) +  # 双重保险隐藏散点（size=0 + alpha=0）
   geom_text_repel(
     aes(label = Sample),
     size = 3.5,
-    box.padding = 0.5,
-    show.legend = FALSE
+    box.padding = 0.5, #散点 与 标签的距离
+    show.legend = FALSE,
+    min.segment.length=30,
+    segment.size = 0,   # 点与标签连线的粗细,0隐藏
+    #segment.color = NA # 点与标签连线的颜色,NA隐藏
   ) +
-  scale_color_manual(values = c("Control" = "#1f77b4",
-                               "TreatmentA" = "#ff7f0e",
-                               "TreatmentB" = "#2ca02c")) +
+  # 强制显示图例并修正图例样式
+  guides(
+    color = guide_legend(
+      override.aes = list(
+        size = 2,        # 图例符号大小
+        alpha = 1,        # 图例不透明度
+        shape = c(16, 17, 15)  # 手动指定形状（需与分组顺序一致）
+      )
+    ),
+    shape = guide_legend(
+      override.aes = list(
+        size = 3,
+        alpha = 1
+      )
+    )
+  ) +
+  
+  scale_color_manual( # 自定义散点颜色
+    values = c("Control" = "#1f77b4",
+               "TreatmentA" = "#ff7f0e",
+               "TreatmentB" = "#2ca02c")
+  ) +
+  scale_shape_manual(  # 自定义散点形状
+    values = c("Control" = 16,
+               "TreatmentA" = 17,
+               "TreatmentB" = 15)
+  ) +
   labs(x = paste0("PCoA1 (", round(variance[1], 1), "%)"),
-       y = paste0("PCoA2 (", round(variance[2], 1), "%)"),
-       title = "PCoA Plot with Sample Labels") +
-  theme_minimal() +
-  theme(plot.title = element_text(hjust = 0.5))
+       y = paste0("PCoA2 (", round(variance[2], 1), "%)")) +
+  theme_minimal()
