@@ -29,11 +29,3 @@ install.packages("ggplot2", lib = new_path)
 
 #### 从指定路径加载包
 library(ggplot2, lib.loc = new_path)
-
-#### 降级安装
-```
-#网站查看 https://cran.r-project.org/src/contrib/Archive 包的旧版本
-#指定安装旧版本
-install.packages("plotly",version="2.2",repos="http://cran.r-project.org")
-```
-
